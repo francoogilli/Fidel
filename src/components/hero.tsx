@@ -4,7 +4,7 @@ import StargoldIcon from "../icons/stargold";
 
 export default function Hero() {
   return (
-    <div className="mx-auto flex flex-col max-w-5xl lg:pt-6 space-y-6">
+    <div className="mx-auto flex flex-col max-w-5xl lg:pt-3 space-y-6">
       <div className="lg:px-20 text-center">
         <div className="flex justify-center ">
           <img
