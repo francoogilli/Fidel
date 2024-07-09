@@ -1,4 +1,5 @@
 import AppIcon from "../icons/app";
+import ChevronIcon from "../icons/chevron";
 import SparklesIcon from "../icons/sparkles";
 import StargoldIcon from "../icons/stargold";
 
@@ -15,9 +16,7 @@ export default function Hero() {
         </div>
         <div className="bg-neutral-800/5 rounded-3xl px-4 py-2 mb-2 inline-block">
           <p className="text-[10px] flex justify-center items-center space-x-1.5 lg:text-xs uppercase tracking-widest bg-gradient-to-r from-[#22b920] via-[#31e82e] to-[#e08608] bg-clip-text text-transparent font-semibold">
-            <AppIcon /> <span>
-            Sistema de gestion y facturacion
-            </span>
+            <AppIcon /> <span>Sistema de gestion y facturacion</span>
           </p>
         </div>
         <h2 className="font-bold lg:text-6xl text-4xl lg:leading-[4.6rem]">
@@ -37,9 +36,11 @@ export default function Hero() {
 
       <div>
         <div className="flex flex-col lg:flex-row lg:space-x-3.5 mx-auto justify-center items-center text-center space-y-2 lg:space-y-0">
-          <button className="bg-zinc-800 hover:bg-zinc-700 px-6 py-3 text-sm text-white rounded-3xl flex items-center space-x-2">
-            <SparklesIcon className="size-5 text-white" />
-            <span>Iniciar sesión</span>
+          <button className="bg-zinc-800 duration-500 hover:bg-[#141414] pl-4 px-2 py-2 text-sm text-white rounded-3xl flex items-center space-x-2">
+            <span>Ingresar ahora</span>
+            <span className="bg-[#fffbf2] rounded-full p-2 hover:scale-110 duration-500">
+              <ChevronIcon />
+            </span>
           </button>
           <button className="font-medium text-black border border-zinc-100 bg-gradient-to-r from-[#35fa32] hover:from-[#43ff40] via-[#35fa32] hover:via-[#43ff40] to-[#ff9500] hover:to-[#ffaa32] px-6 py-3 text-sm rounded-3xl flex items-center space-x-2">
             <span>¡Pedi una demo!</span>
