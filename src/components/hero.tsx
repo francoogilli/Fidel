@@ -1,3 +1,4 @@
+import AppIcon from "../icons/app";
 import SparklesIcon from "../icons/sparkles";
 import StargoldIcon from "../icons/stargold";
 
@@ -12,9 +13,13 @@ export default function Hero() {
             width={200}
           />
         </div>
-        <p className="text-xs lg:text-sm uppercase tracking-widest bg-gradient-to-r from-[#22b920] via-[#22b920] to-[#e08608] bg-clip-text text-transparent font-semibold pb-1.5">
-          Sistema de gestion y facturacion
-        </p>
+        <div className="bg-neutral-800/5 rounded-3xl px-4 py-2 mb-2 inline-block">
+          <p className="text-[10px] flex justify-center items-center space-x-1.5 lg:text-xs uppercase tracking-widest bg-gradient-to-r from-[#22b920] via-[#31e82e] to-[#e08608] bg-clip-text text-transparent font-semibold">
+            <AppIcon /> <span>
+            Sistema de gestion y facturacion
+            </span>
+          </p>
+        </div>
         <h2 className="font-bold lg:text-6xl text-4xl lg:leading-[4.6rem]">
           Organiza y gestiona tu empresa con{" "}
           <span className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] bg-clip-text text-transparent">
@@ -42,19 +47,20 @@ export default function Hero() {
         </div>
 
         <div className="flex lg:flex-row flex-col justify-center items-center pt-7 lg:space-x-2.5 space-y-3 lg:space-y-0">
-  <img src="/people.svg" width={125} alt="" />
-  <div className="flex flex-col items-center lg:items-start">
-    <div className="flex space-x-0.5">
-      <StargoldIcon />
-      <StargoldIcon />
-      <StargoldIcon />
-      <StargoldIcon />
-      <StargoldIcon />
-    </div>
-    <p className="text-[11px] font-normal text-center lg:text-left">Amada por +2300 usuarios</p>
-  </div>
-</div>
-
+          <img src="/people.svg" width={125} alt="" />
+          <div className="flex flex-col items-center lg:items-start">
+            <div className="flex space-x-0.5">
+              <StargoldIcon />
+              <StargoldIcon />
+              <StargoldIcon />
+              <StargoldIcon />
+              <StargoldIcon />
+            </div>
+            <p className="text-[11px] font-normal text-center lg:text-left">
+              Amada por +2300 usuarios
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="absolute hidden md:flex top-0 left-0 w-full h-full justify-center items-center pointer-events-none -z-10">
