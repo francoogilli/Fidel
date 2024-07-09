@@ -54,7 +54,7 @@ export default function Header() {
               return (
                 <a
                   href="#"
-                  className="text-[#6c6c6c] hover:text-black border border-[#f9f9f9] hover:border-[#DFDFDF] hover:bg-[#fffbf4] px-4 py-1.5 rounded-3xl flex items-center gap-1"
+                  className="text-neutral-800 duration-200 hover:text-black border border-[#f9f9f9] hover:border-[#DFDFDF] hover:bg-[#fffbf4] px-4 py-1.5 rounded-3xl flex items-center gap-1"
                   key={option.title}
                 >
                   {option.title}
