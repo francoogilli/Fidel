@@ -35,13 +35,13 @@ export default function Hero() {
 
       <div>
         <div className="flex flex-col lg:flex-row lg:space-x-3.5 mx-auto justify-center items-center text-center space-y-2 lg:space-y-0">
-          <button className="bg-zinc-800 duration-500 hover:bg-[#141414] pl-4 px-2 py-2 text-sm text-white rounded-3xl flex items-center space-x-2">
+          <button className="bg-zinc-800 hover:scale-105 duration-500 hover:bg-[#141414] pl-4 px-2 py-2 text-sm text-white rounded-3xl flex items-center space-x-2">
             <span>Ingresar ahora</span>
             <span className="bg-[#fffbf2] rounded-full p-2 hover:scale-110 duration-500">
               <ChevronIcon />
             </span>
           </button>
-          <button className="font-medium text-black border border-zinc-100 bg-gradient-to-r from-[#35fa32] hover:from-[#43ff40] via-[#35fa32] hover:via-[#43ff40] to-[#ff9500] hover:to-[#ffaa32] px-6 py-3 text-sm rounded-3xl flex items-center space-x-2">
+          <button className="font-medium text-black border hover:scale-105 duration-500 border-zinc-100 bg-gradient-to-r from-[#35fa32]  via-[#35fa32] to-[#ff9500] px-6 py-3 text-sm rounded-3xl flex items-center space-x-2">
             <span>¡Pedi una demo!</span>
           </button>
         </div>
