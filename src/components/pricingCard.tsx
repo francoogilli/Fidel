@@ -1,5 +1,6 @@
 import CheckIcon from "../icons/check";
 import CrossIcon from "../icons/crossx";
+import Referred from "./referred";
 
 interface Benefit {
   text: string;
@@ -84,7 +85,7 @@ export default function PricingCard() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto mt-32 mb-10 px-4">
+    <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <h2 className="text-4xl md:text-5xl font-semibold text-center my-8 pb-4">
         Planes{" "}
         <span className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] bg-clip-text text-transparent tracking-tight">
@@ -92,7 +93,7 @@ export default function PricingCard() {
         </span>{" "}
         para cada negocio.
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {pricingData.map((pricing) => (
           <div
             className="flex flex-col p-6 text-center bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] rounded-3xl border border-[#ffdede] hover:scale-105 duration-500"
@@ -142,6 +143,7 @@ export default function PricingCard() {
           </div>
         ))}
       </div>
+      <Referred />
     </div>
   );
 }
