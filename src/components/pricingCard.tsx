@@ -102,7 +102,7 @@ export default function PricingCard() {
             <p className="font-light text-zinc-500 text-[10px] sm:text-xs text-left">
               Para {pricing.bestOption}
             </p>
-            <div className="flex justify-start text-left items-baseline my-6">
+            <div className="flex justify-start text-left items-baseline my-5">
               <span className="text-5xl font-semibold">
                 ${Number(pricing.price).toLocaleString("en-US")}
               </span>
@@ -110,6 +110,7 @@ export default function PricingCard() {
                 /mes
               </span>
             </div>
+            <hr className="border-dashed border-t-2 border-neutral-200 mb-5" />
             <p className="font-light text-zinc-500 sm:text-xs text-left pb-3">
               ¿Qué incluye?
             </p>
