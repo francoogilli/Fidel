@@ -95,7 +95,7 @@ export default function PricingCard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {pricingData.map((pricing) => (
           <div
-            className="flex flex-col p-6 text-center bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] rounded-3xl border border-[#ffdede]"
+            className="flex flex-col p-6 text-center bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] rounded-3xl border border-[#ffdede] hover:scale-105 duration-500"
             key={pricing.name}
           >
             <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">{pricing.name}</h3>
@@ -135,7 +135,7 @@ export default function PricingCard() {
             </ul>
             <a
               href="#"
-              className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center hover:scale-105 duration-300"
+              className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center hover:scale-105 duration-500"
             >
               Elegir
             </a>
