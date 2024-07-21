@@ -8,8 +8,7 @@ export default function Header() {
   const options = [
     { title: "Inicio" },
     { title: "Sobre Fidel" },
-    { title: "App" },
-    { title: "Ventajas" },
+    { title: "Precios" },
     { title: "Recomendanos", icon: ArrowUpIcon },
   ];
 
