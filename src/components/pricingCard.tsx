@@ -143,7 +143,7 @@ export default function PricingCard() {
           </div>
         ))}
       </div>
-      <Referred />
+      {/* <Referred /> */}
     </div>
   );
 }
