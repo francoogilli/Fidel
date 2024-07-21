@@ -99,7 +99,7 @@ export default function PricingCard() {
             key={pricing.name}
           >
             <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">{pricing.name}</h3>
-            <p className="font-light text-zinc-500 sm:text-xs text-left">
+            <p className="font-light text-zinc-500 text-[10px] sm:text-xs text-left">
               Para {pricing.bestOption}
             </p>
             <div className="flex justify-start text-left items-baseline my-6">
