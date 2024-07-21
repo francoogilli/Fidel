@@ -1,7 +1,7 @@
 export default function ChevronIcon() {
   return (
     <svg
-      className="size-3 text-black"
+      className="size-3 text-white"
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
