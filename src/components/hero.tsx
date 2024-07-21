@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row lg:space-x-3.5 mx-auto justify-center items-center text-center space-y-2 lg:space-y-0">
           <button className="bg-zinc-800 hover:scale-105 duration-500 hover:bg-[#141414] pl-4 px-2 py-2 text-sm text-white rounded-3xl flex items-center space-x-2">
             <span>Ingresar ahora</span>
-            <span className="bg-[#fffbf2] rounded-full p-2 hover:scale-110 duration-500">
+            <span className="p-2 hover:scale-110 duration-500">
               <ChevronIcon />
             </span>
           </button>
