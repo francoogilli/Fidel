@@ -1,6 +1,5 @@
 import CheckIcon from "../icons/check";
 import CrossIcon from "../icons/crossx";
-import Referred from "./referred";
 
 interface Benefit {
   text: string;
