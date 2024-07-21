@@ -95,10 +95,10 @@ export default function PricingCard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {pricingData.map((pricing) => (
           <div
-            className="flex flex-col p-6 text-center bg-[#fffaf0] rounded-3xl border border-zinc-300"
+            className="flex flex-col p-6 text-center bg-[#fffaf0] rounded-3xl border border-[#ffdede]"
             key={pricing.name}
           >
-            <h3 className="text-3xl text-left font-bold">{pricing.name}</h3>
+            <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">{pricing.name}</h3>
             <p className="font-light text-zinc-500 sm:text-xs text-left">
               Para {pricing.bestOption}
             </p>
@@ -113,7 +113,7 @@ export default function PricingCard() {
             <p className="font-light text-zinc-500 sm:text-xs text-left pb-3">
               ¿Qué incluye?
             </p>
-            <ul role="list" className="mb-7 space-y-3 text-left">
+            <ul role="list" className="mb-7 space-y-4 text-left">
               {pricing.benefits.map((benefit, index) => (
                 <li className="flex items-center space-x-2" key={index}>
                   {benefit.active ? <CheckIcon /> : <CrossIcon />}
