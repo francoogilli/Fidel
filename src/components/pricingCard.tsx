@@ -1,4 +1,5 @@
 import CheckIcon from "../icons/check";
+import CreditCardIcon from "../icons/creditCard";
 import CrossIcon from "../icons/crossx";
 
 interface Benefit {
@@ -80,25 +81,33 @@ export default function PricingCard() {
     "3 Vendedores",
     "9 Vendedores",
     "Tienda Nube",
-    "personalizada"
+    "personalizada",
   ];
 
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
-      <h2 className="text-4xl md:text-5xl font-semibold text-center my-8 pb-4">
+      <div className="flex justify-center ">
+        <div className="flex items-center rounded-xl border border-[#ffdede] bg-[#ffecec] px-3 py-1">
+          <CreditCardIcon />
+          <h2 className="text-base font-medium text-center ml-2">Precios</h2>
+        </div>
+      </div>
+      <h3 className="text-4xl md:text-5xl font-semibold text-center my-8 pb-4">
         Planes{" "}
         <span className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] bg-clip-text text-transparent tracking-tight">
           únicos
         </span>{" "}
         para cada negocio.
-      </h2>
+      </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {pricingData.map((pricing) => (
           <div
             className="flex flex-col p-6 text-center bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] rounded-3xl border border-[#ffdede] hover:scale-105 duration-500"
             key={pricing.name}
           >
-            <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">{pricing.name}</h3>
+            <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">
+              {pricing.name}
+            </h3>
             <p className="font-light text-zinc-500 text-[10px] sm:text-xs text-left">
               Para {pricing.bestOption}
             </p>
