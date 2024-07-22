@@ -1,5 +1,4 @@
 import AppIcon from "../icons/app";
-import ChevronIcon from "../icons/chevron";
 import StargoldIcon from "../icons/stargold";
 
 export default function Hero() {

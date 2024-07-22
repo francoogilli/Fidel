@@ -136,7 +136,7 @@ export default function PricingCard() {
             </ul>
             <a
               href="#"
-              className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center"
+              className="bg-gradient-to-r from-[#35fa32] via-[#2fe22c] to-[#35fa32] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center"
             >
               Elegir
             </a>
