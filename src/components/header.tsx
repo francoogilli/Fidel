@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ArrowUpIcon from "../icons/arrow-up";
-import MessageIcon from "../icons/message";
 
 export default function Header() {
   const [isMenuOpen] = useState(false);
@@ -64,9 +63,7 @@ export default function Header() {
           </div>
 
           <div className="lg:flex hidden justify-center items-center gap-2">
-            <div className="bg-[#fffaf0] border border-zinc-200 p-1.5 rounded-3xl cursor-pointer">
-              <MessageIcon />
-            </div>
+            
             <button className="border duration-300 border-[#DFDFDF] bg-zinc-800 text-white font-medium hover:bg-zinc-700 text-sm px-6 py-2.5 rounded-3xl">
               Iniciar sesión
             </button>
