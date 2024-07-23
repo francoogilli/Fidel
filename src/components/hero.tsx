@@ -12,7 +12,7 @@ export default function Hero() {
             width={200}
           />
         </div>
-        <div className="bg-neutral-800/5 rounded-3xl px-4 py-2 mb-2 inline-block">
+        <div className="bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] border border-[#ffebeb] rounded-3xl px-4 py-2 mb-2 inline-block">
           <p className="text-[10px] flex justify-center items-center space-x-1.5 lg:text-xs uppercase tracking-widest bg-gradient-to-r from-[#22b920] via-[#31e82e] to-[#e08608] bg-clip-text text-transparent font-semibold">
             <AppIcon /> <span>Sistema de gestion y facturacion</span>
           </p>
