@@ -87,7 +87,7 @@ export default function PricingCard() {
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <div className="flex justify-center ">
-        <div className="flex items-center rounded-xl border border-[#ffdede] bg-[#ffecec] px-3 py-1">
+        <div className="flex items-center rounded-xl border border-[#ffdede] bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] px-3 py-1">
           <CreditCardIcon />
           <h2 className="text-base font-medium text-center ml-2">Precios</h2>
         </div>
