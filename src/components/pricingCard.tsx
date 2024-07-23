@@ -132,7 +132,7 @@ export default function PricingCard() {
                       .split(new RegExp(`(${keywords.join("|")})`, "gi"))
                       .map((part, i) =>
                         keywords.includes(part) && benefit.active ? (
-                          <span className="font-semibold" key={i}>
+                          <span className="font-medium" key={i}>
                             {part}
                           </span>
                         ) : (
