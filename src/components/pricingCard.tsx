@@ -1,4 +1,3 @@
-import React from 'react';
 import CheckIcon from "../icons/check";
 import CreditCardIcon from "../icons/creditCard";
 import CrossIcon from "../icons/crossx";
@@ -85,26 +84,6 @@ export default function PricingCard() {
     "personalizada",
   ];
 
-  // Función para obtener la clase de retraso en función del índice
-  const getDelayClass = (index: number) => {
-    switch (index) {
-      case 0:
-        return 'delay-1';
-      case 1:
-        return 'delay-2';
-      case 2:
-        return 'delay-3';
-      case 3:
-        return 'delay-4';
-      case 4:
-        return 'delay-5';
-      case 5:
-        return 'delay-6';
-      default:
-        return '';
-    }
-  };
-
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <div className="flex justify-center">
@@ -121,9 +100,9 @@ export default function PricingCard() {
         para cada negocio.
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
-        {pricingData.map((pricing, index) => (
+        {pricingData.map((pricing) => (
           <div
-            className={`animation-1 flex flex-col p-6 text-center bg-gradient-to-br from-[#f7f7f7b9] to-[#fff] rounded-3xl border border-[#ededed] hover:scale-105 duration-500 ${getDelayClass(index)}`}
+            className="animation-1 flex flex-col p-6 text-center bg-gradient-to-br from-[#f7f7f7b9] to-[#fff] rounded-3xl border border-[#ededed] hover:scale-105 duration-500"
             key={pricing.name}
           >
             <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">
