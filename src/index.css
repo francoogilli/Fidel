@@ -143,5 +143,5 @@ body {
   animation-name: slideIn;
   animation-fill-mode: both;
   animation-timeline: --reveal;
-  animation-range: entry 45% cover 65%;
+  animation-range: entry 35% cover 55%;
 }
