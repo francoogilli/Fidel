@@ -87,7 +87,7 @@ export default function PricingCard() {
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <div className="flex justify-center ">
-        <div className="flex items-center rounded-xl border border-[#ffdede] bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] px-3 py-1">
+        <div className="flex items-center rounded-xl border border-[#e9e9e9] bg-gradient-to-br from-[#f5f5f5] to-[#fff] px-3 py-1">
           <CreditCardIcon />
           <h2 className="text-base font-medium text-center ml-2">Precios</h2>
         </div>
@@ -102,7 +102,7 @@ export default function PricingCard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {pricingData.map((pricing) => (
           <div
-            className="flex flex-col p-6 text-center bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] rounded-3xl border border-[#ffdede] hover:scale-105 duration-500"
+            className="flex flex-col p-6 text-center bg-gradient-to-br from-[#f7f7f7b9] to-[#fff] rounded-3xl border border-[#ededed] hover:scale-105 duration-500"
             key={pricing.name}
           >
             <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">

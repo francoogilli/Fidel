@@ -12,12 +12,12 @@ export default function Hero() {
             width={200}
           />
         </div>
-        <div className="bg-gradient-to-br from-[#fbf5e9] to-[#fffbf2] border border-[#ffebeb] rounded-3xl px-4 py-2 mb-2 inline-block">
+        <div className="bg-gradient-to-br from-[#fbfbfb] to-[#fff] border border-[#ffebeb] rounded-3xl px-4 py-2 mb-2 inline-block">
           <p className="text-[10px] flex justify-center items-center space-x-1.5 lg:text-xs uppercase tracking-widest bg-gradient-to-r from-[#22b920] via-[#31e82e] to-[#e08608] bg-clip-text text-transparent font-semibold">
             <AppIcon /> <span>Sistema de gestion y facturacion</span>
           </p>
         </div>
-        <h2 className="font-bold lg:text-6xl text-4xl lg:leading-[4.6rem]">
+        <h2 className="font-bold md:text-6xl lg:text-7xl text-4xl lg:leading-[4.6rem]">
           Organiza y gestiona tu empresa con{" "}
           <span className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] bg-clip-text text-transparent">
             Fidel
@@ -59,32 +59,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute hidden md:flex top-0 left-0 w-full h-full justify-center items-center pointer-events-none -z-10">
-        <div
-          className="absolute top-52 left-52 flex justify-center items-center rounded-full"
-          style={{ animation: "levitate 20s ease 1s infinite" }}
-        >
-          <img src="/image4.svg" width={90} className="select-none" alt="" />
-        </div>
-        <div
-          className="absolute top-36 right-60 flex justify-center items-center rounded-full"
-          style={{ animation: "levitate 22s ease 1s infinite" }}
-        >
-          <img src="/image2.svg" width={90} className="select-none" alt="" />
-        </div>
-        <div
-          className="absolute top-[33rem] right-60 flex justify-center items-center rounded-full"
-          style={{ animation: "levitate 21s ease 1s infinite" }}
-        >
-          <img src="/image3.svg" width={90} className="select-none" alt="" />
-        </div>
-        <div
-          className="absolute top-[33rem] left-60 flex justify-center items-center rounded-full"
-          style={{ animation: "levitate 19s ease 1s infinite" }}
-        >
-          <img src="/image1.svg" width={75} className="select-none" alt="" />
-        </div>
-      </div>
+
     </div>
   );
 }

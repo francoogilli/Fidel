@@ -12,7 +12,7 @@ export default function Header() {
   ];
 
   return (
-    <header className=" top-0 bg-[#fffbf2] z-50 border border-b-slate-100">
+    <header className=" top-0 bg-white/50 z-50 border border-b-slate-100">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
@@ -52,7 +52,7 @@ export default function Header() {
               return (
                 <a
                   href="#"
-                  className="text-neutral-800 duration-200 hover:text-black border border-[#f9f9f9] hover:border-[#DFDFDF] hover:bg-[#fffbf4] px-4 py-1.5 rounded-3xl flex items-center gap-1"
+                  className="text-neutral-800 duration-200 hover:text-black hover:bg-[#fffbf4] px-4 py-1.5 rounded-3xl flex items-center gap-1"
                   key={option.title}
                 >
                   {option.title}
