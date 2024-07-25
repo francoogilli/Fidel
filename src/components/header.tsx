@@ -6,16 +6,17 @@ export default function Header() {
 
   const options = [
     { title: "Inicio" },
-    { title: "Sobre Fidel" },
     { title: "Precios" },
-    { title: "Recomendanos", icon: ArrowUpIcon },
+    { title: "Sobre" },
+    { title: "Contacto"},
+    { title: "FAQs", icon: ArrowUpIcon },
   ];
 
   return (
     <header className=" top-0 bg-white/50 z-50 border border-b-slate-100">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-3 "
       >
         <div className="flex justify-center items-center gap-2">
           <img src="/fidel1.svg" width={50} />
@@ -41,7 +42,6 @@ export default function Header() {
           </button>
         </div>
 
-        <div className="hidden lg:flex justify-center">
           <div
             className={`lg:flex ${
               isMenuOpen ? "block" : "hidden"
@@ -64,11 +64,10 @@ export default function Header() {
 
           <div className="lg:flex hidden justify-center items-center gap-2">
             
-            <button className="border duration-300 border-[#DFDFDF] bg-zinc-800 text-white font-medium hover:bg-zinc-700 text-sm px-6 py-2.5 rounded-3xl">
+            <button className="border duration-300 border-[#DFDFDF] bg-zinc-800 text-white font-normal hover:bg-zinc-700 text-sm px-5 py-2.5 rounded-3xl">
               Iniciar sesión
             </button>
           </div>
-        </div>
       </nav>
     </header>
   );
