@@ -105,7 +105,7 @@ export default function PricingCard() {
             className="flex flex-col p-6 text-center bg-gradient-to-br from-[#f7f7f7b9] to-[#fff] rounded-3xl border border-[#ededed] hover:scale-105 duration-500"
             key={pricing.name}
           >
-            <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#1c1c1c] to-[#3d3d3d] bg-clip-text text-transparent">
+            <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#131313] to-[#3d3d3d] bg-clip-text text-transparent">
               {pricing.name}
             </h3>
             <p className="font-light text-zinc-500 text-[10px] sm:text-xs text-left">
