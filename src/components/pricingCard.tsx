@@ -73,17 +73,6 @@ export default function PricingCard() {
     },
   ];
 
-  const keywords = [
-    "1 Usuario",
-    "12 Usuarios",
-    "3 Usuarios",
-    "6 Usuarios",
-    "3 Vendedores",
-    "9 Vendedores",
-    "Tienda Nube",
-    "personalizada",
-  ];
-
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <div className="flex justify-center">
@@ -127,19 +116,7 @@ export default function PricingCard() {
               {pricing.benefits.map((benefit, index) => (
                 <li className="flex items-center space-x-2" key={index}>
                   {benefit.active ? <CheckIcon /> : <CrossIcon />}
-                  <span className="text-sm">
-                    {benefit.text
-                      .split(new RegExp(`(${keywords.join("|")})`, "gi"))
-                      .map((part, i) =>
-                        keywords.includes(part) && benefit.active ? (
-                          <span className="font-medium" key={i}>
-                            {part}
-                          </span>
-                        ) : (
-                          part
-                        )
-                      )}
-                  </span>
+                  <span className="text-sm">{benefit.text}</span>
                 </li>
               ))}
             </ul>
