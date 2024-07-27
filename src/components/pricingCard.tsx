@@ -4,6 +4,7 @@ import CreditCardIcon from "../icons/creditCard";
 import Cross from "../icons/cross";
 import InfoCircle from "../icons/infoCircle";
 import Tooltip from "./tooltip";
+import ArrowRight from "../icons/arrowRight";
 
 interface Benefit {
   text: string;
@@ -139,9 +140,10 @@ export default function PricingCard() {
             </ul>
             <a
               href="#"
-              className="bg-gradient-to-r from-[#35fa32] via-[#2fe22c] to-[#35fa32] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center hover:scale-105 duration-300"
+              className="flex justify-center items-center gap-x-1 bg-gradient-to-r from-[#2d2d2d] to-[#4a4a4a] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center hover:scale-105 duration-300"
             >
               Elegir
+              <ArrowRight className="size-5" />
             </a>
           </div>
         ))}
