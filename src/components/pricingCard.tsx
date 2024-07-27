@@ -143,7 +143,7 @@ export default function PricingCard() {
               className="flex justify-center items-center gap-x-1 bg-gradient-to-r from-[#2d2d2d] to-[#4a4a4a] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center hover:scale-105 duration-300"
             >
               Elegir
-              <ArrowRight className="size-5" />
+              <ArrowRight className="size-[1.125rem]" />
             </a>
           </div>
         ))}
