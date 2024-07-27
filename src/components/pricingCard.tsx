@@ -1,10 +1,13 @@
 import CheckIcon from "../icons/check";
 import CreditCardIcon from "../icons/creditCard";
 import CrossIcon from "../icons/crossx";
+import InfoCircle from "../icons/infoCircle"; // Suponiendo que tienes un icono de información
+import Tooltip from "./tooltip";
 
 interface Benefit {
   text: string;
   active: boolean;
+  tooltipInfo?: string; // Nueva propiedad opcional para el tooltip
 }
 
 interface PricingCardProps {
@@ -21,15 +24,12 @@ export default function PricingCard() {
       price: 10500,
       bestOption: "monotributistas",
       benefits: [
-        { text: "Asesoría prioritaria", active: true },
-        { text: "1 Usuario", active: true },
-        {
-          text: "Tienda Nube",
-          active: false,
-        },
-        { text: "1 vendedor", active: false },
-        { text: "App Mobile", active: false },
-        { text: "Percepciones por Provincia en Ventas", active: false },
+        { text: "Asesoría prioritaria", active: true, tooltipInfo: "Asesoría rápida y eficaz." },
+        { text: "1 Usuario", active: true, tooltipInfo: "Acceso para 1 usuario. Sin contar vendedores" },
+        { text: "Tienda Nube", active: false, tooltipInfo: "No incluye integración con Tienda Nube." },
+        { text: "1 vendedor", active: false, tooltipInfo: "No incluye soporte para múltiples vendedores." },
+        { text: "App Mobile", active: false, tooltipInfo: "No incluye acceso a la aplicacion mobile." },
+        { text: "Percepciones Prov.", active: false, tooltipInfo: "No incluye gestión de percepciones provinciales." },
       ],
     },
     {
@@ -37,12 +37,12 @@ export default function PricingCard() {
       price: 13500,
       bestOption: "negocios locales",
       benefits: [
-        { text: "Asesoría prioritaria", active: true },
-        { text: "3 usuarios", active: true },
-        { text: "Tienda Nube", active: true },
-        { text: "1 vendedor", active: false },
-        { text: "App Mobile", active: false },
-        { text: "Percepciones por Provincia en Ventas", active: false },
+        { text: "Asesoría prioritaria", active: true, tooltipInfo: "Asesoría rápida y eficaz." },
+        { text: "3 usuarios", active: true, tooltipInfo: "Acceso para 3 usuarios. Sin contar vendedores" },
+        { text: "Tienda Nube", active: true, tooltipInfo: "Incluye integración con Tienda Nube." },
+        { text: "1 vendedor", active: false, tooltipInfo: "No incluye soporte para múltiples vendedores." },
+        { text: "App Mobile", active: false, tooltipInfo: "No incluye acceso a la aplicacion mobile." },
+        { text: "Percepciones Prov.", active: false, tooltipInfo: "No incluye gestión de percepciones provinciales." },
       ],
     },
     {
@@ -50,12 +50,12 @@ export default function PricingCard() {
       price: 18500,
       bestOption: "pequeñas y medianas empresas",
       benefits: [
-        { text: "Asesoría prioritaria", active: true },
-        { text: "6 usuarios", active: true },
-        { text: "Tienda Nube", active: true },
-        { text: "3 vendedores", active: true },
-        { text: "App Mobile", active: true },
-        { text: "Percepciones por Provincia en Ventas", active: false },
+        { text: "Asesoría prioritaria", active: true, tooltipInfo: "Asesoría rápida y eficaz." },
+        { text: "6 usuarios", active: true, tooltipInfo: "Acceso para 6 usuarios. Sin contar vendedores" },
+        { text: "Tienda Nube", active: true, tooltipInfo: "Incluye integración con Tienda Nube." },
+        { text: "3 vendedores", active: true, tooltipInfo: "Soporte para hasta 3 vendedores." },
+        { text: "App Mobile", active: true, tooltipInfo: "Incluye acceso a la aplicacion mobile." },
+        { text: "Percepciones Prov.", active: false, tooltipInfo: "No incluye gestión de percepciones provinciales." },
       ],
     },
     {
@@ -63,12 +63,12 @@ export default function PricingCard() {
       price: 23000,
       bestOption: "grandes empresas",
       benefits: [
-        { text: "Asesoría personalizada", active: true },
-        { text: "12 usuarios", active: true },
-        { text: "Tienda Nube", active: true },
-        { text: "9 Vendedores", active: true },
-        { text: "App Mobile", active: true },
-        { text: "Percepciones por Provincia en Ventas", active: true },
+        { text: "Asesoría personalizada", active: true, tooltipInfo: "Asesoría personalizada y detallada." },
+        { text: "12 usuarios", active: true, tooltipInfo: "Acceso para 12 usuarios. Sin contar vendedores" },
+        { text: "Tienda Nube", active: true, tooltipInfo: "Incluye integración con Tienda Nube." },
+        { text: "9 Vendedores", active: true, tooltipInfo: "Soporte para hasta 9 vendedores." },
+        { text: "App Mobile", active: true, tooltipInfo: "Incluye acceso a la aplicacion mobile." },
+        { text: "Percepciones Prov.", active: true, tooltipInfo: "Gestión de percepciones provinciales incluida." },
       ],
     },
   ];
@@ -114,9 +114,19 @@ export default function PricingCard() {
             </p>
             <ul role="list" className="mb-7 space-y-4 text-left">
               {pricing.benefits.map((benefit, index) => (
-                <li className="flex items-center space-x-2" key={index}>
-                  {benefit.active ? <CheckIcon /> : <CrossIcon />}
-                  <span className="text-sm">{benefit.text}</span>
+                <li
+                  className="flex items-center space-x-2 justify-between"
+                  key={index}
+                >
+                  <div className="flex items-center space-x-2">
+                    {benefit.active ? <CheckIcon /> : <CrossIcon />}
+                    <span className="text-sm">{benefit.text}</span>
+                  </div>
+                  {benefit.tooltipInfo && (
+                    <Tooltip text={benefit.tooltipInfo}>
+                      <InfoCircle />
+                    </Tooltip>
+                  )}
                 </li>
               ))}
             </ul>
@@ -129,7 +139,6 @@ export default function PricingCard() {
           </div>
         ))}
       </div>
-      {/* <Referred /> */}
     </div>
   );
 }
