@@ -1,3 +1,4 @@
+import React from "react";
 import Check from "../icons/checkIcon";
 import CreditCardIcon from "../icons/creditCard";
 import Cross from "../icons/cross";
@@ -116,22 +117,24 @@ export default function PricingCard() {
             <p className="font-light text-zinc-500 sm:text-xs text-left pb-3">
               ¿Qué incluye?
             </p>
-            <ul role="list" className="mb-7 space-y-4 text-left">
+            <ul role="list" className="mb-7 space-y-2.5 text-left">
               {pricing.benefits.map((benefit, index) => (
-                <li
-                  className="flex items-center space-x-2 justify-between"
-                  key={index}
-                >
-                  <div className="flex items-center space-x-2">
-                    {benefit.active ? <Check/> : <Cross />}
-                    <span className="text-sm">{benefit.text}</span>
-                  </div>
-                  {benefit.tooltipInfo && (
-                    <Tooltip text={benefit.tooltipInfo}>
-                      <InfoCircle />
-                    </Tooltip>
+                <React.Fragment key={index}>
+                  <li className="flex items-center space-x-2 justify-between">
+                    <div className="flex items-center space-x-2">
+                      {benefit.active ? <Check /> : <Cross />}
+                      <span className="text-sm">{benefit.text}</span>
+                    </div>
+                    {benefit.tooltipInfo && (
+                      <Tooltip text={benefit.tooltipInfo}>
+                        <InfoCircle />
+                      </Tooltip>
+                    )}
+                  </li>
+                  {index < pricing.benefits.length - 1 && (
+                    <hr className="border-t border-zinc-100" />
                   )}
-                </li>
+                </React.Fragment>
               ))}
             </ul>
             <a
