@@ -96,7 +96,7 @@ export default function PricingCard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {pricingData.map((pricing) => (
           <div
-            className="flex flex-col p-6 text-center bg-gradient-to-br from-[#f7f7f7b9] to-[#fff] rounded-3xl border border-[#ededed] hover:scale-105 duration-500"
+            className="flex flex-col p-6 text-center bg-gradient-to-br from-[#f7f7f7b9] to-[#fff] rounded-3xl border border-[#ededed]"
             key={pricing.name}
           >
             <h3 className="text-3xl text-left font-semibold bg-gradient-to-r from-[#131313] to-[#3d3d3d] bg-clip-text text-transparent">
