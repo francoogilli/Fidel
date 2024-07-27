@@ -29,6 +29,7 @@ export default function PricingCard() {
         { text: "Tienda Nube", active: false, tooltipInfo: "No incluye integración con Tienda Nube." },
         { text: "1 vendedor", active: false, tooltipInfo: "No incluye soporte para múltiples vendedores." },
         { text: "App Mobile", active: false, tooltipInfo: "No incluye acceso a la aplicacion mobile." },
+        { text: "Multicuit", active: false, tooltipInfo: "No permite facturar utilizando múltiples CUITs." },
         { text: "Percepciones Prov.", active: false, tooltipInfo: "No incluye gestión de percepciones provinciales." },
       ],
     },
@@ -42,6 +43,7 @@ export default function PricingCard() {
         { text: "Tienda Nube", active: true, tooltipInfo: "Incluye integración con Tienda Nube." },
         { text: "1 vendedor", active: false, tooltipInfo: "No incluye soporte para múltiples vendedores." },
         { text: "App Mobile", active: false, tooltipInfo: "No incluye acceso a la aplicacion mobile." },
+        { text: "Multicuit", active: false, tooltipInfo: "No permite facturar utilizando múltiples CUITs." },
         { text: "Percepciones Prov.", active: false, tooltipInfo: "No incluye gestión de percepciones provinciales." },
       ],
     },
@@ -55,6 +57,7 @@ export default function PricingCard() {
         { text: "Tienda Nube", active: true, tooltipInfo: "Incluye integración con Tienda Nube." },
         { text: "3 vendedores", active: true, tooltipInfo: "Soporte para hasta 3 vendedores." },
         { text: "App Mobile", active: true, tooltipInfo: "Incluye acceso a la aplicacion mobile." },
+        { text: "Multicuit", active: true, tooltipInfo: "Permite facturar con hasta 2 CUITs diferentes." },
         { text: "Percepciones Prov.", active: false, tooltipInfo: "No incluye gestión de percepciones provinciales." },
       ],
     },
@@ -68,6 +71,7 @@ export default function PricingCard() {
         { text: "Tienda Nube", active: true, tooltipInfo: "Incluye integración con Tienda Nube." },
         { text: "9 Vendedores", active: true, tooltipInfo: "Soporte para hasta 9 vendedores." },
         { text: "App Mobile", active: true, tooltipInfo: "Incluye acceso a la aplicacion mobile." },
+        { text: "Multicuit", active: true, tooltipInfo: "Permite facturar con hasta 6 CUITs diferentes." },
         { text: "Percepciones Prov.", active: true, tooltipInfo: "Gestión de percepciones provinciales incluida." },
       ],
     },
@@ -94,7 +98,7 @@ export default function PricingCard() {
             className="flex flex-col p-6 text-center bg-gradient-to-br from-[#f7f7f7b9] to-[#fff] rounded-3xl border border-[#ededed] hover:scale-105 duration-500"
             key={pricing.name}
           >
-            <h3 className="text-3xl text-left font-bold bg-gradient-to-r from-[#131313] to-[#3d3d3d] bg-clip-text text-transparent">
+            <h3 className="text-3xl text-left font-semibold bg-gradient-to-r from-[#131313] to-[#3d3d3d] bg-clip-text text-transparent">
               {pricing.name}
             </h3>
             <p className="font-light text-zinc-500 text-[10px] sm:text-xs text-left">
