@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import PricingCard from "./components/pricingCard";
+import PricingComparison from "./components/pricingComparision";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <PricingCard/>
+      <PricingComparison/>
     </>
   );
 }
