@@ -2,13 +2,13 @@ import React from "react";
 import Check from "../icons/checkIcon";
 import CreditCardIcon from "../icons/creditCard";
 import Cross from "../icons/cross";
-import InfoCircle from "../icons/infoCircle"; // Suponiendo que tienes un icono de información
+import InfoCircle from "../icons/infoCircle";
 import Tooltip from "./tooltip";
 
 interface Benefit {
   text: string;
   active: boolean;
-  tooltipInfo?: string; // Nueva propiedad opcional para el tooltip
+  tooltipInfo?: string;
 }
 
 interface PricingCardProps {
