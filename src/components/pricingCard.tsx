@@ -1,6 +1,6 @@
-import CheckIcon from "../icons/check";
+import Check from "../icons/checkIcon";
 import CreditCardIcon from "../icons/creditCard";
-import CrossIcon from "../icons/crossx";
+import Cross from "../icons/cross";
 import InfoCircle from "../icons/infoCircle"; // Suponiendo que tienes un icono de información
 import Tooltip from "./tooltip";
 
@@ -123,7 +123,7 @@ export default function PricingCard() {
                   key={index}
                 >
                   <div className="flex items-center space-x-2">
-                    {benefit.active ? <CheckIcon /> : <CrossIcon />}
+                    {benefit.active ? <Check/> : <Cross />}
                     <span className="text-sm">{benefit.text}</span>
                   </div>
                   {benefit.tooltipInfo && (
