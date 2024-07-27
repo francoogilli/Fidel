@@ -1,6 +1,6 @@
 export default function Check() {
   return (
-    <div className="bg-gradient-to-r from-[#b7ff33] to-[#dbff99] rounded-md p-1">
+    <div className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-md p-1">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
