@@ -1,4 +1,5 @@
 import { socialLinks, appLinks, footerLinks } from "../data/data";
+import Download from "../icons/download";
 
 export default function Footer() {
   return (
@@ -47,9 +48,9 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col items-start border border-[#3a3a3a] rounded-2xl px-6 pt-4 h-full pb-6">
-          <p className="text-xs md:text-base font-medium pb-4">
-            Descarga nuestra App
+        <div className="flex flex-col items-center border border-[#3a3a3a] rounded-2xl px-6 pt-4 h-full pb-6">
+          <p className="text-xs md:text-base font-medium flex justify-center items-center gap-x-2 pb-4">
+            Descargar ahora <Download />
           </p>
           <div className="flex flex-col justify-center w-full space-y-3">
             {appLinks.map((appLink, index) => (
