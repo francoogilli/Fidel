@@ -1,3 +1,9 @@
+import Apple from "../icons/apple";
+import Facebook from "../icons/facebook";
+import Instagram from "../icons/instagram";
+import PlayStore from "../icons/playstore";
+import Whatsapp from "../icons/whatsapp";
+
 interface Benefit {
     text: string;
     active: boolean;
@@ -139,5 +145,59 @@ interface Benefit {
         { text: "Múltiples CUIT", active: true, tooltipInfo: "Permite facturar con hasta 6 CUITs diferentes." },
         { text: "Percepciones Prov.", active: true, tooltipInfo: "Gestión de percepciones provinciales incluida." },
       ],
+    },
+  ];
+
+  export  const socialLinks = [
+    { href: "https://www.facebook.com/fidelgestion", icon: Facebook },
+    { href: "https://api.whatsapp.com/send?phone=543564222935", icon: Whatsapp },
+    { href: "https://www.instagram.com/fidelsistema", icon: Instagram },
+  ];
+  
+  export  const footerLinks = [
+    {
+      title: "Home",
+      links: [
+        { text: "Product Features", href: "#link1" },
+        { text: "Benefits", href: "#link2" },
+        { text: "How To Use", href: "#link3" },
+        { text: "Key Features", href: "#link4" },
+        { text: "Pricing", href: "#link5" },
+        { text: "Testimonials", href: "#link6" },
+        { text: "FAQ’s", href: "#link7" },
+      ],
+    },
+    {
+      title: "App",
+      links: [
+        { text: "Mobile App", href: "#link8" },
+        { text: "Desktop App", href: "#link9" },
+        { text: "How To Use", href: "#link10" },
+      ],
+    },
+    {
+      title: "All Pages",
+      links: [
+        { text: "Home", href: "#link11" },
+        { text: "App", href: "#link12" },
+        { text: "Blogs", href: "#link13" },
+        { text: "Blogs Open", href: "#link14" },
+        { text: "Contact", href: "#link15" },
+        { text: "Privacy Policy", href: "#link16" },
+        { text: "404", href: "#link17" },
+      ],
+    },
+  ];
+  
+ export const appLinks = [
+    {
+      href: "https://play.google.com/store/apps/details?id=ar.com.fidel",
+      icon: PlayStore,
+      platform: "Google Play",
+    },
+    {
+      href: "https://apps.apple.com/ar/app/fidel-gesti%C3%B3n/id1670120525",
+      icon: Apple,
+      platform: "App Store",
     },
   ];
