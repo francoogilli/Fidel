@@ -73,9 +73,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="px-24">
+      <div className="px-2 md:px-24">
         <hr className="border border-[#242424]" />
-        <div className="flex text-sm justify-between items-center py-6 text-[#999999]">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 text-sm  py-6 text-[#7d7d7d]">
           <p>© 2024 Fidel. All rights reserved.</p>
           <p>Privacy Policy</p>
           <p>Template By Praha</p>
