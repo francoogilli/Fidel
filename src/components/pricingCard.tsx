@@ -127,7 +127,7 @@ export default function PricingCard() {
                       <span className="text-sm">{benefit.text}</span>
                     </div>
                     {benefit.tooltipInfo && (
-                      <Tooltip text={benefit.tooltipInfo}>
+                      <Tooltip text={benefit.tooltipInfo} hideOnSmallScreens>
                         <InfoCircle />
                       </Tooltip>
                     )}

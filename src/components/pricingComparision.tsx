@@ -109,7 +109,7 @@ const PricingComparison: React.FC = () => {
                 <tr key={index}>
                   <td className="p-4 text-sm justify-start flex items-center px-12 space-x-1.5">
                     <span>{benefit.text}</span>
-                    <Tooltip text={benefit.tooltipInfo}>
+                    <Tooltip text={benefit.tooltipInfo} hideOnSmallScreens={false}>
                       <InfoCircle />
                     </Tooltip>
                   </td>
