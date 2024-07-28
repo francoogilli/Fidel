@@ -107,7 +107,7 @@ const PricingComparison: React.FC = () => {
             <tbody className="bg-[#fdfdfd] divide-y divide-[#e8e8e8]">
               {pricingData[0].benefits.map((benefit, index) => (
                 <tr key={index}>
-                  <td className="p-4 text-sm justify-start flex items-center px-12 space-x-2">
+                  <td className="p-4 text-sm justify-start flex items-center px-12 space-x-1.5">
                     <span>{benefit.text}</span>
                     <Tooltip text={benefit.tooltipInfo}>
                       <InfoCircle />
