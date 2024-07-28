@@ -3,7 +3,7 @@ import { socialLinks, appLinks, footerLinks } from "../data/data";
 export default function Footer() {
   return (
     <footer className="bg-[#191919] max-w-8xl mx-4 md:mx-5 mb-4 md:mb-5 rounded-[1.875rem] text-white p-4">
-      <div className="flex flex-col md:flex-row justify-between px-3 md:px-24 pb-6 md:pb-16 pt-7 md:pt-20">
+      <div className="flex flex-col lg:flex-row justify-between px-3 md:px-24 pb-6 lg:pb-16 pt-7 md:pt-20">
         <div className="flex flex-col justify-start max-w-72">
           <div className="flex justify-start items-center space-x-4">
             <img src="/fidel1.svg" width={80} alt="Fidel Logo" />
@@ -26,7 +26,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-20 gap-y-7 md:pb-0 pb-7">
+        <div className="hidden lg:grid grid-cols-2 sm:grid-cols-3 gap-x-20 gap-y-7 md:pb-0 pb-7">
           {footerLinks.map((section, index) => (
             <div key={index}>
               <h3 className="text-base text-[#999999] font-normal pb-3.5">
