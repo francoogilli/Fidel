@@ -33,14 +33,15 @@ export default function Hero() {
       </div>
 
       <div>
-        <div className="flex flex-col lg:flex-row lg:space-x-3.5 mx-auto justify-center items-center text-center space-y-2 lg:space-y-0">
-          <button className="bg-zinc-800 hover:scale-105 duration-500 hover:bg-[#141414] px-6 py-3 text-[13px] text-white rounded-2xl flex items-center space-x-2">
-            Empezar ahora
-          </button>
-          <button className="font-medium text-black border hover:scale-105 duration-500 border-zinc-100 bg-gradient-to-r from-[#35fa32]  via-[#35fa32] to-[#ff9500] px-6 py-3 text-[13px] rounded-2xl flex items-center space-x-2">
-            <span>¡Pedi una demo!</span>
-          </button>
-        </div>
+      <div className="flex flex-col md:flex-row md:space-x-3 mx-auto justify-center items-center text-center space-y-2 md:space-y-0">
+  <button className="bg-zinc-800 hover:scale-105 duration-500 hover:bg-[#141414] px-6 py-3 text-[13px] text-white rounded-2xl flex items-center space-x-2">
+    Empezar ahora
+  </button>
+  <button className="font-medium text-black border hover:scale-105 duration-500 border-zinc-100 bg-gradient-to-r from-[#35fa32] via-[#35fa32] to-[#ff9500] px-6 py-3 text-[13px] rounded-2xl flex items-center space-x-2">
+    <span>¡Pedi una demo!</span>
+  </button>
+</div>
+
 
         <div className="flex lg:flex-row flex-col justify-center items-center pt-7 lg:space-x-2.5 space-y-3 lg:space-y-0">
           <img src="/people.svg" width={125} alt="" />
