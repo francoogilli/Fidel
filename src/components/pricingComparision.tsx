@@ -8,7 +8,7 @@ interface Benefit {
   text: string;
   active: boolean;
   tooltipInfo: string;
-  displayText?: string; // Texto que se muestra en lugar de un ícono
+  displayText?: string;
 }
 
 interface PricingCardProps {
@@ -27,7 +27,7 @@ const pricingData: PricingCardProps[] = [
       { text: "Asesoría", active: true, tooltipInfo: "Tipo de asesoría", displayText: "prioritaria" },
       { text: "Usuarios", active: true, tooltipInfo: "Usuarios disponibles. Sin contar vendedores", displayText: "1" },
       { text: "Vendedores", active: false, tooltipInfo: "Vendedores para pedidos en app móvil", displayText: "-" },
-      { text: "Gestión", active: false, tooltipInfo: "Compras, Proveedores y Estadísticas"},
+      { text: "Gestión", active: false, tooltipInfo: "Compras, Proveedores y Estadísticas" },
       { text: "Portal de clientes", active: false, tooltipInfo: "Acceso a ventas y pagos" },
       { text: "Reportes Contables", active: false, tooltipInfo: "IVA, IIBB e Imp. Municipal" },
       { text: "App Mobile", active: false, tooltipInfo: "Acceso a la aplicacion mobile." },
@@ -44,7 +44,7 @@ const pricingData: PricingCardProps[] = [
       { text: "Asesoría", active: true, tooltipInfo: "Asesoría rápida y eficaz.", displayText: "prioritaria" },
       { text: "Usuarios", active: true, tooltipInfo: "Acceso para 3 usuarios. Sin contar vendedores", displayText: "hasta 3" },
       { text: "Vendedores", active: false, tooltipInfo: "No incluye soporte para múltiples vendedores.", displayText: "-" },
-      { text: "Gestión", active: true, tooltipInfo: "Compras, Proveedores y Estadísticas"},
+      { text: "Gestión", active: true, tooltipInfo: "Compras, Proveedores y Estadísticas" },
       { text: "Portal de clientes", active: true, tooltipInfo: "Acceso a ventas y pagos" },
       { text: "Reportes Contables", active: true, tooltipInfo: "IVA, IIBB e Imp. Municipal" },
       { text: "App Mobile", active: true, tooltipInfo: "No incluye acceso a la aplicacion mobile." },
@@ -61,7 +61,7 @@ const pricingData: PricingCardProps[] = [
       { text: "Asesoría prioritaria", active: true, tooltipInfo: "Asesoría rápida y eficaz." ,displayText: "prioritaria"},
       { text: "Usuarios", active: true, tooltipInfo: "Acceso para 6 usuarios. Sin contar vendedores", displayText: "hasta 6" },
       { text: "Vendedores", active: true, tooltipInfo: "Soporte para hasta 3 vendedores.", displayText: "hasta 3" },
-      { text: "Gestión", active: true, tooltipInfo: "Compras, Proveedores y Estadísticas"},
+      { text: "Gestión", active: true, tooltipInfo: "Compras, Proveedores y Estadísticas" },
       { text: "Portal de clientes", active: true, tooltipInfo: "Acceso a ventas y pagos" },
       { text: "Reportes Contables", active: true, tooltipInfo: "IVA, IIBB e Imp. Municipal" },
       { text: "App Mobile", active: true, tooltipInfo: "Incluye acceso a la aplicacion mobile." },
@@ -78,7 +78,7 @@ const pricingData: PricingCardProps[] = [
       { text: "Asesoría personalizada", active: true, tooltipInfo: "Asesoría personalizada y detallada.",displayText: "personalizada" },
       { text: "Usuarios", active: true, tooltipInfo: "Acceso para 12 usuarios. Sin contar vendedores", displayText: "hasta 12 *" },
       { text: "Vendedores", active: true, tooltipInfo: "Soporte para hasta 9 vendedores.", displayText: "hasta 9 *" },
-      { text: "Gestión", active: true, tooltipInfo: "Compras, Proveedores y Estadísticas"},
+      { text: "Gestión", active: true, tooltipInfo: "Compras, Proveedores y Estadísticas" },
       { text: "Portal de clientes", active: true, tooltipInfo: "Acceso a ventas y pagos" },
       { text: "Reportes Contables", active: true, tooltipInfo: "IVA, IIBB e Imp. Municipal" },
       { text: "App Mobile", active: true, tooltipInfo: "Incluye acceso a la aplicacion mobile." },
@@ -90,45 +90,51 @@ const pricingData: PricingCardProps[] = [
 ];
 
 const PricingComparison: React.FC = () => {
-  return (
-    <div className="md:flex flex-col max-w-7xl mx-auto px-4 pb-10 hidden">
-      <div className="flex bg-gray-50 border-b border-gray-300 rounded-t-3xl">
-        <div className="flex-1 p-4 font-medium text-center">Características</div>
-        {pricingData.map((plan, index) => (
-          <div key={index} className="flex-1 p-4 font-medium text-center">
-            {plan.name}
-          </div>
-        ))}
+    return (
+      <div className="max-w-7xl mx-auto px-4 pb-10">
+        <div className="overflow-x-auto rounded-3xl border border-[#e8e8e8]">
+          <table className="min-w-full divide-y divide-[#e8e8e8] rounded-3xl overflow-hidden">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="p-4 px-12 text-left font-medium rounded-tl-3xl">Características</th>
+                {pricingData.map((plan, index) => (
+                  <th key={index} className={`p-4 px-10 md:px-20 text-center font-medium ${index === pricingData.length - 1 ? 'rounded-tr-3xl' : ''}`}>
+                    {plan.name}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="bg-[#fdfdfd] divide-y divide-[#e8e8e8]">
+              {pricingData[0].benefits.map((benefit, index) => (
+                <tr key={index}>
+                  <td className="p-4 text-sm justify-start flex items-center px-12 space-x-2">
+                    <span>{benefit.text}</span>
+                    <Tooltip text={benefit.tooltipInfo}>
+                      <InfoCircle />
+                    </Tooltip>
+                  </td>
+                  {pricingData.map((plan, planIndex) => (
+                    <td key={planIndex} className={`p-4 text-center ${index === pricingData[0].benefits.length - 1 ? 'rounded-bl-3xl' : ''}`}>
+                      {plan.benefits[index]?.displayText ? (
+                        <span className='text-sm'>{plan.benefits[index].displayText}</span>
+                      ) : plan.benefits[index]?.active ? (
+                        <div className="flex items-center justify-center">
+                          <Check />
+                        </div>
+                      ) : (
+                        <div className="flex items-center justify-center">
+                          <Cross />
+                        </div>
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div>
-        {pricingData[0].benefits.map((benefit, index) => (
-          <div key={index} className={`flex ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
-            <div className="flex-1 text-sm p-4 flex items-center space-x-2 border-b border-gray-300">
-              <span className="flex pl-12 text-center">{benefit.text}</span>
-              <Tooltip text={benefit.tooltipInfo}>
-                <InfoCircle />
-              </Tooltip>
-            </div>
-            {pricingData.map((plan, planIndex) => (
-              <div key={planIndex} className="flex-1 p-4 text-center border-b border-gray-300">
-                {plan.benefits[index]?.displayText ? (
-                  <span className='text-sm'>{plan.benefits[index].displayText}</span>
-                ) : plan.benefits[index]?.active ? (
-                  <div className="flex items-center justify-center">
-                    <Check />
-                  </div>
-                ) : (
-                  <div className="flex items-center justify-center">
-                    <Cross />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default PricingComparison;
+    );
+  };
+  
+  export default PricingComparison;
