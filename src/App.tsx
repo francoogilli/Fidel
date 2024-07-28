@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import PricingCard from "./components/pricingCard";
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <PricingCard/>
       <PricingComparison/>
+      <Footer/>
     </>
   );
 }
