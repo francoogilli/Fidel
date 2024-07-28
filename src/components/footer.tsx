@@ -10,8 +10,8 @@ export default function Footer() {
             <p className="text-3xl font-medium">Fidel</p>
           </div>
           <p className="text-[#a9a9a9] text-sm md:text-base font-medium pt-5">
-            Empowering Your Projects, Enhancing Your Success, Every Step of the
-            Way.
+            Organiza y gestiona tu empresa con Fidel: Impulsando tu éxito en
+            cada paso.
           </p>
           <div className="flex justify-start items-center space-x-3 pt-6 pb-6">
             {socialLinks.map((link, index) => (
@@ -77,8 +77,8 @@ export default function Footer() {
         <hr className="border border-[#242424]" />
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 text-sm  py-6 text-[#7d7d7d]">
           <p>© 2024 Fidel. All rights reserved.</p>
-          <p>Privacy Policy</p>
-          <p>Template By Praha</p>
+          <p>Politicas de privacidad</p>
+          <p>Template de Fidel</p>
         </div>
       </div>
     </footer>
