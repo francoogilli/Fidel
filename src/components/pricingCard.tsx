@@ -8,7 +8,6 @@ import ArrowRight from "../icons/arrowRight";
 import { pricingData } from "../data/data";
 
 export default function PricingCard() {
-
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <div className="flex justify-center">
@@ -44,7 +43,7 @@ export default function PricingCard() {
                 /mes
               </span>
             </div>
-            <hr className="border-dashed border-t-2 border-neutral-200 mb-5" />
+            <hr className="flex-grow border-t border-zinc-200 mb-5" />
             <p className="font-light text-zinc-500 sm:text-xs text-left pb-3">
               ¿Qué incluye?
             </p>
