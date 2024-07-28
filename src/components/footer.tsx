@@ -3,7 +3,7 @@ import { socialLinks, appLinks, footerLinks } from "../data/data";
 export default function Footer() {
   return (
     <footer className="bg-[#191919] max-w-8xl mx-4 md:mx-5 mb-4 md:mb-5 rounded-[1.875rem] text-white p-4">
-      <div className="flex justify-between px-24 pb-16 pt-20">
+      <div className="flex flex-col md:flex-row justify-between px-3 md:px-24 pb-6 md:pb-16 pt-20">
         <div className="flex flex-col justify-start max-w-72">
           <div className="flex justify-start items-center space-x-4">
             <img src="/fidel1.svg" width={80} alt="Fidel Logo" />
@@ -51,7 +51,7 @@ export default function Footer() {
           <p className="text-xs md:text-base font-medium pb-4">
             Descarga nuestra App
           </p>
-          <div className="flex flex-col justify-center space-y-3">
+          <div className="flex flex-col justify-center w-full space-y-3">
             {appLinks.map((appLink, index) => (
               <a
                 key={index}
