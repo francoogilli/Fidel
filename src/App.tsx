@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import PricingCard from "./components/pricingCard";
 import PricingComparison from "./components/pricingComparision";
+import Recommend from "./components/recommend";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <PricingCard/>
       <PricingComparison/>
+      <Recommend/>
       <Footer/>
     </>
   );
