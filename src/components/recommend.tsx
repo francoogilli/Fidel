@@ -1,3 +1,5 @@
+import ArrowRight from "../icons/arrowRight";
+
 export default function Recommend() {
   return (
     <div className="bg-gradient-to-br from-[#fff1c7] via-[#ffeca9] to-[#fff1c7] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
@@ -74,8 +76,9 @@ export default function Recommend() {
           persona que se suscriba usando tu enlace.
         </p>
 
-        <button className="flex mx-auto bg-gradient-to-br from-[#000000] to-[#434343] text-white font-normal rounded-2xl text-sm px-7 py-3 mt-5 text-center">
+        <button className="flex justify-center items-center gap-x-1 mx-auto bg-gradient-to-br from-[#000000] to-[#434343] text-white font-normal rounded-2xl duration-300 hover:scale-105 text-sm px-7 py-3 mt-5 text-center">
           Conoce mas
+          <ArrowRight className="size-[1.125rem]" />
         </button>
       </div>
       <div className="hidden md:block lg:hidden relative p-8">
@@ -95,7 +98,7 @@ export default function Recommend() {
           src="coin5.png"
           alt="Moneda"
           draggable="false"
-          className="select-none absolute left-16 top-9 transform -translate-y-1/2 size-[4.5rem]"
+          className="select-none absolute left-16 top-7 transform -translate-y-1/2 size-[4.5rem]"
         />
         <img
           src="coin4.png"
@@ -107,13 +110,13 @@ export default function Recommend() {
           src="coin.png"
           alt="Moneda"
           draggable="false"
-          className="select-none absolute left-14 top-[86%] transform -translate-y-1/2 size-[4.5rem]"
+          className="select-none absolute left-14 -bottom-11 transform -translate-y-1/2 size-[4.5rem]"
         />
         <img
           src="coin2.png"
           alt="Moneda"
           draggable="false"
-          className="select-none absolute right-16 top-9 transform -translate-y-1/2 size-[4.5rem]"
+          className="select-none absolute right-16 top-6 transform -translate-y-1/2 size-[4.5rem]"
         />
         <img
           src="coin82.png"
@@ -137,7 +140,7 @@ export default function Recommend() {
           src="coin3.png"
           alt="Moneda"
           draggable="false"
-          className="select-none absolute right-9 top-[86%] transform -translate-y-1/2 size-[4.5rem]"
+          className="select-none absolute right-9 -bottom-12 transform -translate-y-1/2 size-[4.5rem]"
         />
         <p className="text-5xl pb-5 font-bold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
           ¡Referi y gana!
@@ -151,8 +154,8 @@ export default function Recommend() {
           persona que se suscriba usando tu enlace.
         </p>
 
-        <button className="flex mx-auto text-xs bg-gradient-to-br from-[#000000] to-[#434343] text-white font-normal rounded-2xl px-7 py-3 mt-5 text-center">
-          Conoce mas
+        <button className="flex justify-center items-center mx-auto text-xs bg-gradient-to-br gap-x-1.5 from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 font-normal rounded-2xl px-7 py-3 mt-5 text-center">
+          Conoce mas<ArrowRight className="size-[1.125rem]" />
         </button>
       </div>
       <div className="block md:hidden relative py-10 pt-12">
@@ -168,8 +171,8 @@ export default function Recommend() {
           persona que se suscriba usando tu enlace.
         </p>
 
-        <button className="flex mx-auto text-xs bg-gradient-to-br from-[#000000] to-[#434343] text-white font-normal rounded-2xl px-7 py-3 mt-5 text-center">
-          Conoce mas
+        <button className="flex justify-center items-center mx-auto text-xs bg-gradient-to-br from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-2xl px-7 py-3 mt-5 text-center">
+          Conoce mas<ArrowRight className="size-[1.125rem]" />
         </button>
       </div>
     </div>
