@@ -168,7 +168,7 @@ export default function Recommend() {
           persona que se suscriba usando tu enlace.
         </p>
 
-        <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-gradient-to-r from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-[0.875rem] text-center">
+        <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-gradient-to-r from-[#000000] to-[#323232] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-[0.875rem] text-center">
           Conoce mas<ArrowRight className="size-[1.125rem]" />
         </button>
       </div>
