@@ -159,7 +159,7 @@ export default function Recommend() {
         </button>
       </div>
       <div className="block md:hidden relative py-4">
-        <img src="coin2.png" alt="" className="mx-auto size-28 mb-6" />
+        <img src="coin.png" alt="" className="mx-auto rotate-[47deg] size-28 mb-6" />
         <p className="text-2xl pb-3.5 font-bold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
           ¡Referi y gana!
         </p>
