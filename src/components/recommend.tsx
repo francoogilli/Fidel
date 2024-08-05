@@ -158,20 +158,17 @@ export default function Recommend() {
           Conoce mas<ArrowRight className="size-[1.125rem]" />
         </button>
       </div>
-      <div className="block md:hidden relative py-10 pt-12">
-        <p className="text-4xl pb-5 font-bold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
+      <div className="block md:hidden relative py-4">
+        <img src="coin2.png" alt="" className="mx-auto size-28 mb-6" />
+        <p className="text-2xl pb-3.5 font-bold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
           ¡Referi y gana!
         </p>
-        <p className="font-medium text-xs text-[#434343] text-center">
-          Recomenda <span className="font-bold text-black">Fidel</span> a tus
-          amigos y familiares.
-        </p>
-        <p className="font-medium text-xs text-[#434343] text-center">
+        <p className="font-medium text-xs text-[#434343] text-center pb-2">
           Gana <span className="font-bold text-black">$10.000</span> por cada
           persona que se suscriba usando tu enlace.
         </p>
 
-        <button className="flex justify-center items-center mx-auto text-xs bg-gradient-to-r from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-2xl px-7 py-3 mt-5 text-center">
+        <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-gradient-to-r from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-[0.875rem] text-center">
           Conoce mas<ArrowRight className="size-[1.125rem]" />
         </button>
       </div>
