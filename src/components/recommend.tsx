@@ -164,7 +164,7 @@ export default function Recommend() {
           src="coin4.png"
           alt="Moneda"
           draggable="false"
-          className="select-none absolute right-[4.3rem] top-16 transform -translate-y-1/2 size-8"
+          className="select-none absolute right-16 top-16 transform -translate-y-1/2 size-8"
         />
         <img
           src="coin7.png"
