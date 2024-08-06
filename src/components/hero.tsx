@@ -3,7 +3,7 @@ import StargoldIcon from "../icons/stargold";
 
 export default function Hero() {
   return (
-    <div className="mx-auto flex flex-col max-w-5xl lg:pt-3 space-y-6">
+    <div className="mx-auto flex flex-col max-w-5xl lg:pt-3 space-y-6 px-4 lg:px-1">
       <div className="lg:px-20 text-center">
         <div className="flex justify-center ">
           <img
@@ -34,10 +34,10 @@ export default function Hero() {
 
       <div>
       <div className="flex flex-col md:flex-row md:space-x-3 mx-auto justify-center items-center text-center space-y-2 md:space-y-0">
-  <button className="bg-zinc-800 hover:scale-105 duration-500 hover:bg-[#141414] px-7 py-3 text-[13px] text-white rounded-2xl flex items-center space-x-2">
+  <button className="bg-zinc-800 justify-center w-full md:w-auto hover:scale-105 duration-500 hover:bg-[#141414] py-4 px-7 md:py-3 text-sm text-white rounded-2xl flex items-center space-x-2">
     Empezar ahora
   </button>
-  <button className="font-medium text-black border hover:scale-105 duration-500 border-zinc-100 bg-[#35fa32] px-6 py-3 text-[13px] rounded-2xl flex items-center space-x-2">
+  <button className="font-medium text-black border w-full md:w-auto justify-center hover:scale-105 duration-500 border-zinc-100 bg-[#35fa32] px-6 py-4 md:py-3 text-sm rounded-2xl flex items-center space-x-2">
     <span>¡Pedi una demo!</span>
   </button>
 </div>
