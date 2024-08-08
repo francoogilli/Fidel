@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ArrowRight from "../icons/arrowRight";
 
 export default function Recommend() {
@@ -75,11 +76,12 @@ export default function Recommend() {
           Gana <span className="font-bold text-black">$10.000</span> por cada
           persona que se suscriba usando tu enlace.
         </p>
-
-        <button className="flex justify-center items-center gap-x-1 mx-auto bg-gradient-to-r from-[#000000] to-[#434343] text-white font-normal rounded-2xl duration-300 hover:scale-105 text-sm px-7 py-3 mt-5 text-center">
-          Conoce mas
-          <ArrowRight className="size-[1.125rem]" />
-        </button>
+        <Link to="/terms">
+          <button className="flex justify-center items-center gap-x-1 mx-auto bg-gradient-to-r from-[#000000] to-[#434343] text-white font-normal rounded-2xl duration-300 hover:scale-105 text-sm px-7 py-3 mt-5 text-center">
+            Conoce mas
+            <ArrowRight className="size-[1.125rem]" />
+          </button>
+        </Link>
       </div>
       <div className="hidden md:block lg:hidden relative p-8">
         <img
@@ -153,13 +155,19 @@ export default function Recommend() {
           Gana <span className="font-bold text-black">$10.000</span> por cada
           persona que se suscriba usando tu enlace.
         </p>
-
-        <button className="flex justify-center items-center mx-auto text-xs bg-gradient-to-r gap-x-1.5 from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 font-normal rounded-2xl px-7 py-3 mt-5 text-center">
-          Conoce mas<ArrowRight className="size-[1.125rem]" />
-        </button>
+        <Link to="/terms">
+          <button className="flex justify-center items-center mx-auto text-xs bg-gradient-to-r gap-x-1.5 from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 font-normal rounded-2xl px-7 py-3 mt-5 text-center">
+            Conoce mas
+            <ArrowRight className="size-[1.125rem]" />
+          </button>
+        </Link>
       </div>
       <div className="block md:hidden relative py-4">
-        <img src="coin.png" alt="" className="mx-auto rotate-[47deg] size-28 mb-6" />
+        <img
+          src="coin.png"
+          alt=""
+          className="mx-auto rotate-[47deg] size-28 mb-6"
+        />
         <img
           src="coin4.png"
           alt="Moneda"
@@ -191,8 +199,7 @@ export default function Recommend() {
           className="select-none absolute right-0 top-28 transform -translate-y-1/2 size-8"
         />
 
-
-      <img
+        <img
           src="coin2.png"
           alt="Moneda"
           draggable="false"
@@ -229,10 +236,12 @@ export default function Recommend() {
           Gana <span className="font-bold text-black">$10.000</span> por cada
           persona que se suscriba usando tu enlace.
         </p>
-
-        <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-gradient-to-r from-[#000000] to-[#323232] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-[0.875rem] text-center">
-          Conoce mas<ArrowRight className="size-[1.125rem]" />
-        </button>
+        <Link to="/terms">
+          <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-gradient-to-r from-[#000000] to-[#323232] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-[0.875rem] text-center">
+            Conoce mas
+            <ArrowRight className="size-[1.125rem]" />
+          </button>
+        </Link>
       </div>
     </div>
   );
