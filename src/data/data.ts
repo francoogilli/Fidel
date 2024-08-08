@@ -209,7 +209,7 @@ interface Benefit {
       {
         title: "1. Introducción:",
         content: [
-          "El Programa de Red de Vendedores otorga a cualquier persona mayor de 18 años ('Participante') un Bono único e intransferible por el valor de $10.000 (pesos argentinos). El mismo es comunicado y otorgado por la empresa Agencia Programarte SAS, fundadora de Fidel. Esta iniciativa busca incentivar la promoción y expansión de los servicios de Fidel, ofreciendo una recompensa a aquellos que logren atraer nuevos clientes.",
+          "El Programa de Red de Vendedores otorga a cualquier persona mayor de 18 años ('Participante') un Bono único e intransferible por el valor de $10.000 (pesos argentinos). El mismo es comunicado y otorgado por la empresa Trizap, fundadora de Fidel. Esta iniciativa busca incentivar la promoción y expansión de los servicios de Fidel, ofreciendo una recompensa a aquellos que logren atraer nuevos clientes.",
           "Para participar, se deberán aceptar los siguientes términos y condiciones. Estos términos están diseñados para asegurar un proceso justo y transparente para todos los participantes, garantizando que las referencias sean genuinas y que los bonos se otorguen de acuerdo con las reglas establecidas."
         ]
       },
