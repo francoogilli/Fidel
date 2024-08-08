@@ -1,6 +1,7 @@
 export const TermsAndConditions = () => {
     return (
-      <div className="bg-white max-w-5xl mx-auto px-4" style={{ fontFamily: 'Outfit Variable' }}>
+      <div className="bg-white" style={{ fontFamily: 'Outfit Variable' }}>
+        <div className="max-w-5xl mx-auto px-4">
         <h3 className="text-3xl md:text-6xl font-medium pt-24 justify-center flex pb-2" style={{ fontFamily: 'Outfit Variable' }}>
           Términos y Condiciones
         </h3>
@@ -49,6 +50,7 @@ export const TermsAndConditions = () => {
           <p className="text-[#242726] font-light text-base">
             Este acuerdo es válido desde el 1 de enero de 2023 hasta el 31 de diciembre de 2023. Durante este período, los participantes podrán referir nuevos usuarios y optar por los bonos correspondientes siempre que se cumplan las condiciones mencionadas. Al finalizar el año, los términos y condiciones podrán ser revisados y actualizados según las políticas de la empresa.
           </p>
+        </div>
         </div>
       </div>
     );
