@@ -16,7 +16,7 @@ export default function PricingCard() {
           <h2 className="text-base font-medium text-center ml-2">Precios</h2>
         </div>
       </div>
-      <h3 className="animation-1 text-4xl md:text-5xl font-semibold text-center my-8 pb-4">
+      <h3 className="animation-1 text-4xl md:text-5xl font-semibold text-center my-8 pb-4" style={{ fontFamily: "Outfit Variable" }}>
         Planes{" "}
         <span className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] bg-clip-text text-transparent tracking-tight">
           únicos

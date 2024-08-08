@@ -1,22 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Hero from "./components/hero";
-import PricingCard from "./components/pricingCard";
-import PricingComparison from "./components/pricingComparision";
-import Recommend from "./components/recommend";
+import Home from "./pages/Home";
+import { TermsAndConditions } from "./pages/TermsAndConditions";
 
 function App() {
   return (
-    <>
+    <Router>
       <div className="backgroundImage"></div>
       <Header />
-      <Hero />
-      <PricingCard/>
-      <PricingComparison/>
-      <Recommend/>
-      <Footer/>
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/terminos" element={<TermsAndConditions />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
