@@ -92,7 +92,7 @@ interface Benefit {
  export const pricingData: PricingCardProps[] = [
     {
       name: "Básico",
-      price: 10500,
+      price: 30000,
       bestOption: "monotributistas",
       benefits: [
         { text: "Asesoría prioritaria", active: true, tooltipInfo: "Asesoría rápida y eficaz." },
@@ -106,7 +106,7 @@ interface Benefit {
     },
     {
       name: "Inicial",
-      price: 13500,
+      price: 41000,
       bestOption: "negocios locales",
       benefits: [
         { text: "Asesoría prioritaria", active: true, tooltipInfo: "Asesoría rápida y eficaz." },
@@ -120,7 +120,7 @@ interface Benefit {
     },
     {
       name: "Intermedio",
-      price: 18500,
+      price: 56000,
       bestOption: "pequeñas y medianas empresas",
       benefits: [
         { text: "Asesoría prioritaria", active: true, tooltipInfo: "Asesoría rápida y eficaz." },
@@ -134,7 +134,7 @@ interface Benefit {
     },
     {
       name: "Avanzado",
-      price: 23000,
+      price: 72000,
       bestOption: "grandes empresas",
       benefits: [
         { text: "Asesoría personalizada", active: true, tooltipInfo: "Asesoría personalizada y detallada." },
