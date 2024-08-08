@@ -2,7 +2,7 @@ export const TermsAndConditions = () => {
     return (
       <div className="bg-white" style={{ fontFamily: 'Outfit Variable' }}>
         <div className="max-w-5xl mx-auto px-4">
-        <h3 className="text-3xl md:text-6xl font-medium pt-24 justify-center flex pb-2" style={{ fontFamily: 'Outfit Variable' }}>
+        <h3 className="text-3xl md:text-6xl font-medium pt-12 md:pt-24 justify-center flex pb-2" style={{ fontFamily: 'Outfit Variable' }}>
           Términos y Condiciones
         </h3>
         <div className="pt-2 md:pt-8 text-lg">
