@@ -201,3 +201,52 @@ interface Benefit {
       platform: "App Store",
     },
   ];
+
+
+  export const termsData = {
+    lastUpdated: "04 de febrero, 2024",
+    sections: [
+      {
+        title: "1. Introducción:",
+        content: [
+          "El Programa de Red de Vendedores otorga a cualquier persona mayor de 18 años ('Participante') un Bono único e intransferible por el valor de $10.000 (pesos argentinos). El mismo es comunicado y otorgado por la empresa Agencia Programarte SAS, fundadora de Fidel. Esta iniciativa busca incentivar la promoción y expansión de los servicios de Fidel, ofreciendo una recompensa a aquellos que logren atraer nuevos clientes.",
+          "Para participar, se deberán aceptar los siguientes términos y condiciones. Estos términos están diseñados para asegurar un proceso justo y transparente para todos los participantes, garantizando que las referencias sean genuinas y que los bonos se otorguen de acuerdo con las reglas establecidas."
+        ]
+      },
+      {
+        title: "2. Requisitos para obtener el bono:",
+        content: [
+          "El Participante puede conseguir un bono solo si:"
+        ],
+        listItems: [
+          "Refiere a un usuario no vinculado anteriormente a través del formulario disponible en los distintos medios (Página Web, App Móvil, Sistema ERP) y este contrata por primera vez un plan de los ofrecidos en el año corriente. El usuario referido debe ser una persona que nunca haya tenido una relación comercial con Fidel anteriormente."
+        ]
+      },
+      {
+        title: "Ampliación del párrafo anterior:",
+        content: [
+          "El Participante no podrá reclamar el pago del premio si, anteriormente, el Usuario potencial fue referido por otra persona o si ya tuvo relación comercial con el producto Fidel. En caso de que el usuario referido haya sido contactado previamente o haya utilizado los servicios de Fidel, el bono no será otorgado. De activarse cualquiera de las dos situaciones, será notificado por el ente emisor del programa 'Red de Vendedores'."
+        ]
+      },
+      {
+        title: "3. Proceso de referencia:",
+        content: [
+          "El Participante debe ingresar los datos solicitados del Usuario potencial, a fin de contactarlo y generar el vínculo. En caso de no obtener respuesta por parte de este último, queda cancelado el premio en cuestión. Es fundamental que los datos proporcionados sean correctos y completos para facilitar el proceso de contacto y confirmación.",
+          "También se solicitará, por única vez, la cuenta bancaria y correo electrónico del 'Participante', para la posterior comunicación y transferencia del premio. Esta información será utilizada exclusivamente para la gestión del bono y no será compartida con terceros."
+        ]
+      },
+      {
+        title: "4. Entrega del premio:",
+        content: [
+          "La entrega del premio se realizará mediante correo electrónico. Se enviará el comprobante de transferencia bancaria al e-mail de contacto del 'Participante' una vez que el Usuario potencial contrate un plan. El proceso de transferencia se completará dentro de los 30 días hábiles posteriores a la confirmación de la nueva contratación."
+        ]
+      },
+      {
+        title: "5. Vigencia del acuerdo:",
+        content: [
+          "Este acuerdo es válido desde el 1 de enero de 2023 hasta el 31 de diciembre de 2023. Durante este período, los participantes podrán referir nuevos usuarios y optar por los bonos correspondientes siempre que se cumplan las condiciones mencionadas. Al finalizar el año, los términos y condiciones podrán ser revisados y actualizados según las políticas de la empresa."
+        ]
+      }
+    ]
+  };
+  
