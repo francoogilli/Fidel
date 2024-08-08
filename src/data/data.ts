@@ -134,7 +134,7 @@ interface Benefit {
     },
     {
       name: "Avanzado",
-      price: 72000,
+      price: 72000, 
       bestOption: "grandes empresas",
       benefits: [
         { text: "Asesoría personalizada", active: true, tooltipInfo: "Asesoría personalizada y detallada." },
