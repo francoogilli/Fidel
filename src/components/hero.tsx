@@ -1,5 +1,4 @@
 import AppIcon from "../icons/app";
-import StargoldIcon from "../icons/stargold";
 
 export default function Hero() {
   return (
@@ -33,34 +32,15 @@ export default function Hero() {
       </div>
 
       <div>
-      <div className="flex flex-col md:flex-row md:space-x-3 mx-auto justify-center items-center text-center space-y-2 md:space-y-0">
-  <button className="bg-zinc-800 justify-center w-full md:w-auto hover:scale-105 duration-500 hover:bg-[#141414] py-4 px-7 md:py-3 text-sm text-white rounded-2xl flex items-center space-x-2">
-    Empezar ahora
-  </button>
-  <button className="font-medium text-black border w-full md:w-auto justify-center hover:scale-105 duration-500 border-zinc-100 bg-[#35fa32] px-6 py-4 md:py-3 text-sm rounded-2xl flex items-center space-x-2">
-    <span>¡Pedi una demo!</span>
-  </button>
-</div>
-
-
-        <div className="flex lg:flex-row flex-col justify-center items-center pt-7 lg:space-x-2.5 space-y-3 lg:space-y-0">
-          <img src="/people.svg" width={125} alt="" />
-          <div className="flex flex-col items-center lg:items-start">
-            <div className="flex space-x-0.5">
-              <StargoldIcon />
-              <StargoldIcon />
-              <StargoldIcon />
-              <StargoldIcon />
-              <StargoldIcon />
-            </div>
-            <p className="text-[11px] font-normal text-center lg:text-left">
-              Amada por +2300 usuarios
-            </p>
-          </div>
+        <div className="flex flex-col md:flex-row md:space-x-3 mx-auto justify-center items-center text-center space-y-2 md:space-y-0">
+          <button className="bg-zinc-800 justify-center w-full md:w-auto hover:scale-105 duration-500 hover:bg-[#141414] py-4 px-7 md:py-3 text-sm text-white rounded-2xl flex items-center space-x-2">
+            Empezar ahora
+          </button>
+          <button className="font-medium text-black border w-full md:w-auto justify-center hover:scale-105 duration-500 border-zinc-100 bg-[#35fa32] px-6 py-4 md:py-3 text-sm rounded-2xl flex items-center space-x-2">
+            <span>¡Pedi una demo!</span>
+          </button>
         </div>
       </div>
-
-
     </div>
   );
 }
