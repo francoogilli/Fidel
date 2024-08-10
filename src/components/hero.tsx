@@ -2,13 +2,13 @@ import AppIcon from "../icons/app";
 
 export default function Hero() {
   return (
-    <div className="mx-auto flex flex-col max-w-5xl lg:pt-3 space-y-6 px-4 lg:px-1">
-      <div className="lg:px-20 text-center">
+    <div className="mx-auto flex flex-col max-w-5xl lg:pt-3 space-y-6 px-4 lg:px-1 pb-10">
+      <div className="lg:px-20 text-center pt-[4.8rem]">
         <div className="flex justify-center ">
           <img
             src="/fidel1.svg"
             className="hover:scale-105 transition-transform duration-500"
-            width={200}
+            width={110}
           />
         </div>
         <div className="bg-gradient-to-br from-[#fbfbfb] to-[#fff] border border-[#ffebeb] rounded-3xl px-4 py-2 mb-2 inline-block">
