@@ -1,54 +1,44 @@
-const Header = () => {
+import { Link } from "react-router-dom";
+import { navLinks } from "../data/data";
+
+export default function Header() {
   return (
-    <div
-      className="sticky inset-x-0 backdrop-blur-lg bg-white/85  top-0 z-30 w-full transition-all "
-      id="header-nav"
-    >
-      <div className="flex h-[54px] mx-auto lg:w-10/12 items-center justify-between px-4">
-        <div className="flex items-center gap-x-3 justify-center">
-          <img src="/fidel1.svg" className="size-9" alt="" />
-          <span className="font-semibold text-lg">Fidel</span>
-        </div>
-
-        <div className=" items-center space-x-9 hidden md:flex">
-          <a
-            href="/"
-            className="text-sm font-medium text-zinc-800  transition-colors duration-200 hover:text-black "
-          >
-            Inicio
-          </a>
-          <a
-            href="/"
-            className="text-sm font-medium text-zinc-800  transition-colors duration-200 hover:text-black "
-          >
-            Precios
-          </a>
-          <a
-            href="/"
-            className="text-sm font-medium text-zinc-800  transition-colors duration-200 hover:text-black "
-          >
-            Sobre
-          </a>
-          <a
-            href="/"
-            className="text-sm font-medium text-zinc-800  transition-colors duration-200 hover:text-black "
-          >
-            Contacto
-          </a>
-          <a
-            href="/"
-            className="text-sm font-medium text-zinc-800  transition-colors duration-200 hover:text-black "
-          >
-            FAQ
-          </a>
-        </div>
-
-        <div className="flex items-center space-x-2 mr-10 sm:mr-0">
-          <button className="bg-[#2f2f2f] rounded-[14px] border text-white border-[#2f2f2f] text-[13px] px-5 py-2">Ingresar</button>
-
+    <header className="bg-white backdrop-blur-3xl  top-0 z-40 border-b border-[#fcfcfc] transition duration-200 ease-in-out">
+      <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl">
+        <div className="mx-auto hidden h-[58px] w-full items-center justify-between transition duration-500 ease-in-out md:flex">
+          <div className="flex lg:w-[225px]">
+            <a
+              href="/"
+              className="flex justify-center items-center space-x-2 outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 py-1"
+            >
+              <img src="/fidelnew.svg" className="w-11" alt="" />
+              <p className="text-base font-semibold pt-0.5 text-[#101010]">Fidel</p>
+            </a>
+          </div>
+          <div className="relative pr-20">
+            <ul className="flex items-center text-[13px] font-medium">
+              {navLinks.map((link) => (
+                <Link key={link.href} to={link.href}>
+                  <li
+                  className="hover:bg-[#00000007] transition duration-300 cursor-pointer border border-none hover:border-[#e7e7e7] px-5 py-2 rounded-lg"
+                >
+                  {link.label}
+                </li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+          <div className="flex gap-2">
+            
+            <a
+              href=""
+              className="text-[13px] py-2 px-6 font-normal bg-zinc-800 text-white inline-flex items-center  justify-center select-none rounded-xl"
+            >
+              Ingresar
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
   );
-};
-export default Header;
+}
