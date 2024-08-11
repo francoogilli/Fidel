@@ -11,18 +11,30 @@ export default function PricingCard() {
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <div className="flex justify-center">
-        <div className="flex items-center rounded-xl border border-[#e9e9e9] bg-gradient-to-br from-[#f5f5f5] to-[#fff] px-3 py-1">
-          <CreditCardIcon />
-          <h2 className="text-base font-medium text-center ml-2">Precios</h2>
+        <div className="flex items-center rounded-3xl border border-[#e9e9e9] px-3 py-1">
+          <CreditCardIcon className="size-5" />
+          <h2 className="text-sm font-medium text-center ml-2">Precios</h2>
         </div>
       </div>
-      <h3 className="animation-1 text-4xl md:text-5xl font-semibold text-center my-8 pb-4" style={{ fontFamily: "Outfit Variable" }}>
-        Planes{" "}
-        <span className="bg-gradient-to-r from-[#2fe22c] via-[#35fa32] to-[#ff9500] bg-clip-text text-transparent tracking-tight">
-          únicos
-        </span>{" "}
-        para cada negocio.
+      <h3
+        className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+        style={{ fontFamily: "Satoshi" }}
+      >
+        Precios que tienen
+        <span
+          className="italic text-4xl md:text-[3.25rem] tracking-wide"
+          style={{ fontFamily: "instrument-serif" }}
+        >
+          {" "}
+          sentido.
+        </span>
       </h3>
+      <h4
+        className="text-center text-lg text-[#5c5c5c] font-medium w-[21rem] mx-auto pb-9"
+        style={{ fontFamily: "Satoshi" }}
+      >
+        Diseñamos nuestros precios para que se adapten a tu negocio.
+      </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {pricingData.map((pricing) => (
           <div

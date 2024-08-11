@@ -1,4 +1,7 @@
-export default function CreditCardIcon() {
+interface CreditCardIconProps {
+  className?: string;
+}
+export default function CreditCardIcon({ className }: CreditCardIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +13,7 @@ export default function CreditCardIcon() {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      className="lucide lucide-credit-card"
+      className={className}
     >
       <rect width="20" height="14" x="2" y="5" rx="2" />
       <line x1="2" x2="22" y1="10" y2="10" />
