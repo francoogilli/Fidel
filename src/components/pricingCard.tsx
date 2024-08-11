@@ -12,8 +12,8 @@ export default function PricingCard() {
     <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
       <div className="flex justify-center">
         <div className="flex items-center rounded-3xl border border-[#e9e9e9] px-3 py-1">
-          <CreditCardIcon className="size-5" />
-          <h2 className="text-sm font-medium text-center ml-2">Precios</h2>
+          <CreditCardIcon className="size-4 md:size-5" />
+          <h2 className="text-xs md:text-sm font-medium text-center ml-2">Precios</h2>
         </div>
       </div>
       <h3
@@ -30,7 +30,7 @@ export default function PricingCard() {
         </span>
       </h3>
       <h4
-        className="text-center text-lg text-[#5c5c5c] font-medium w-[21rem] mx-auto pb-9"
+        className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[21rem] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
         Diseñamos nuestros precios para que se adapten a tu negocio.
