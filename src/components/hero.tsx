@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="lg:px-20 text-center pt-[4.8rem]">
         <div className="flex justify-center ">
           <img
-            src="/fidel1.svg"
+            src="/fidelnew.svg"
             className="hover:scale-105 transition-transform duration-500"
             width={110}
           />
