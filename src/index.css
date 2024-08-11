@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* src/index.css */
-
 @font-face {
   font-family: 'Satoshi';
   src: url('./fonts/Satoshi-Black.woff2') format('woff2'),
@@ -100,15 +98,6 @@
   font-style: italic;
 }
 
-
-.fondo {
-  background: linear-gradient(208.4719273485145deg, rgb(31, 31, 31) 0%, rgb(44, 44, 44) 20.3125%, rgb(43, 43, 43) 23.800522089004517%, rgb(14, 14, 14) 62.338095903396606%);
-}
-
-.fondo2 {
-  background: linear-gradient(131.833deg, rgba(43, 43, 43, 0.3) 0%, rgba(14, 14, 14, 0.3) 65.625%);
-}
-
 body {
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -119,6 +108,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0.6;
   background-image: url('/background1.svg');
   background-size: cover;
   background-position: center;
