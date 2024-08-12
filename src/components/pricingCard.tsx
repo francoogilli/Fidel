@@ -13,7 +13,7 @@ export default function PricingCard() {
       <div className="flex justify-center">
         <div className="flex items-center rounded-3xl border border-[#e9e9e9] px-3 py-1">
           <CreditCardIcon className="size-4 md:size-5" />
-          <h2 className="text-xs md:text-sm font-medium text-center ml-2">Precios</h2>
+          <h2 className="text-xs md:text-sm font-medium text-center ml-2" style={{ fontFamily: "Satoshi" }}>Planes</h2>
         </div>
       </div>
       <h3
