@@ -7,6 +7,7 @@ import Recommend from "../components/recommend";
 const Home: React.FC = () => {
   return (
     <>
+      <div className="backgroundImage"></div>
       <Hero />
       <PricingCard />
       <PricingComparison />

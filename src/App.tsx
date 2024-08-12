@@ -10,7 +10,6 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="backgroundImage"></div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
