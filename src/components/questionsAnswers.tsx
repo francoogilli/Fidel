@@ -3,6 +3,7 @@ import { FAQIcon } from "../icons/faq";
 import WorldIcon  from "../icons/world";
 import CalendarIcon from "../icons/calendar";
 import FileImportIcon from "../icons/file-import";
+import CloudIcon from "../icons/cloud";
 interface AccordionItem {
   id: number;
   title: string;
@@ -33,6 +34,12 @@ export const QuestionsAnswers = () => {
         title:"¿Puedo importar mi información al sistema?",
         content:"Sí, puedes importar tu información a Fidel. Con esta funcionalidad, podes cargar de manera simple y rápida tus clientes, proveedores y productos. Para comenzar, consulta nuestra guía de importación o contacta con nuestro equipo de soporte.",
         icon:FileImportIcon
+    },
+    {
+        id: 4,
+        title:"¿Necesito instalar algo para utilizar Fidel?",
+        content:"No, Fidel es una plataforma que funciona en la nube, por lo que no necesitas instalar ningún software adicional en tu computadora. Solo necesitas un navegador web y una conexión a Internet para acceder y utilizar el sistema.",
+        icon:CloudIcon
     }
   ];
 
