@@ -17,7 +17,7 @@ export const QuestionsAnswers = () => {
       id: 1,
       title: "¿Desde dónde se puede usar Fidel?",
       content:
-        "Fidel es una plataforma accesible desde cualquier lugar con conexión a internet. Puedes usarla en tu computadora, tablet o smartphone, lo que te permite gestionar tus procesos de negocio y acceder a herramientas analíticas estés donde estés.",
+        "Fidel es una plataforma accesible desde cualquier lugar con conexión a internet. Podes usarla en tu computadora, tablet o smartphone, lo que te permite gestionar tus procesos de negocio y acceder a herramientas analíticas estés donde estés.",
       icon: WorldIcon,
     },
     {
