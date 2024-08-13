@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FAQIcon } from "../icons/faq";
 import WorldIcon  from "../icons/world";
 import CalendarIcon from "../icons/calendar";
+import FileImportIcon from "../icons/file-import";
 interface AccordionItem {
   id: number;
   title: string;
@@ -27,6 +28,12 @@ export const QuestionsAnswers = () => {
         "En Fidel, actualizamos y mejoramos nuestro servicio cada 15 días. Priorizamos los requerimientos de nuestros clientes para garantizar que cada actualización aborde sus necesidades y mejore la plataforma de acuerdo con sus expectativas.",
       icon: CalendarIcon,
     },
+    {
+        id:3,
+        title:"¿Puedo importar mi información al sistema?",
+        content:"Sí, puedes importar tu información a Fidel. Con esta funcionalidad, podes cargar de manera simple y rápida tus clientes, proveedores y productos. Para comenzar, consulta nuestra guía de importación o contacta con nuestro equipo de soporte.",
+        icon:FileImportIcon
+    }
   ];
 
   const handleToggle = (index: number) => {
@@ -95,7 +102,7 @@ export const QuestionsAnswers = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="3.5"
+                  strokeWidth="3.3"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={`size-4 md:size-5 transition-transform duration-300 ${
