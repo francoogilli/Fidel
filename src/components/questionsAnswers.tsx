@@ -5,6 +5,7 @@ import CalendarIcon from "../icons/calendar";
 import FileImportIcon from "../icons/file-import";
 import ScreenIcon from "../icons/screen";
 import CloudIcon from "../icons/cloud";
+import HelpIcon from "../icons/help";
 interface AccordionItem {
   id: number;
   title: string;
@@ -47,6 +48,12 @@ export const QuestionsAnswers = () => {
         title:"¿Se realiza una copia de seguridad de mi información?",
         content:"Sí, se realizan copias de seguridad periódicas de tu información para garantizar su seguridad y disponibilidad. Esto asegura que tus datos estén protegidos y puedan ser recuperados en caso de cualquier imprevisto.",
         icon:CloudIcon
+    },
+    {
+        id: 6,
+        title:"¿Qué hago si necesito ayuda?",
+        content:"Si necesitas ayuda, nuestro equipo de soporte está disponible para ayudarte. Podes contactarnos a través de WhatsApp, correo electrónico o llamada, y estaremos disponibles para resolver cualquier duda o inconveniente que tengas al usar Fidel.",
+        icon:HelpIcon
     },
   ];
 
