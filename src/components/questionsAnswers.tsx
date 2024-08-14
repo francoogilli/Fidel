@@ -1,61 +1,11 @@
 import { useState } from "react";
 import { FAQIcon } from "../icons/faq";
-import WorldIcon  from "../icons/world";
-import CalendarIcon from "../icons/calendar";
-import FileImportIcon from "../icons/file-import";
-import ScreenIcon from "../icons/screen";
-import CloudIcon from "../icons/cloud";
-import HelpIcon from "../icons/help";
-interface AccordionItem {
-  id: number;
-  title: string;
-  content: string;
-  icon: React.ComponentType<any>;
-}
+import { accordionData } from "../data/data";
+
 
 export const QuestionsAnswers = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const accordionData: AccordionItem[] = [
-    {
-      id: 1,
-      title: "¿Desde dónde se puede usar Fidel?",
-      content:
-        "Fidel es una plataforma accesible desde cualquier lugar con conexión a internet. Podes usarla en tu computadora, tablet o smartphone, lo que te permite gestionar tus procesos de negocio y acceder a herramientas analíticas estés donde estés.",
-      icon: WorldIcon,
-    },
-    {
-      id: 2,
-      title: "¿Con qué frecuencia se actualiza Fidel?",
-      content:
-        "En Fidel, actualizamos y mejoramos nuestro servicio cada 15 días. Priorizamos los requerimientos de nuestros clientes para garantizar que cada actualización aborde sus necesidades y mejore la plataforma de acuerdo con sus expectativas.",
-      icon: CalendarIcon,
-    },
-    {
-        id:3,
-        title:"¿Puedo importar mi información al sistema?",
-        content:"Sí, puedes importar tu información a Fidel. Con esta funcionalidad, podes cargar de manera simple y rápida tus clientes, proveedores y productos. Para comenzar, consulta nuestra guía de importación o contacta con nuestro equipo de soporte.",
-        icon:FileImportIcon
-    },
-    {
-        id: 4,
-        title:"¿Necesito instalar algo para utilizar Fidel?",
-        content:"No, Fidel es una plataforma que funciona en la nube, por lo que no necesitas instalar ningún software adicional en tu computadora. Solo necesitas un navegador web y una conexión a Internet para acceder y utilizar el sistema.",
-        icon:ScreenIcon
-    },
-    {
-        id: 5,
-        title:"¿Se realiza una copia de seguridad de mi información?",
-        content:"Sí, se realizan copias de seguridad periódicas de tu información para garantizar su seguridad y disponibilidad. Esto asegura que tus datos estén protegidos y puedan ser recuperados en caso de cualquier imprevisto.",
-        icon:CloudIcon
-    },
-    {
-        id: 6,
-        title:"¿Qué hago si necesito ayuda?",
-        content:"Si necesitas ayuda, nuestro equipo de soporte está disponible para ayudarte. Podes contactarnos a través de WhatsApp, correo electrónico o llamada, y estaremos disponibles para resolver cualquier duda o inconveniente que tengas al usar Fidel.",
-        icon:HelpIcon
-    },
-  ];
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
