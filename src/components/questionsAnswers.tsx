@@ -2,10 +2,8 @@ import { useState } from "react";
 import { FAQIcon } from "../icons/faq";
 import { accordionData } from "../data/data";
 
-
 export const QuestionsAnswers = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
