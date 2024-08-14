@@ -3,6 +3,7 @@ import { FAQIcon } from "../icons/faq";
 import WorldIcon  from "../icons/world";
 import CalendarIcon from "../icons/calendar";
 import FileImportIcon from "../icons/file-import";
+import ScreenIcon from "../icons/screen";
 import CloudIcon from "../icons/cloud";
 interface AccordionItem {
   id: number;
@@ -39,8 +40,14 @@ export const QuestionsAnswers = () => {
         id: 4,
         title:"¿Necesito instalar algo para utilizar Fidel?",
         content:"No, Fidel es una plataforma que funciona en la nube, por lo que no necesitas instalar ningún software adicional en tu computadora. Solo necesitas un navegador web y una conexión a Internet para acceder y utilizar el sistema.",
+        icon:ScreenIcon
+    },
+    {
+        id: 5,
+        title:"¿Se realiza una copia de seguridad de mi información?",
+        content:"Sí, se realizan copias de seguridad periódicas de tu información para garantizar su seguridad y disponibilidad. Esto asegura que tus datos estén protegidos y puedan ser recuperados en caso de cualquier imprevisto.",
         icon:CloudIcon
-    }
+    },
   ];
 
   const handleToggle = (index: number) => {

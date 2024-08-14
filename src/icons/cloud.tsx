@@ -16,10 +16,9 @@ export default function CloudIcon({ className }: CloudIconProps) {
       className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
-      <path d="M7 20h10" />
-      <path d="M9 16v4" />
-      <path d="M15 16v4" />
+      <path d="M12 18.004h-5.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.38 0 2.57 .811 3.128 1.986" />
+      <path d="M19 22v-6" />
+      <path d="M22 19l-3 -3l-3 3" />
     </svg>
   );
 }
