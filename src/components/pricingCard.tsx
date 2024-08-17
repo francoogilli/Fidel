@@ -4,7 +4,6 @@ import CreditCardIcon from "../icons/creditCard";
 import Cross from "../icons/cross";
 import InfoCircle from "../icons/infoCircle";
 import Tooltip from "./tooltip";
-import ArrowRight from "../icons/arrowRight";
 import { pricingData } from "../data/data";
 
 export default function PricingCard() {
@@ -13,7 +12,12 @@ export default function PricingCard() {
       <div className="flex justify-center">
         <div className="flex items-center rounded-3xl border border-[#e9e9e9] px-3 py-1 animation-1">
           <CreditCardIcon className="size-4 md:size-5" />
-          <h2 className="text-xs md:text-sm font-medium text-center ml-2" style={{ fontFamily: "Satoshi" }}>Planes</h2>
+          <h2
+            className="text-xs md:text-sm font-medium text-center ml-2"
+            style={{ fontFamily: "Satoshi" }}
+          >
+            Planes
+          </h2>
         </div>
       </div>
       <h3
@@ -81,10 +85,9 @@ export default function PricingCard() {
             </ul>
             <a
               href="#"
-              className="flex justify-center items-center gap-x-1 bg-gradient-to-t from-[#2d2d2d] to-[#4a4a4a] text-white font-semibold rounded-xl text-sm px-5 py-2.5 text-center hover:scale-105 duration-300"
+              className="flex justify-center items-center gap-x-1 bg-gradient-to-t from-[#2d2d2d] to-[#4a4a4a] text-white font-semibold rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#FCFCFC] hover:border-[#dfdfdf] transition-all duration-700"
             >
               Elegir
-              <ArrowRight className="size-[1.125rem]" />
             </a>
           </div>
         ))}
