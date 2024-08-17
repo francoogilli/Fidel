@@ -77,9 +77,9 @@ export default function Recommend() {
           persona que se suscriba usando tu enlace.
         </p>
         <Link to="/terms">
-          <button className="flex justify-center items-center gap-x-1 mx-auto bg-gradient-to-r from-[#000000] to-[#434343] text-white font-normal rounded-2xl duration-300 hover:scale-105 text-sm px-7 py-3 mt-5 text-center">
-            Conoce mas
-            <ArrowUpIcon className="size-[1.125rem]"/>
+          <button className="flex justify-center items-center gap-x-2 mx-auto bg-[#212121] text-white font-normal rounded-2xl duration-300 text-sm px-7 py-3 mt-5 text-center">
+            Descubri más
+            <ArrowUpIcon className="size-4"/>
           </button>
         </Link>
       </div>
@@ -157,8 +157,8 @@ export default function Recommend() {
         </p>
         <Link to="/terms">
           <button className="flex justify-center items-center mx-auto text-xs bg-gradient-to-r gap-x-1.5 from-[#000000] to-[#434343] text-white hover:scale-105 duration-300 font-normal rounded-2xl px-7 py-3 mt-5 text-center">
-            Conoce mas
-            <ArrowUpIcon className="size-[1.125rem]"/>
+            Descubri más
+            <ArrowUpIcon className="size-4"/>
           </button>
         </Link>
       </div>
@@ -238,8 +238,8 @@ export default function Recommend() {
         </p>
         <Link to="/terms">
           <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-gradient-to-r from-[#000000] to-[#323232] text-white hover:scale-105 duration-300 gap-x-1.5 font-normal rounded-[0.875rem] text-center">
-            Conoce mas
-            <ArrowUpIcon className="size-[1.125rem]"/>
+            Descubri más
+            <ArrowUpIcon className="size-4"/>
           </button>
         </Link>
       </div>
