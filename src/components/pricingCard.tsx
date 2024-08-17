@@ -85,7 +85,7 @@ export default function PricingCard() {
             </ul>
             <a
               href="#"
-              className="flex justify-center items-center gap-x-1 bg-gradient-to-t from-[#2d2d2d] to-[#4a4a4a] text-white font-semibold rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#FCFCFC] hover:border-[#dfdfdf] transition-all duration-700"
+              className="flex justify-center items-center gap-x-1 bg-gradient-to-t from-[#2d2d2d] to-[#4a4a4a] text-white font-semibold rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#FCFCFC] hover:border-[#e5e5e5] transition-all duration-700"
             >
               Elegir
             </a>
