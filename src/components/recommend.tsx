@@ -91,7 +91,7 @@ export default function Recommend() {
             persona que se suscriba usando tu enlace.
           </p>
           <Link to="/terms">
-            <button className="flex justify-center items-center gap-x-2 mx-auto bg-[#212121] text-white font-normal rounded-2xl text-sm px-7 py-3 mt-5 text-center">
+            <button className="flex justify-center items-center gap-x-2 mx-auto bg-[#212121] text-white font-normal rounded-[1.3rem] text-sm px-7 py-3 mt-5 text-center border-4 border-[#FFF6D8] hover:border-[#ffc6c6] transition-all duration-700">
               Descubri más
               <ArrowUpIcon className="size-4" />
             </button>
