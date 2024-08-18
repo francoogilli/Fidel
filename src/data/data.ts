@@ -593,7 +593,7 @@ export const termsData = {
 
 export const navLinks = [
   { href: "/", label: "Inicio" },
-  { href: "#about", label: "Planes" },
+  { href: "/plans", label: "Planes" },
   { href: "#services", label: "Producto" },
   { href: "#download", label: "About us" },
   { href: "#story", label: "Contacto" },

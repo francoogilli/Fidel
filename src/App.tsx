@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Home from "./pages/Home";
 import { TermsAndConditions } from "./pages/TermsAndConditions";
 import ScrollToTop from "./components/scrollTop";
+import { Plans } from "./pages/Plans";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/plans" element={<Plans />} />
       </Routes>
       <Footer />
     </Router>
