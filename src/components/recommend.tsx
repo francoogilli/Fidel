@@ -5,7 +5,7 @@ import UsersIcon from "../icons/users";
 export default function Recommend() {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-20">
         <div className="flex items-center rounded-3xl border border-[#e9e9e9] px-3 py-1 animation-1">
           <UsersIcon className="size-4 md:size-4" />
           <h2
@@ -17,7 +17,7 @@ export default function Recommend() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-[#fff1c7] via-[#ffeca9] to-[#fff1c7] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
+      <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca981] to-[#ffffff24] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="hidden lg:block relative p-10">
           <img
             src="coin4.png"
