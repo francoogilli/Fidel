@@ -12,8 +12,8 @@ const Home: React.FC = () => {
       <Hero />
       <PricingCard />
       <PricingComparison />
-      <QuestionsAnswers />
       <Recommend />
+      <QuestionsAnswers />
     </>
   );
 };
