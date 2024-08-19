@@ -29,7 +29,7 @@ export default function PricingCard({ viewComparison }: Props) {
             </span>
           </h3>
           <h4
-            className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[28rem] md:w-[40rem] mx-auto pb-0 md:pb-9"
+            className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[23rem] md:w-[40rem] mx-auto pb-0 md:pb-9"
             style={{ fontFamily: "Satoshi" }}
           >
             Hemos diseñado atentamente nuestros planes de precios para que se
