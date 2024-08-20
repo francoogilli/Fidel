@@ -1,7 +1,7 @@
 export default function CallToAction() {
   return (
     <div>
-      <div className="flex items-center justify-center gap-x-1.5 pt-12">
+      <div className="flex items-center justify-center gap-x-1.5 pt-12 mr-1.5">
         <img src="/fidelnew.svg" className="size-16" alt="Logo de Fidel" />
         <h6
           className="text-[#1b1b1b] text-3xl font-semibold"
