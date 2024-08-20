@@ -3,7 +3,7 @@ import Download from "../icons/download";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#191919] max-w-8xl mt-10 md:mt-20 rounded-t-[2rem] md:rounded-t-[2.5rem] text-white p-4">
+    <footer className="bg-[#191919] max-w-8xl mt-10 md:mt-20 text-white p-4">
       <div className="flex flex-col lg:flex-row justify-between px-3 md:px-24 pb-6 lg:pb-16 pt-7 md:pt-20">
         <div className="flex flex-col items-center md:items-start max-w-72">
           <div className="flex justify-start items-center space-x-4">
