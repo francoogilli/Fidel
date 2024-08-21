@@ -22,7 +22,7 @@ export default function CallToAction() {
           className="text-center mx-auto text-base md:text-lg pt-1 w-[22rem] md:w-[30rem] font-medium text-[#717171]"
           style={{ fontFamily: "Satoshi" }}
         >
-          Gestiona tus operaciones y ventas en un solo lugar y transforma tu
+          Gestiona tus operaciones y ventas en un solo lugar. Transforma tu
           empresa con Fidel.
         </h6>
         <button
