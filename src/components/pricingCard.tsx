@@ -6,6 +6,7 @@ import InfoCircle from "../icons/infoCircle";
 import Tooltip from "./tooltip";
 import { pricingData } from "../data/data";
 import { Link } from "react-router-dom";
+import ArrowUpIcon from "../icons/arrow-up";
 
 interface Props {
   viewComparison?: boolean;
@@ -128,10 +129,11 @@ export default function PricingCard({ viewComparison }: Props) {
       {viewComparison && (
         <Link to="/plans">
           <button
-            className="bg-[#fafafa] mt-10 tracking-tighter mx-auto md:tracking-normal text-[#171717] justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-2.5 text-lg md:text-[15px] rounded-[18px]  flex items-center space-x-2 border-4 border-[#ffffff] hover:border-[#f6f6f6] transition-all duration-700"
+            className="bg-[#fafafa] mt-10 tracking-tighter mx-auto md:tracking-normal gap-x-1.5 text-[#171717] justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-2.5 text-lg md:text-[15px] rounded-[18px]  flex items-center space-x-2 border-4 border-[#ffffff] hover:border-[#f6f6f6] transition-all duration-700"
             style={{ fontFamily: "Satoshi" }}
           >
             Ver comparacion
+            <ArrowUpIcon className="w-4" />
           </button>
         </Link>
       )}
