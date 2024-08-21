@@ -3,7 +3,7 @@ import { navLinks } from "../data/data";
 
 export default function Header() {
   return (
-    <header className="bg-white backdrop-blur-3xl  top-0 z-40 border-b border-[#fcfcfc] transition duration-200 ease-in-out">
+    <header className="bg-transparent top-0 z-40 border-b border-[#fcfcfc] transition duration-200 ease-in-out">
       <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl">
         <div className="mx-auto hidden h-[58px] w-full items-center justify-between transition duration-500 ease-in-out md:flex">
           <div className="flex lg:w-[225px]">
