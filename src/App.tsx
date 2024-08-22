@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { lazy } from "react";
 import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -14,13 +14,11 @@ function App() {
     <Router>
       <ScrollToTop />
       <Header />
-      <Suspense fallback={<div>Cargando...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/plans" element={<Plans />} />
         </Routes>
-      </Suspense>
       <Footer />
     </Router>
   );
