@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import ScrollToTop from "./components/scrollTop";
+import FullScreenSpinner from "./components/spinner";
 
 const Home = lazy(() => import("./pages/Home"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
@@ -14,7 +15,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Header />
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<FullScreenSpinner />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/terms" element={<TermsAndConditions />} />
