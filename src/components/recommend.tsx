@@ -17,7 +17,7 @@ export default function Recommend() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca981] to-[#ffffff24] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
+      <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca956] to-[#ffffff24] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="hidden lg:block relative p-10">
           <img
             src="coin4.png"
