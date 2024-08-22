@@ -1,22 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Home from "./pages/Home";
-import { TermsAndConditions } from "./pages/TermsAndConditions";
 import ScrollToTop from "./components/scrollTop";
-import { Plans } from "./pages/Plans";
+
+const Home = lazy(() => import("./pages/Home"));
+const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
+const Plans = lazy(() => import("./pages/Plans"));
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/terms" element={<TermsAndConditions />} />
-        <Route path="/plans" element={<Plans />} />
-      </Routes>
+      <Suspense fallback={<div>Cargando...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/plans" element={<Plans />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </Router>
   );
