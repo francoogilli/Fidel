@@ -508,7 +508,6 @@ export const footerLinks = [
       { text: "Key Features", href: "#link4" },
       { text: "Pricing", href: "#link5" },
       { text: "Testimonials", href: "#link6" },
-      { text: "FAQ’s", href: "#link7" },
     ],
   },
   {
@@ -528,7 +527,6 @@ export const footerLinks = [
       { text: "Blogs Open", href: "#link14" },
       { text: "Contact", href: "#link15" },
       { text: "Privacy Policy", href: "#link16" },
-      { text: "404", href: "#link17" },
     ],
   },
 ];

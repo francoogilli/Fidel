@@ -4,7 +4,7 @@ import Download from "../icons/download";
 export default function Footer() {
   return (
     <footer className="bg-[#191919] max-w-8xl mt-10 md:mt-20 text-white p-4">
-      <div className="flex flex-col lg:flex-row justify-between px-3 md:px-24 pb-6 lg:pb-16 pt-7 md:pt-20">
+      <div className="flex flex-col lg:flex-row justify-between px-3 md:px-24 pb-6 lg:pb-6 pt-7 md:pt-12">
         <div className="flex flex-col items-center md:items-start max-w-72">
           <div className="flex justify-start items-center space-x-4">
             <img src="/fidel1.svg" width={80} alt="Fidel Logo" />
@@ -76,7 +76,7 @@ export default function Footer() {
       </div>
       <div className="px-2 md:px-24">
         <hr className="border border-[#242424]" />
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 text-sm  py-6 text-[#7d7d7d]">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-3.5 pt-2 text-sm text-[#7d7d7d]">
           <p>© 2024 Fidel. All rights reserved.</p>
           <p>Politicas de privacidad</p>
           <p>Template de Fidel</p>
