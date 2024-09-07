@@ -1,3 +1,4 @@
+import SendIcon from "../icons/send";
 import SparklesIcon from "../icons/sparkles";
 
 export default function Contact() {
@@ -78,10 +79,11 @@ export default function Contact() {
             />
           </div>
           <button
-            className="bg-[#1f1f1f] hover:bg-[#121212] w-full text-white text-sm font-medium rounded-xl px-5 py-3 transition-colors duration-300"
+            className="group flex justify-center items-center bg-[#303030] hover:bg-[#121212] w-full text-white text-sm font-medium rounded-xl px-5 py-3 transition-colors duration-300"
             style={{ fontFamily: "Satoshi" }}
           >
             Enviar mensaje
+            <SendIcon className="size-4 ml-2 mt-0.5 transform transition-transform duration-500 group-hover:rotate-45" />
           </button>
         </div>
       </div>
