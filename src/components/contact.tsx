@@ -85,8 +85,8 @@ export default function Contact() {
           </button>
         </div>
       </div>
-      <div className="col-span-7 bg-[#f5f5f541] rounded-3xl px-4 flex flex-col justify-center items-center">
-        <div className=" flex bg-[#fafafa] rounded-full pt-5 md:pt-0 px-4 items-center justify-center gap-x-1.5 mr-1.5">
+      <div className="col-span-7 bg-[#f5f5f541] rounded-3xl px-8 md:px-4 flex flex-col justify-center items-center">
+        <div className=" flex bg-[#fafafa] rounded-full pt-5 md:pt-0 px-44 items-center justify-center gap-x-1.5 mr-1.5">
           <img
             src="/fidel1.svg"
             className="size-10 md:size-14"
