@@ -39,7 +39,7 @@ export default function Contact() {
               <label className="text-xs font-medium mb-1">Nombre</label>
               <input
                 type="text"
-                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-1.5"
+                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
                 placeholder="Nombre"
               />
             </div>
@@ -47,7 +47,7 @@ export default function Contact() {
               <label className="text-xs font-medium mb-1">Apellido</label>
               <input
                 type="text"
-                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-1.5"
+                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
                 placeholder="Apellido"
               />
             </div>
@@ -58,7 +58,7 @@ export default function Contact() {
             </label>
             <input
               type="text"
-              className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-1.5"
+              className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
               placeholder="nombre@correo.com"
             />
           </div>
@@ -66,7 +66,7 @@ export default function Contact() {
             <label className="text-xs font-medium mb-1">Teléfono</label>
             <input
               type="text"
-              className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-1.5"
+              className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
               placeholder="Número de teléfono"
             />
           </div>
@@ -74,7 +74,7 @@ export default function Contact() {
             <label className="text-xs font-medium mb-1">Mensaje</label>
             <textarea
               rows={4}
-              className="border rounded-xl resize-none text-sm p-2.5 placeholder:text-sm placeholder:px-1.5"
+              className="border rounded-xl resize-none text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
               placeholder="Cualquier mensaje adicional que quieras agregar..."
             />
           </div>
