@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 max-w-7xl mx-auto px-4 gap-y-5 md:gap-x-5 pt-32">
       <div className="col-span-5 bg-[#fafafa] rounded-3xl p-6 md:p-12">
-        <div className="flex justify-start items-center gap-x-3 pb-4 md:pb-7">
+        <div className="flex justify-start items-center gap-x-2 pb-4 md:pb-7">
           <img src="fidel1.svg" className="opacity-85" width={40} alt="" />
           <p
             className="text-xl font-semibold"
