@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import SparklesIcon from "../icons/sparkles";
+import CreditCardIcon from "../icons/creditCard";
 
 export default function Hero() {
   return (
@@ -43,16 +45,18 @@ export default function Hero() {
             Empezar ahora
           </button> */}
           <button
-            className="bg-[#5fff5c] tracking-tighter md:tracking-normal text-[#171717] justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-2.5 text-base md:text-[15px] rounded-[18px]  flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] hover:border-[#c9ffc8] transition-all duration-700"
+            className="bg-[#5fff5c] tracking-tighter md:tracking-normal text-[#171717] justify-center w-auto gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px]  flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] hover:border-[#c9ffc8] transition-all duration-700"
             style={{ fontFamily: "Satoshi" }}
           >
+            <SparklesIcon className="size-4 md:size-5" />
             Empezar ahora
           </button>
           <Link to="/plans">
             <button
-              className="bg-[#fafafa] tracking-tighter md:tracking-normal text-[#171717] justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-2.5 text-base md:text-[15px] rounded-[18px]  flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] hover:border-[#f6f6f6] transition-all duration-700"
+              className="bg-[#fafafa] tracking-tighter md:tracking-normal text-[#171717] gap-2 justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px]  flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] hover:border-[#f6f6f6] transition-all duration-700"
               style={{ fontFamily: "Satoshi" }}
             >
+              <CreditCardIcon className="size-4 md:size-5" />
               Conocer planes
             </button>
           </Link>
