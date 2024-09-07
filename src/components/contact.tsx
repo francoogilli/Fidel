@@ -15,13 +15,13 @@ export default function Contact() {
           </p>
         </div>
         <p
-          className="text-[#1f1f1f] font-normal text-2xl tracking-tight"
+          className="text-[#1f1f1f] font-normal text-2xl md:text-3xl tracking-tight"
           style={{ fontFamily: "Satoshi" }}
         >
           ¿Tenes alguna duda?
         </p>
         <p
-          className="text-[#1f1f1f] font-semibold text-2xl tracking-tight pb-4"
+          className="text-[#1f1f1f] font-semibold text-2xl md:text-3xl tracking-tight pb-4"
           style={{ fontFamily: "Satoshi" }}
         >
           No dudes en contactarnos.
