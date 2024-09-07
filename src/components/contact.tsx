@@ -123,7 +123,7 @@ export default function Contact() {
             Transforma tu empresa con Fidel.
           </h6>
           <button
-            className="bg-[#5fff5c] mx-auto mt-5 mb-5 md:mb-0 md:mt-5 gap-2 tracking-tighter md:tracking-normal text-[#000] w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] hover:border-[#e0ffdfdf] transition-all duration-700"
+            className="bg-[#5fff5c] mx-auto mt-5 mb-5 md:mb-0 md:mt-5 gap-2 tracking-tighter md:tracking-normal text-[#000] w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fcfcfc] hover:border-[#e0ffdfdf] transition-all duration-700"
             style={{ fontFamily: "Satoshi" }}
           >
             <SparklesIcon className="size-4 md:size-5" />
