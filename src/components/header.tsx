@@ -11,6 +11,9 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <header className="md:bg-transparent top-0 sticky md:relative justify-center items-center z-40 border-b border-[#fcfcfc] transition duration-200 ease-in-out">
       <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl">
@@ -55,6 +58,7 @@ export default function Header() {
                         <Link
                           to={link.href}
                           className="block md:text-base font-medium text-slate-900"
+                          onClick={closeMenu}
                         >
                           {link.label}
                         </Link>
