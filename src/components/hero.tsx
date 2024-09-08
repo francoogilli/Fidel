@@ -32,7 +32,7 @@ export default function Hero() {
           </span>
         </h2>
 
-        <div className="lg:px-0 mt-4 mx-auto w-[23rem] md:w-[36rem]">
+        <div className="lg:px-0 mt-4 mx-auto md:ml-0 w-[23rem] md:w-[36rem]">
           <h4
             className="text-[#5c5c5c] lg:w-auto mx-auto lg:mx-0 text-base lg:text-lg leading-[1.4em] font-medium"
             style={{ fontFamily: "Satoshi" }}
