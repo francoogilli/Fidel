@@ -19,10 +19,10 @@ export default function Header() {
       <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl">
         <div className="bg-white absolute left-0 top-0 z-20 flex w-full flex-col items-center md:hidden">
           <div className="flex w-full items-center px-6 py-4">
-            <div className="flex gap-x-2 justify-center items-center auto font-medium">
+            <a href="/" className="flex gap-x-2 justify-center items-center auto font-medium">
               <img src="/fidel1.svg" className="w-10" alt="Logo Fidel" />
               Fidel
-            </div>
+            </a>
             <button onClick={toggleMenu} className="flex flex-auto justify-end">
               {isMenuOpen ? <CrossMenuIcon /> : <MenuHamburgerIcon />}
             </button>
