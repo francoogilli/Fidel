@@ -9,12 +9,13 @@ export default function Hero() {
       {/* Sección de texto */}
       <div className="absolute top-28 left-0 right-0 flex justify-center">
         <div
-          className="text-sm font-medium bg-white mb-0 md:mb-10 inline-block rounded-[0.625rem] border border-[#e9e9e9] px-3 py-1"
+          className="text-sm font-medium bg-[#fdfdfd] shadow-2xl mb-0 md:mb-10 inline-block rounded-xl border border-[#e0e0e0] px-4 py-2"
           style={{ fontFamily: "Satoshi" }}
         >
-          <div className="flex justify-center items-center space-x-2">
-           <span className="inline-block size-2 bg-[#80ff18] rounded-full animate-pulse"></span>
-            <p>Mejoras y novedades cada dos semanas</p>
+          <div className="flex justify-center items-center space-x-3">
+            {/* Usar un icono SVG en lugar de un simple círculo */}
+            <span className="inline-block size-2.5 bg-[#80ff18] rounded-full animate-pulse"></span>
+            <p className="">Mejoras y novedades cada dos semanas</p>
           </div>
         </div>
       </div>
@@ -66,11 +67,11 @@ export default function Hero() {
       </div>
 
       {/* Sección de imagen */}
-      <div className="relative flex-1 flex justify-center lg:justify-end items-center">
+      <div className="relative flex-1 flex justify-center lg:justify-end items-center group">
         <img
           src="/image.png"
           alt="Laptop"
-          className="border-[10px] border-[#a7faa5] md:mt-11 w-[100%] rounded-3xl"
+          className="border-[10px] border-[#a7faa5] md:mt-11 w-[100%] rounded-3xl transition-colors duration-300 group-hover:border-[#79f277]" // Cambio al hacer hover en el grupo
         />
         <button className="absolute inset-0 flex justify-center mt-0 md:mt-11 items-center">
           <div className="bg-[#6fff6d] hover:bg-[#43fc40] border-[7px] border-[#dcffdb] hover:border-[#e6ffe6] p-4 rounded-full shadow-xl hover:shadow-2xl duration-500 transition-all">
