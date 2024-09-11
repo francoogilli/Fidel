@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
 import PlayIcon from "../icons/play";
+import Modal from "./modal";
 
 export default function Hero() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
     <div className="mx-auto flex flex-col lg:flex-row max-w-7xl pt-40 lg:pt-14 space-y-6 px-4 lg:px-4 pb-10">
       {/* Sección de texto */}
@@ -13,12 +20,12 @@ export default function Hero() {
           style={{ fontFamily: "Satoshi" }}
         >
           <div className="flex justify-center items-center space-x-3">
-            {/* Usar un icono SVG en lugar de un simple círculo */}
             <span className="inline-block size-2.5 bg-[#80ff18] rounded-full animate-pulse"></span>
             <p className="">Mejoras y novedades cada dos semanas</p>
           </div>
         </div>
       </div>
+
       <div className="flex-1  text-center lg:text-left pt-0 md:pt-[2rem]">
         <h2
           className="font-bold text-4xl md:text-6xl lg:text-[5rem] lg:leading-[1.1em] tracking-tighter"
@@ -71,14 +78,24 @@ export default function Hero() {
         <img
           src="/image.png"
           alt="Laptop"
-          className="border-[10px] border-[#a7faa5] md:mt-11 w-[100%] rounded-3xl transition-colors duration-300 group-hover:border-[#79f277]" // Cambio al hacer hover en el grupo
+          className="border-[10px] border-[#a7faa5] md:mt-11 w-[100%] rounded-3xl transition-colors duration-300 group-hover:border-[#79f277]"
         />
-        <button className="absolute inset-0 flex justify-center mt-0 md:mt-11 items-center">
+        <button
+          onClick={openModal}
+          className="absolute inset-0 flex justify-center mt-0 md:mt-11 items-center"
+        >
           <div className="bg-[#6fff6d] hover:bg-[#43fc40] border-[7px] border-[#dcffdb] hover:border-[#e6ffe6] p-4 rounded-full shadow-xl hover:shadow-2xl duration-500 transition-all">
             <PlayIcon className="size-8 md:size-12 pl-0.5 text-white" />
           </div>
         </button>
       </div>
+
+      {/* Modal con video de YouTube */}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        videoUrl="https://www.youtube.com/embed/WO2b03Zdu4Q?autoplay=1"
+      />
     </div>
   );
 }
