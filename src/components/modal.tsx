@@ -40,14 +40,14 @@ export default function Modal({ isOpen, onClose, videoUrl }: ModalProps) {
         }`}
       >
         <button
-          className="absolute -top-10 right-0 lg:-top-5 lg:-right-4 text-black rounded-full p-1"
+          className="absolute -top-10 right-2 lg:-top-5 lg:-right-4 text-black rounded-full p-1"
           onClick={onClose}
         >
           <CrossIcon className="size-11 text-white active:bg-black/30 duration-200 hover:bg-black/10 rounded-full p-1.5" />
         </button>
         {/* Contenedor para el video */}
         <div
-          className="relative rounded-2xl md:rounded-[1.875rem] overflow-hidden"
+          className="relative rounded-xl md:rounded-[1.875rem] overflow-hidden"
           style={{ paddingBottom: "56.25%", height: 0 }}
         >
           <iframe
