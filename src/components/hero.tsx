@@ -16,7 +16,7 @@ export default function Hero() {
       {/* Sección de texto */}
       <div className="absolute top-28 left-0 right-0 flex justify-center">
         <div
-          className="text-sm font-medium bg-[#fdfdfd] shadow-2xl mb-0 md:mb-10 inline-block rounded-xl border border-[#e0e0e0] px-4 py-2"
+          className="text-sm font-medium bg-[#fdfdfd] shadow-2xl mb-0 md:mb-0 lg:mb-10 inline-block rounded-xl border border-[#e0e0e0] px-4 py-2"
           style={{ fontFamily: "Satoshi" }}
         >
           <div className="flex justify-center items-center space-x-3">
@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="flex-1  text-center lg:text-left pt-0 md:pt-[2rem]">
+      <div className="flex-1  text-center lg:text-left pt-0 md:pt-[0rem] lg:pt-[2rem]">
         <h2
           className="font-bold text-4xl md:text-6xl lg:text-[5rem] lg:leading-[1.1em] tracking-tighter"
           style={{ fontFamily: "Satoshi" }}
