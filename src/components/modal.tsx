@@ -40,7 +40,7 @@ export default function Modal({ isOpen, onClose, videoUrl }: ModalProps) {
         }`}
       >
         <button
-          className="absolute -top-10 right-2 lg:-top-5 lg:-right-4 text-black rounded-full p-1"
+          className="absolute -top-10 right-5 lg:-top-5 lg:-right-4 text-black rounded-full p-1"
           onClick={onClose}
         >
           <CrossIcon className="size-11 text-white active:bg-black/30 duration-200 hover:bg-black/10 rounded-full p-1.5" />
