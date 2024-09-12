@@ -1,6 +1,5 @@
 import CrossIcon from "../icons/crossx";
-import { MouseEvent } from "react";
-import { useState, useEffect } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 
 interface ModalProps {
   isOpen: boolean;
@@ -12,11 +11,22 @@ export default function Modal({ isOpen, onClose, videoUrl }: ModalProps) {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    
     if (isOpen) {
       setShowModal(true);
+      document.body.style.overflow = 'hidden'; // Evitar scroll
+      document.body.style.paddingRight = `${scrollbarWidth}px`; // Compensar ancho de la barra de scroll
     } else {
       setTimeout(() => setShowModal(false), 300);
+      document.body.style.overflow = ''; // Restaurar scroll
+      document.body.style.paddingRight = ''; // Restaurar padding
     }
+
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    };
   }, [isOpen]);
 
   const handleClickOutside = (e: MouseEvent<HTMLDivElement>) => {
