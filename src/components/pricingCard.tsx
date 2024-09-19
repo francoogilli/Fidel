@@ -41,7 +41,7 @@ export default function PricingCard({ viewComparison }: Props) {
       ) : (
         <>
           <div className="flex justify-center">
-            <div className="flex items-center rounded-3xl border border-[#e9e9e9] px-3 py-1 animation-1">
+            <div className="flex items-center rounded-lg border border-[#e9e9e9] px-3 py-1 animation-1">
               <CreditCardIcon className="size-4 md:size-5" />
               <h2
                 className="text-xs md:text-sm font-medium text-center ml-2"

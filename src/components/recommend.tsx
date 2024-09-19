@@ -6,7 +6,7 @@ export default function Recommend() {
   return (
     <>
       <div className="flex justify-center pt-20">
-        <div className="flex items-center rounded-3xl border border-[#e9e9e9] px-3 py-1 animation-1">
+        <div className="flex items-center rounded-lg border border-[#e9e9e9] px-3 py-1 animation-1">
           <UsersIcon className="size-4 md:size-4" />
           <h2
             className="text-xs md:text-sm font-medium text-center ml-2"
