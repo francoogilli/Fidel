@@ -70,12 +70,12 @@ export default function AppMobile() {
           </div>
 
           {/* Imagen en la segunda columna, se oculta en mobile */}
-          <div className="col-span-6 relative p-1 pt-[8.2rem] md:p-10">
+          <div className="col-span-6 relative p-1 pt-[9.2rem] md:p-10">
             <img
               src="iphone4.png"
               alt="Moneda"
               draggable="false"
-              className="select-none absolute w-[16.5rem] drop-shadow-2xl top-1 -right-20 md:-top-4 md:right-24 hover:scale-105 duration-700"
+              className="select-none absolute w-[16.5rem] drop-shadow-2xl top-5 -right-20 md:-top-4 md:right-24 hover:scale-105 duration-700"
             />
           </div>
         </div>
