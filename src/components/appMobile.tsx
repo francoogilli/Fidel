@@ -17,11 +17,11 @@ export default function AppMobile() {
         </div>
       </div>
       <div className="bg-gradient-to-t md:bg-gradient-to-br overflow-hidden from-[#4fff0f2f] via-[#44ff00a7] to-[#4fff0f2f] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
-        <div className="grid grid-cols-12 p-10">
-          <div className="col-span-12 md:col-span-6 flex flex-col">
+        <div className="grid grid-cols-12 p-2 md:p-10">
+          <div className="col-span-12 pt-4 md:pt-0 md:col-span-6 flex flex-col">
             {/* Mover el título arriba en mobile */}
             <h2
-              className="text-4xl md:text-7xl font-semibold text-[#000000] mb-1 md:mb-0"
+              className="text-4xl md:text-7xl text-center font-semibold text-[#000000] mb-1 md:mb-0"
               style={{ fontFamily: "Satoshi" }}
             >
               <span style={{ fontFamily: "instrument-serif" }}>Maneja</span> tu
@@ -29,7 +29,7 @@ export default function AppMobile() {
             </h2>
 
             {/* Contenedor para los botones, abajo en mobile */}
-            <div className="flex flex-col md:flex-row pt-10 gap-x-4 px-10">
+            <div className="flex flex-col md:flex-row pt-6 md:pt-10 gap-x-4 px-10">
               <div className="flex flex-col justify-center w-full space-y-3">
                 <a
                   key="appLink"
@@ -48,7 +48,7 @@ export default function AppMobile() {
                   </div>
                 </a>
               </div>
-              <div className="flex flex-col justify-center w-full space-y-3 mt-5 md:mt-0">
+              <div className="flex flex-col justify-center w-full space-y-3 mt-2 md:mt-0">
                 <a
                   key="appLink"
                   href="#"
