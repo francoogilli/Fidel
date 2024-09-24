@@ -535,7 +535,7 @@ export const appLinks = [
   {
     href: "https://play.google.com/store/apps/details?id=ar.com.fidel",
     icon: PlayStore,
-    platform: "Google Play",
+    platform: "Play Store",
   },
   {
     href: "https://apps.apple.com/ar/app/fidel-gesti%C3%B3n/id1670120525",

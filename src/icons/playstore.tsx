@@ -1,4 +1,9 @@
-export default function PlayStore() {
+interface Props {
+  className?: string;
+  stroke?: string;
+}
+
+export default function PlayStore({ className,stroke }: Props) {
   return (
     <svg
       fill="#ffffff"
@@ -7,9 +12,9 @@ export default function PlayStore() {
       version="1.1"
       id="Icons"
       xmlns="http://www.w3.org/2000/svg"
-      className="size-7"
+      className={className}
       viewBox="0 0 32 32"
-      stroke="#ffffff"
+      stroke={stroke}
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g

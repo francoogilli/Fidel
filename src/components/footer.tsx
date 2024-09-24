@@ -60,7 +60,7 @@ export default function Footer() {
                 target="_blank"
                 className="flex justify-center items-center space-x-3 bg-[#262626] hover:bg-[#373737] border border-[#333333] py-3.5 px-10 rounded-xl"
               >
-                <appLink.icon />
+                <appLink.icon className="size-7 fill-white" />
                 <div className="flex flex-col items-start">
                   <h3 className="text-xs font-medium text-[#999999]">
                     Descargar en
