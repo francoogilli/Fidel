@@ -70,7 +70,7 @@ export default function AppMobile() {
           </div>
 
           {/* Imagen en la segunda columna, se oculta en mobile */}
-          <div className="col-span-6 relative p-1 pt-28 md:p-10">
+          <div className="col-span-6 relative p-1 pt-[8.2rem] md:p-10">
             <img
               src="iphone4.png"
               alt="Moneda"
