@@ -47,23 +47,15 @@ export default function Contact() {
             a la brevedad responder a tus preguntas.
           </p>
           <div className="flex-row space-y-7">
-            <div className="grid grid-cols-2 gap-x-6">
-              <div className="flex flex-col">
-                <label className="text-xs font-medium mb-1">Nombre</label>
-                <input
-                  type="text"
-                  className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
-                  placeholder="Nombre"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label className="text-xs font-medium mb-1">Apellido</label>
-                <input
-                  type="text"
-                  className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
-                  placeholder="Apellido"
-                />
-              </div>
+          <div className="flex flex-col">
+              <label className="text-xs font-medium mb-1">
+                Nombre completo
+              </label>
+              <input
+                type="text"
+                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
+                placeholder="Nombre completo"
+              />
             </div>
             <div className="flex flex-col">
               <label className="text-xs font-medium mb-1">
