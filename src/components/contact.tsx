@@ -6,10 +6,10 @@ export default function Contact() {
   return (
     <>
       <div className="flex justify-center">
-        <div className="flex items-center rounded-lg border border-[#e9e9e9] px-3 py-1 animation-1 mt-16 mb-10 md:mt-32">
-          <MailIcon className="size-4 md:size-5" />
+        <div className="flex items-center rounded-lg border bg-[#F8F9FA] border-[#E6E9EE] px-3 py-1 animation-1 mt-16 mb-10 md:mt-32">
+          <MailIcon className="size-4 md:size-5 text-[#333333]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2"
+            className="text-xs md:text-sm font-medium text-center ml-2 text-[#333333]"
             style={{ fontFamily: "Satoshi" }}
           >
             Contacto

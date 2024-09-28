@@ -6,10 +6,10 @@ export default function Recommend() {
   return (
     <>
       <div className="flex justify-center pt-20">
-        <div className="flex items-center rounded-lg border border-[#e9e9e9] px-3 py-1 animation-1">
-          <UsersIcon className="size-4 md:size-4" />
+        <div className="flex items-center rounded-lg border bg-[#F8F9FA] border-[#E6E9EE] px-3 py-1 animation-1">
+          <UsersIcon className="size-4 md:size-4 text-[#333333]"/>
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2"
+            className="text-xs md:text-sm font-medium text-center ml-2 text-[#333333]"
             style={{ fontFamily: "Satoshi" }}
           >
             Referidos
