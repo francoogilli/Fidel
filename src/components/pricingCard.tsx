@@ -119,7 +119,7 @@ export default function PricingCard({ viewComparison }: Props) {
             <a
               href="/"
               style={{ fontFamily: "Satoshi" }}
-              className="flex justify-center tracking-wide items-center gap-x-1 bg-[#5fff5c] text-[#2d2d2d] font-semibold rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#fff] hover:border-[#c9ffc8] transition-all duration-700"
+              className="flex justify-center tracking-wide items-center gap-x-1 bg-[#74fc72] text-[#2d2d2d] font-semibold rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#fff] hover:border-[#d9fed8] transition-all duration-700"
             >
               Elegir
             </a>
