@@ -16,7 +16,7 @@ export default function AppMobile() {
           </h2>
         </div>
       </div>
-      <div className="bg-gradient-to-t md:bg-gradient-to-br overflow-hidden from-[#4fff0f2f] via-[#44ff00a7] to-[#4fff0f2f] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
+      <div className="bg-gradient-to-t md:bg-gradient-to-br overflow-hidden from-[#4fff0f2f] via-[#66ff00a7] to-[#4fff0f2f] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="grid grid-cols-12 p-2 md:p-10">
           <div className="col-span-12 pt-4 md:pt-0 md:col-span-6 flex flex-col">
             {/* Mover el título arriba en mobile */}
