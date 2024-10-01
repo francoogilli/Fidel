@@ -4,6 +4,7 @@ import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
 import PlayIcon from "../icons/play";
 import Modal from "./modal";
+import CalendarIcon from "../icons/calendar";
 
 export default function Hero() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -13,15 +14,13 @@ export default function Hero() {
 
   return (
     <div className="mx-auto flex flex-col lg:flex-row max-w-7xl pt-40 lg:pt-14 space-y-6 px-4 lg:px-4 pb-10">
-      {/* Sección de texto */}
       <div className="absolute top-28 left-0 right-0 flex justify-center">
-        <div
-          className="text-sm font-medium bg-[#fdfdfd] shadow-2xl mb-0 md:mb-0 lg:mb-10 inline-block rounded-xl border border-[#e0e0e0] px-4 py-2"
-          style={{ fontFamily: "Satoshi" }}
-        >
-          <div className="flex justify-center items-center space-x-3">
-            <span className="inline-block size-2.5 bg-[#80ff18] rounded-full animate-pulse"></span>
-            <p className="">Mejoras y novedades cada dos semanas</p>
+        <div className="text-sm font-medium bg-gradient-to-br from-[#fefffd] to-[#F8F9FA] border border-[#e6eee6] pr-2.5 mb-0 md:mb-0 lg:mb-10 inline-block rounded-3xl">
+          <div className="flex justify-center items-center text-xs text-[#1f1f1f] gap-x-2 p-[3px]">
+            <div className="bg-gradient-to-r p-1.5 from-[#D9FF93] to-[#B9FF38] rounded-full">
+              <CalendarIcon className="size-[17px]" />
+            </div>
+            ¡Novedades cada dos semanas!
           </div>
         </div>
       </div>
