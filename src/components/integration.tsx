@@ -6,7 +6,7 @@ import TiendaNubeIcon from "../icons/tiendaNube";
 
 export default function Integration() {
   return (
-    <div className="max-w-7xl mb-[24rem] mx-auto">
+    <div className="max-w-7xl mb-8 mx-auto">
       <div className="flex justify-center pt-20">
         <div className="flex items-center rounded-lg bg-[#F8F9FA] border border-[#E6E9EE] px-3 py-1 animation-1">
           <IntegrationIcon className="size-4 rotate-90 -scale-x-100 text-[#333333]" />
