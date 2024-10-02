@@ -31,7 +31,7 @@ export default function Mobile() {
         </h3>
       </div>
       <h4
-        className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[50%] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[50%] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
         Controla y toma decisiones desde la comodidad de tu celular. Conecta con
@@ -71,7 +71,7 @@ export default function Mobile() {
         </div>
         <div className="col-span-6">
           <h3
-            className="animation-1 text-5xl text-[#252525] font-bold my-8 pb-1 tracking-tight"
+            className="text-5xl text-[#252525] font-bold my-8 pb-1 tracking-tight"
             style={{ fontFamily: "Satoshi" }}
           >
             Gestiona tu
