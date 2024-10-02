@@ -85,14 +85,14 @@ export default function Integration() {
             className="inline-flex font-medium justify-start bg-[#fcfcfc] border border-[#E6E9EE] items-center mt-7 rounded-full px-2 py-1.5 gap-x-1.5 text-[#3d3d3d]"
             style={{ fontFamily: "Satoshi" }}
           >
-            <CheckboxIcon className="size-6 mb-0.5 rounded-full bg-[#a8ff80] p-1 text-black" />
+            <CheckboxIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
             Elegi entre Tienda Nube o WooCommerce para tu negocio.
           </div>
           <div
             className="inline-flex font-medium justify-start bg-[#fcfcfc] border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-1.5 text-[#3d3d3d]"
             style={{ fontFamily: "Satoshi" }}
           >
-            <RefreshIcon className="size-6 mb-0.5 rounded-full bg-[#a8ff80] p-1 text-black" />
+            <RefreshIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
             Actualiza precios, descuentos y stock automaticamente.
           </div>
 
@@ -100,7 +100,7 @@ export default function Integration() {
             className="inline-flex font-medium justify-start bg-[#fcfcfc] border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-1.5 text-[#3d3d3d]"
             style={{ fontFamily: "Satoshi" }}
           >
-            <ThunderIcon className="size-6 mb-0.5 rounded-full bg-[#a8ff80] p-1 text-black" />
+            <ThunderIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
             Optimiza y mejora la gestión de tu negocio.
           </div>
         </div>
