@@ -1,10 +1,9 @@
-import Apple from "../icons/apple";
+import CheckIcon from "../icons/check";
 import MobileIcon from "../icons/mobile";
-import PlayStore from "../icons/playstore";
 
 export default function Mobile() {
   return (
-    <>
+    <div className="max-w-7xl mb-8 mx-auto">
       <div className="flex justify-center pt-20">
         <div className="flex items-center rounded-lg bg-[#F8F9FA] border border-[#E6E9EE] px-3 py-1 animation-1">
           <MobileIcon className="size-4 md:size-4 text-[#333333]" />
@@ -12,74 +11,114 @@ export default function Mobile() {
             className="text-xs md:text-sm font-medium text-center ml-2 text-[#333333]"
             style={{ fontFamily: "Satoshi" }}
           >
-            App Movil
+            Aplicacion Movil
           </h2>
         </div>
       </div>
-      <div className="bg-gradient-to-t md:bg-gradient-to-br overflow-hidden from-[#4fff0f2f] via-[#66ff00a7] to-[#4fff0f2f] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
-        <div className="grid grid-cols-12 p-2 md:p-10">
-          <div className="col-span-12 pt-4 md:pt-0 md:col-span-6 flex flex-col">
-            {/* Mover el título arriba en mobile */}
-            <h2
-              className="text-4xl md:text-7xl text-center font-semibold text-[#000000] mb-1 md:mb-0"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              <span style={{ fontFamily: "instrument-serif" }}>Maneja</span> tu
-              negocio desde tu <span className="text-[#ffffff]">celular.</span>
-            </h2>
-
-            {/* Contenedor para los botones, abajo en mobile */}
-            <div className="flex flex-col md:flex-row pt-6 md:pt-10 gap-x-4 px-10">
-              <div className="flex flex-col justify-center w-full space-y-3">
-                <a
-                  key="appLink"
-                  href="#"
-                  target="_blank"
-                  className="flex justify-center items-center bg-[#222222] hover:bg-[#181818] text-white space-x-3 py-3 px-8 rounded-2xl duration-300"
-                >
-                  <Apple className="size-8 md:size-9 fill-[#ffffff]" />
-                  <div className="flex flex-col items-start">
-                    <h3 className="text-xs md:text-sm font-medium text-white">
-                      Disponible en
-                    </h3>
-                    <p className="text-sm md:text-lg font-semibold">
-                      App Store
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div className="flex flex-col justify-center w-full space-y-3 mt-2 md:mt-0">
-                <a
-                  key="appLink"
-                  href="#"
-                  target="_blank"
-                  className="flex justify-center items-center bg-[#222222] hover:bg-[#181818] text-white space-x-3 py-3 px-8 rounded-2xl duration-300"
-                >
-                  <PlayStore className="size-8 fill-white" />
-                  <div className="flex flex-col items-start">
-                    <h3 className="text-xs md:text-sm font-medium text-[#ffffff]">
-                      Disponible en
-                    </h3>
-                    <p className="text-sm md:text-lg font-semibold text-white">
-                      Play Store
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
+      <div className="flex mx-auto justify-center items-center">
+        <h3
+          className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+          style={{ fontFamily: "Satoshi" }}
+        >
+          Maneja tu{" "}
+          <span
+            className="italic text-4xl md:text-[3.25rem] tracking-wide"
+            style={{ fontFamily: "instrument-serif" }}
+          >
+            negocio{" "}
+          </span>
+          desde tu celular
+        </h3>
+      </div>
+      <h4
+        className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[50%] mx-auto pb-0 md:pb-9"
+        style={{ fontFamily: "Satoshi" }}
+      >
+        Controla y toma decisiones desde la comodidad de tu celular. Conecta con
+        cada aspecto de tu negocio, estés donde estés, a cualquier hora.
+      </h4>
+      <div className="grid grid-cols-12 relative pt-10">
+        <div className="col-span-6 relative">
+          {/* Imagen de fondo */}
+          <img
+            src="fondo.avif"
+            alt=""
+            style={{ width: "600px", height: "500px" }}
+            className="absolute z-0 rounded-2xl"
+          />
+          {/* Imagen encima del fondo */}
+          <img
+            width={600}
+            src="cositas.svg"
+            alt=""
+            className="p-10 relative z-10"
+          />
+          <div className="absolute flex justify-center -top-5 right-4 transition-all duration-300">
+            <img src="papelitoderecho.avif" className="w-16" alt="" />
           </div>
-
-          {/* Imagen en la segunda columna, se oculta en mobile */}
-          <div className="col-span-6 relative p-1 pt-[9.2rem] md:p-10">
+          <div className="absolute flex justify-center -top-5 -left-6 transition-all duration-300">
+            <img src="papelitoizquierdo.avif" className="w-16" alt="" />
+          </div>
+          {/* Imagen del celular encima de todo */}
+          <div className="absolute inset-0 flex justify-center items-center z-20">
             <img
-              src="iphone4.png"
-              alt="Moneda"
-              draggable="false"
-              className="select-none absolute w-[16.5rem] drop-shadow-2xl top-5 -right-20 md:-top-4 md:right-24 hover:scale-105 duration-700"
+              src="phone.avif"
+              alt="Imagen de celular"
+              width={500}
+              className="overflow-hidden"
             />
           </div>
         </div>
+        <div className="col-span-6">
+          <h3
+            className="animation-1 text-5xl text-[#252525] font-bold my-8 pb-1 tracking-tight"
+            style={{ fontFamily: "Satoshi" }}
+          >
+            Gestiona tu
+            <span
+              className="italic text-5xl tracking-wide"
+              style={{ fontFamily: "instrument-serif" }}
+            >
+              {" "}
+              empresa{" "}
+            </span>
+            desde donde vos quieras.
+          </h3>
+
+          <p className="text-[#565656] text-base">
+            Fidel te ofrece acceso instantáneo a toda la información clave de tu
+            negocio. Desde la facturación hasta el control de inventario.
+            Simplifica la gestión, mejora la eficiencia, y mantén el control
+            total desde la comodidad de tu celular.
+          </p>
+          <div className="pt-5">
+            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+              <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
+              <span className="pr-2">
+                Acceso en cualquier lugar y en cualquier momento.
+              </span>
+            </div>
+            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+              <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
+              <span className="pr-2">
+                Visualiza todos tus datos o información en tiempo real.
+              </span>
+            </div>
+            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+              <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
+              <span className="pr-2">
+                Realiza pedidos directamente desde cualquier lugar
+              </span>
+            </div>
+            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+              <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
+              <span className="pr-2">
+                Consulta el stock y precios de tus productos al instante.
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
