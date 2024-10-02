@@ -33,7 +33,7 @@ export default function Integration() {
           </span>
         </h3>
       </div>
-      <div className="grid grid-cols-12 relative gap-x-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 relative gap-x-5">
         <div className="col-span-6 relative border border-[#ffffff] rounded-3xl">
           <div className="absolute flex justify-center bg-[#fbfbfb] px-12 py-4 rounded-[2rem] hover:scale-105 top-5 left-16 transition-all duration-300">
             <TiendaNubeIcon className="size-28" fill="#212121" />

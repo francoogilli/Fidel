@@ -3,7 +3,7 @@ import MobileIcon from "../icons/mobile";
 
 export default function Mobile() {
   return (
-    <div className="max-w-7xl mb-8 mx-auto">
+    <div className="max-w-7xl mb-8 mx-auto px-3 md:px-0">
       <div className="flex justify-center pt-20">
         <div className="flex items-center rounded-lg bg-[#F8F9FA] border border-[#E6E9EE] px-3 py-1 animation-1">
           <MobileIcon className="size-4 md:size-4 text-[#333333]" />
@@ -31,14 +31,14 @@ export default function Mobile() {
         </h3>
       </div>
       <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[50%] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[50%] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
         Controla y toma decisiones desde la comodidad de tu celular. Conecta con
         cada aspecto de tu negocio, estés donde estés, a cualquier hora.
       </h4>
-      <div className="grid grid-cols-12 relative pt-10">
-        <div className="col-span-6 relative">
+      <div className="grid grid-cols-1 md:grid-cols-12 relative pt-10">
+        <div className="col-span-6 relative hidden md:block">
           {/* Imagen de fondo */}
           <img
             src="fondo.avif"
@@ -69,48 +69,57 @@ export default function Mobile() {
             />
           </div>
         </div>
+        <div className="col-span-6 md:hidden flex justify-center items-center mx-auto">
+          <img
+            src="mobileimage.png"
+            alt="Imagen para móviles"
+            className="w-full h-auto"
+          />
+        </div>
         <div className="col-span-6">
-          <h3
-            className="text-5xl text-[#252525] font-bold my-8 pb-1 tracking-tight"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Gestiona tu
-            <span
-              className="italic text-5xl tracking-wide"
-              style={{ fontFamily: "instrument-serif" }}
+          <div className="hidden md:block">
+            <h3
+              className="text-3xl md:text-5xl text-[#252525] font-bold my-8 pb-0 md:pb-1 tracking-tight"
+              style={{ fontFamily: "Satoshi" }}
             >
-              {" "}
-              empresa{" "}
-            </span>
-            desde donde vos quieras.
-          </h3>
+              Gestiona tu
+              <span
+                className="italic tracking-wide"
+                style={{ fontFamily: "instrument-serif" }}
+              >
+                {" "}
+                empresa{" "}
+              </span>
+              desde donde vos quieras.
+            </h3>
 
-          <p className="text-[#565656] text-base">
-            Fidel te ofrece acceso instantáneo a toda la información clave de tu
-            negocio. Desde la facturación hasta el control de inventario.
-            Simplifica la gestión, mejora la eficiencia, y mantén el control
-            total desde la comodidad de tu celular.
-          </p>
+            <p className="text-[#565656] text-sm md:text-base">
+              Fidel te ofrece acceso instantáneo a toda la información clave de
+              tu negocio. Desde la facturación hasta el control de inventario.
+              Simplifica la gestión, mejora la eficiencia, y mantén el control
+              total desde la comodidad de tu celular.
+            </p>
+          </div>
           <div className="pt-5">
-            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Acceso en cualquier lugar y en cualquier momento.
               </span>
             </div>
-            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Visualiza todos tus datos o información en tiempo real.
               </span>
             </div>
-            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Realiza pedidos directamente desde cualquier lugar
               </span>
             </div>
-            <div className="inline-flex text-[#565656] text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Consulta el stock y precios de tus productos al instante.
