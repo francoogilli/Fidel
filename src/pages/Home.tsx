@@ -4,7 +4,7 @@ import PricingCard from "../components/pricingCard";
 import Recommend from "../components/recommend";
 import { QuestionsAnswers } from "../components/questionsAnswers";
 import Contact from "../components/contact";
-import AppMobile from "../components/appMobile";
+import Mobile from "../components/mobile";
 import Integration from "../components/integration";
 
 const Home: React.FC = () => {
@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       <div className="backgroundImage"></div>
       <Hero />
       <PricingCard viewComparison />
-      <AppMobile />
+      <Mobile />
       <Integration />
       <Recommend />
       <QuestionsAnswers />

@@ -2,7 +2,7 @@ import Apple from "../icons/apple";
 import MobileIcon from "../icons/mobile";
 import PlayStore from "../icons/playstore";
 
-export default function AppMobile() {
+export default function Mobile() {
   return (
     <>
       <div className="flex justify-center pt-20">
