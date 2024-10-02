@@ -42,7 +42,7 @@ export default function PricingComparison() {
                         <span className='text-sm'>{plan.benefits[index].displayText}</span>
                       ) : plan.benefits[index]?.active ? (
                         <div className="flex items-center justify-center">
-                          <Check />
+                          <Check className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-md p-1" />
                         </div>
                       ) : (
                         <div className="flex items-center justify-center">

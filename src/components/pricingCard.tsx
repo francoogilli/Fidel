@@ -101,7 +101,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 <React.Fragment key={index}>
                   <li className="flex items-center space-x-2 justify-between">
                     <div className="flex items-center space-x-2">
-                      {benefit.active ? <Check /> : <Cross />}
+                      {benefit.active ? <Check className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-md p-1" /> : <Cross />}
                       <span className="text-sm">{benefit.text}</span>
                     </div>
                     {benefit.tooltipInfo && (

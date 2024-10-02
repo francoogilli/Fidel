@@ -1,6 +1,9 @@
-export default function Check() {
+interface CheckIconProps {
+  className?: string;
+}
+export default function Check({className}: CheckIconProps) {
   return (
-    <div className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-md p-1">
+    <div className={className}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
