@@ -70,7 +70,7 @@ export default function Integration() {
         </div>
         <div className="col-span-6 bg-gradient-to-br from-[#fcfef9] via-[#F8F9FA] to-[#fcfef9] border border-[#e6eee6] rounded-3xl px-6 py-5">
           <h3
-            className="font-bold text-[2.5rem] leading-[2.5rem] text-center"
+            className="font-bold text-3xl md:text-[2.5rem] md:leading-[2.5rem] text-center"
             style={{ fontFamily: "Satoshi" }}
           >
             <span className="tracking-wide" style={{ fontFamily: "instrument-serif" }}>
