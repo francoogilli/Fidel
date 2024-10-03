@@ -18,7 +18,7 @@ export default function Integration() {
           </h2>
         </div>
       </div>
-      <div className="flex mx-auto justify-center items-center pb-2 md:pb-12">
+      <div className="flex mx-auto justify-center items-center">
         <h3
           className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
           style={{ fontFamily: "Satoshi" }}
@@ -33,6 +33,13 @@ export default function Integration() {
           </span>
         </h3>
       </div>
+      <h4
+        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[50%] mx-auto pb-0 md:pb-14"
+        style={{ fontFamily: "Satoshi" }}
+      >
+        Facilita la gestión de tu tienda online sincronizando inventarios,
+        pedidos y ventas, todo desde un mismo lugar y sin complicaciones.
+      </h4>
       <div className="grid grid-cols-1 md:grid-cols-12 relative gap-x-5">
         <div className="col-span-6 relative hidden md:block border border-[#ffffff] rounded-3xl">
           <div className="absolute flex justify-center bg-[#fbfbfb] px-12 py-4 rounded-[2rem] hover:scale-105 top-5 left-16 transition-all duration-300">
