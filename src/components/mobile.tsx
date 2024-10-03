@@ -100,7 +100,7 @@ export default function Mobile() {
               total desde la comodidad de tu celular.
             </p>
           </div>
-          <div className="pt-5">
+          <div className="pt-0 md:pt-5">
             <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
