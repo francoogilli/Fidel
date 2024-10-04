@@ -8,10 +8,10 @@ export default function Integration() {
   return (
     <div className="max-w-7xl mb-8 mx-auto px-4">
       <div className="flex justify-center pt-20">
-        <div className="flex items-center rounded-lg bg-[#F8F9FA] border border-[#E6E9EE] px-3 py-1 animation-1">
-          <IntegrationIcon className="size-4 rotate-90 -scale-x-100 text-[#333333]" />
+        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+          <IntegrationIcon className="size-4 rotate-90 -scale-x-100 text-[#f5f5f5]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#333333]"
+            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Satoshi" }}
           >
             Integraciones
