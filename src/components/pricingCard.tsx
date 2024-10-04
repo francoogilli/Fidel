@@ -65,7 +65,7 @@ export default function PricingCard({ viewComparison }: Props) {
             </span>
           </h3>
           <h4
-            className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[21rem] mx-auto pb-0 md:pb-9"
+            className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[21rem] mx-auto pb-0 md:pb-9"
             style={{ fontFamily: "Satoshi" }}
           >
             Diseñamos nuestros precios para que se adapten a tu negocio.
