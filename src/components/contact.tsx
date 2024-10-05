@@ -1,12 +1,15 @@
 import MailIcon from "../icons/email";
 import SendIcon from "../icons/send";
 import SparklesIcon from "../icons/sparkles";
+import ThreeStripesLeft from "../icons/threeStripesLeft";
+import ThreeStripesRight from "../icons/threeStripesRight";
 
 export default function Contact() {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1 mt-16 mb-10 md:mt-32">
+      <div className="flex justify-center items-center gap-x-2.5 mt-16 mb-10 md:mt-32">
+        <ThreeStripesLeft />
+        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <MailIcon className="size-4 md:size-5 text-[#f5f5f5]" />
           <h2
             className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
@@ -15,6 +18,7 @@ export default function Contact() {
             Contacto
           </h2>
         </div>
+        <ThreeStripesRight />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 max-w-7xl mx-auto px-4 gap-y-5 md:gap-x-5">
         <div className="col-span-5 bg-[#fafafa] rounded-3xl p-6 md:p-12">
@@ -47,7 +51,7 @@ export default function Contact() {
             a la brevedad responder a tus preguntas.
           </p>
           <div className="flex-row space-y-7">
-          <div className="flex flex-col">
+            <div className="flex flex-col">
               <label className="text-xs font-medium mb-1">
                 Nombre completo
               </label>

@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import ArrowUpIcon from "../icons/arrow-up";
 import UsersIcon from "../icons/users";
+import ThreeStripesLeft from "../icons/threeStripesLeft";
+import ThreeStripesRight from "../icons/threeStripesRight";
 
 export default function Recommend() {
   return (
     <>
-      <div className="flex justify-center pt-20">
+      <div className="flex justify-center items-center gap-x-2.5 pt-20">
+        <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
-          <UsersIcon className="size-4 md:size-4 text-[#f5f5f5]"/>
+          <UsersIcon className="size-4 md:size-4 text-[#f5f5f5]" />
           <h2
             className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Satoshi" }}
@@ -15,6 +18,7 @@ export default function Recommend() {
             Referidos
           </h2>
         </div>
+        <ThreeStripesRight />
       </div>
 
       <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca956] to-[#ffffff24] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">

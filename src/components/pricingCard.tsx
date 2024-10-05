@@ -7,6 +7,8 @@ import Tooltip from "./tooltip";
 import { pricingData } from "../data/data";
 import { Link } from "react-router-dom";
 import ArrowUpIcon from "../icons/arrow-up";
+import ThreeStripesRight from "../icons/threeStripesRight";
+import ThreeStripesLeft from "../icons/threeStripesLeft";
 
 interface Props {
   viewComparison?: boolean;
@@ -40,7 +42,8 @@ export default function PricingCard({ viewComparison }: Props) {
         </>
       ) : (
         <>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center gap-x-2.5">
+            <ThreeStripesLeft />
             <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
               <CreditCardIcon className="size-4 md:size-5 text-[#f5f5f5]" />
               <h2
@@ -50,6 +53,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 Planes
               </h2>
             </div>
+            <ThreeStripesRight />
           </div>
           <h3
             className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
@@ -101,7 +105,11 @@ export default function PricingCard({ viewComparison }: Props) {
                 <React.Fragment key={index}>
                   <li className="flex items-center space-x-2 justify-between">
                     <div className="flex items-center space-x-2">
-                      {benefit.active ? <Check className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-md p-1" /> : <Cross />}
+                      {benefit.active ? (
+                        <Check className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-md p-1" />
+                      ) : (
+                        <Cross />
+                      )}
                       <span className="text-sm">{benefit.text}</span>
                     </div>
                     {benefit.tooltipInfo && (
