@@ -85,25 +85,25 @@ export default function Integration() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-2">
-            <div className="col-span-1 flex justify-start items-center text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-[#DBFF99] rounded-xl p-2 border border-[#e6eee6]">
                 <CheckboxIcon className="size-7" />
               </div>
               Elegi 1 integracion para tu negocio.
             </div>
-            <div className="col-span-1 flex justify-start items-center text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-[#DBFF99] rounded-xl p-2 border border-[#e6eee6]">
                 <RefreshIcon className="size-7" />
               </div>
               Actualiza precios y stock automaticamente
             </div>
-            <div className="col-span-1 flex justify-start items-center text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-[#DBFF99] rounded-xl p-2 border border-[#e6eee6]">
                 <ThunderIcon className="size-7" />
               </div>
               Optimiza y mejora la gestión de tu negocio
             </div>
-            <div className="col-span-1 flex justify-start items-center text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-[#DBFF99] rounded-xl p-2 border border-[#e6eee6]">
                 <LockIcon className="size-7" />
               </div>
