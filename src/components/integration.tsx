@@ -130,14 +130,6 @@ export default function Integration() {
               alt=""
             />
           </div>
-          {/* <div className="absolute flex justify-center opacity-30 px-4 py-4 rounded-[2rem] top-7 right-28 transition-all duration-300">
-            <img
-              src="pruebaa.avif"
-              draggable="false"
-              className="size-[400px]"
-              alt=""
-            />
-          </div> */}
           <div className="absolute flex justify-center top-[12rem] right-[7.5rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
