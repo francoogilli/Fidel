@@ -160,8 +160,8 @@ export default function Integration() {
                   y2="21.339"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#fff" />
-                  <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                  <stop stop-color="#000" />
+                  <stop offset="1" stop-color="#000" stop-opacity="0" />
                 </linearGradient>
               </defs>
             </svg>
