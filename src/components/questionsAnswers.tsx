@@ -53,7 +53,7 @@ export const QuestionsAnswers = () => {
           return (
             <div
               key={item.id}
-              className="mx-auto max-w-[50rem] border border-[#e9e9e9] rounded-xl overflow-hidden"
+              className="mx-auto max-w-[56rem] border border-[#e9e9e9] rounded-xl overflow-hidden"
             >
               <button
                 onClick={() => handleToggle(index)}
