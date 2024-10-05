@@ -41,7 +41,7 @@ export default function Mobile() {
         <div className="col-span-6 relative hidden md:block">
           {/* Imagen de fondo */}
           <img
-            src="fondo.avif"
+            src="fondo.png"
             alt=""
             style={{ width: "600px", height: "500px" }}
             className="absolute z-0 rounded-2xl"
@@ -54,15 +54,15 @@ export default function Mobile() {
             className="p-10 relative z-10"
           />
           <div className="absolute flex justify-center -top-5 right-4 transition-all duration-300">
-            <img src="papelitoderecho.avif" className="w-16" alt="" />
+            <img src="papelitoderecho.png" className="w-16" alt="" />
           </div>
           <div className="absolute flex justify-center -top-5 -left-6 transition-all duration-300">
-            <img src="papelitoizquierdo.avif" className="w-16" alt="" />
+            <img src="papelitoizquierdo.png" className="w-16" alt="" />
           </div>
           {/* Imagen del celular encima de todo */}
           <div className="absolute inset-0 flex justify-center items-center z-20">
             <img
-              src="phone.avif"
+              src="phone.png"
               alt="Imagen de celular"
               width={500}
               className="overflow-hidden"
