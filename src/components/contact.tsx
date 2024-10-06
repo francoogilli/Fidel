@@ -1,6 +1,4 @@
 import MailIcon from "../icons/email";
-import SendIcon from "../icons/send";
-import SparklesIcon from "../icons/sparkles";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 
@@ -20,126 +18,65 @@ export default function Contact() {
         </div>
         <ThreeStripesRight />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-12 max-w-7xl mx-auto px-4 gap-y-5 md:gap-x-5">
-        <div className="col-span-5 bg-[#fafafa] rounded-3xl p-6 md:p-12">
-          <div className="flex justify-center md:justify-start items-center gap-x-2 pb-4 md:pb-7">
-            <img src="fidel1.svg" className="opacity-85" width={40} alt="" />
-            <p
-              className="text-xl font-semibold"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              Fidel
-            </p>
-          </div>
-          <p
-            className="text-[#1f1f1f] font-normal text-2xl md:text-3xl tracking-tight"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            ¿Tenes alguna duda?
-          </p>
-          <p
-            className="text-[#1f1f1f] font-semibold text-2xl md:text-3xl tracking-tight pb-4"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            No dudes en contactarnos.
-          </p>
-          <p
-            className="text-[#444444] font-medium tracking-tight text-sm pb-10"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Envíanos tu consulta y nuestro equipo se pondrá en contacto con vos
-            a la brevedad responder a tus preguntas.
-          </p>
-          <div className="flex-row space-y-7">
-            <div className="flex flex-col">
-              <label className="text-xs font-medium mb-1">
-                Nombre completo
-              </label>
-              <input
-                type="text"
-                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
-                placeholder="Nombre completo"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label className="text-xs font-medium mb-1">
-                Correo electrónico
-              </label>
-              <input
-                type="text"
-                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
-                placeholder="nombre@correo.com"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label className="text-xs font-medium mb-1">Teléfono</label>
-              <input
-                type="text"
-                className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
-                placeholder="Número de teléfono"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label className="text-xs font-medium mb-1">Mensaje</label>
-              <textarea
-                rows={4}
-                className="border rounded-xl resize-none text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
-                placeholder="Cualquier mensaje adicional que quieras agregar..."
-              />
-            </div>
-            <button
-              className="group flex justify-center items-center bg-[#303030] hover:bg-[#121212] w-full text-white text-sm font-medium rounded-xl px-5 py-3 transition-colors duration-300"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              Enviar mensaje
-              <SendIcon className="size-4 ml-2 mt-0.5 transform transition-transform duration-500 group-hover:rotate-45" />
-            </button>
-          </div>
+      <h3
+        className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+        style={{ fontFamily: "Satoshi" }}
+      >
+        ¿Tenes preguntas?
+        <span
+          className="italic text-4xl md:text-[3.25rem] tracking-wide"
+          style={{ fontFamily: "instrument-serif" }}
+        >
+          {" "}
+          Contáctanos
+        </span>
+      </h3>
+      <h4
+        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[20rem] md:w-[45rem] mx-auto pb-0 md:pb-9"
+        style={{ fontFamily: "Satoshi" }}
+      >
+        <span className="hidden md:inline">¿Tenes alguna duda sobre el sistema o queres
+        consultar algo en general?</span> Completa el formulario y te respondemos en un plazo de 2 días hábiles.
+      </h4>
+      <div className="flex flex-col mx-auto max-w-[50rem] pt-12 justify-center gap-y-5 px-4">
+        <div className="flex flex-col">
+          <label className="text-xs font-medium mb-1">Nombre y Apellido</label>
+          <input
+            type="text"
+            className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
+            placeholder="Nombre completo"
+          />
         </div>
-        <div className="col-span-7 bg-[#f5f5f541] rounded-3xl px-8 md:px-4 flex flex-col justify-center items-center">
-          <div className=" flex rounded-full pt-5 md:pt-0 px-44 items-center justify-center gap-x-1.5 mr-1.5">
-            <img
-              src="/fidel1.svg"
-              className="size-10 md:size-14"
-              alt="Logo de Fidel"
-              draggable={false}
-            />
-            <h6
-              className="text-[#1b1b1b] text-xl md:text-3xl font-semibold"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              Fidel
-            </h6>
-          </div>
-          <div className="text-center pt-5 md:pt-12">
-            <h3
-              className="text-[#1b1b1b] text-4xl md:text-7xl font-bold pb-7 md:pb-16"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              Empeza a ordenar tu negocio{" "}
-              <span
-                className="text-[#5fff5c]"
-                style={{ fontFamily: "instrument-serif" }}
-              >
-                hoy.
-              </span>
-            </h3>
-            <h6
-              className="mx-auto text-base md:text-lg pt-1 w-[22rem] md:w-[30rem] font-medium text-[#404040]"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              La organización que buscas para tu empresa, en un solo lugar.
-              Transforma tu empresa con Fidel.
-            </h6>
-            <button
-              className="bg-[#5fff5c] mx-auto mt-5 mb-5 md:mb-0 md:mt-5 gap-2 tracking-tighter md:tracking-normal text-[#000] w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fcfcfc] hover:border-[#e0ffdfdf] transition-all duration-700"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              <SparklesIcon className="size-4 md:size-5" />
-              Empezar ahora
-            </button>
-          </div>
+        <div className="flex flex-col">
+          <label className="text-xs font-medium mb-1">Email</label>
+          <input
+            type="text"
+            className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
+            placeholder="nombre@ejemplo.com"
+          />
         </div>
+        <div className="flex flex-col">
+          <label className="text-xs font-medium mb-1">Telefono</label>
+          <input
+            type="text"
+            className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
+            placeholder="Numero de Telefono"
+          />
+        </div>
+        <div className="flex flex-col">
+          <label className="text-xs font-medium mb-1">Mensaje</label>
+          <textarea
+            rows={4}
+            className="border rounded-xl resize-none text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
+            placeholder="Hola, tengo una pregunta..."
+          />
+        </div>
+        <button
+          className="group flex justify-center items-center bg-[#5FFF5C] hover:bg-[#92ff90] w-full text-black text-sm font-semibold rounded-xl px-5 py-3 transition-colors duration-300"
+          style={{ fontFamily: "Satoshi" }}
+        >
+          Enviar mensaje
+        </button>
       </div>
     </>
   );
