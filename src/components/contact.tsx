@@ -38,7 +38,7 @@ export default function Contact() {
         <span className="hidden md:inline">¿Tenes alguna duda sobre el sistema o queres
         consultar algo en general?</span> Completa el formulario y te respondemos en un plazo de 2 días hábiles.
       </h4>
-      <div className="flex flex-col mx-auto max-w-[50rem] pt-7 justify-center gap-y-5 px-4">
+      <div className="flex flex-col mx-auto max-w-[45rem] pt-7 justify-center gap-y-5 px-4">
         <div className="flex flex-col">
           <label className="text-xs font-medium mb-1">Nombre y Apellido</label>
           <input
