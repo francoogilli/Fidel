@@ -119,7 +119,7 @@ export default function Integration() {
           <div className="absolute flex justify-center -top-5 -left-6 transition-all duration-300">
             <img src="papelitoizquierdo.png" className="w-16" alt="" />
           </div>
-          <div className="absolute flex justify-center bg-gradient-to-r from-[#343434] via-[#5a5a5a] to-[#343434] border-[7px] border-[#a5a5a500] px-10 py-4 rounded-[2rem] rotate-[5deg] top-[5.5rem] left-[120px]">
+          <div className="absolute flex justify-center bg-gradient-to-r from-[#217aff] via-[#4690ff] to-[#217aff] border-[7px] border-[#b6fea8] px-10 py-4 rounded-[2rem] rotate-[5deg] top-[5.5rem] left-[120px]">
             <TiendaNubeIcon className="size-32" fill="#fff" />
           </div>
           <div className="absolute flex justify-center bg-[#fff] border-[7px] border-[#D1F9CA]  px-[2.375rem] py-4 rounded-[2rem] -rotate-[5deg] top-[17.8rem] right-[8.5rem]">
