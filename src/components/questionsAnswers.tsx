@@ -40,7 +40,7 @@ export const QuestionsAnswers = () => {
         </span>
       </h3>
       <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[25rem] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[19rem] md:w-[25rem] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
         ¿Todavía tenes preguntas? Contacta a nuestro soporte, disponible durante
