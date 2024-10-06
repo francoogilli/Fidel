@@ -57,7 +57,7 @@ export default function Mobile() {
             alt=""
             className="p-10 relative z-10"
           />
-          <div className="absolute flex justify-center -top-5 right-4 transition-all duration-300">
+          <div className="absolute flex justify-center -top-5 right-0 transition-all duration-300">
             <img src="papelitoderecho.png" className="w-16" alt="" />
           </div>
           <div className="absolute flex justify-center -top-5 -left-6 transition-all duration-300">
