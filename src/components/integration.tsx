@@ -9,7 +9,7 @@ import TiendaNubeIcon from "../icons/tiendaNube";
 
 export default function Integration() {
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-0">
+    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20">
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">

@@ -5,7 +5,7 @@ import ThreeStripesRight from "../icons/threeStripesRight";
 
 export default function Mobile() {
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-3 md:px-0">
+    <div className="max-w-7xl mb-8 mx-auto px-3 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20">
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
@@ -105,25 +105,25 @@ export default function Mobile() {
             </p>
           </div>
           <div className="pt-0 md:pt-5">
-            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-2 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Acceso en cualquier lugar y en cualquier momento.
               </span>
             </div>
-            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-2 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Visualiza todos tus datos o información en tiempo real.
               </span>
             </div>
-            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-2 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Realiza pedidos directamente desde cualquier lugar
               </span>
             </div>
-            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-3.5 rounded-full px-2 py-1.5 gap-x-2">
+            <div className="inline-flex text-[#565656] text-xs md:text-sm justify-start border border-[#E6E9EE] items-center mt-2 rounded-full px-2 py-1.5 gap-x-2">
               <CheckIcon className="size-6 mb-0.5 rounded-full bg-gradient-to-b from-[#b7ff33] to-[#dbff99] p-1 text-black" />
               <span className="pr-2">
                 Consulta el stock y precios de tus productos al instante.
