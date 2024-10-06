@@ -19,7 +19,7 @@ export default function Contact() {
         <ThreeStripesRight />
       </div>
       <h3
-        className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+        className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight"
         style={{ fontFamily: "Satoshi" }}
       >
         ¿Tenes preguntas?
