@@ -119,10 +119,10 @@ export default function Integration() {
           <div className="absolute flex justify-center -top-5 -left-6 transition-all duration-300">
             <img src="papelitoizquierdo.png" className="w-16" alt="" />
           </div>
-          <div className="absolute flex justify-center bg-gradient-to-r from-[#217aff] via-[#4690ff] to-[#217aff] border-[7px] border-[#b6fea8] px-10 py-4 rounded-[2rem] rotate-[5deg] top-[5.5rem] left-[120px]">
+          <div className="absolute flex justify-center bg-gradient-to-r from-[#217aff] via-[#4690ff] to-[#217aff] border-[7px] border-[#b6fea8] px-10 py-4 rounded-[2rem] rotate-[5deg] top-[5.5rem] left-[120px] hover:scale-105 duration-500">
             <TiendaNubeIcon className="size-32" fill="#fff" />
           </div>
-          <div className="absolute flex justify-center bg-[#fff] border-[7px] border-[#D1F9CA]  px-[2.375rem] py-4 rounded-[2rem] -rotate-[5deg] top-[17.8rem] right-[8.5rem]">
+          <div className="absolute flex justify-center bg-[#fff] border-[7px] border-[#D1F9CA]  px-[2.375rem] py-4 rounded-[2rem] -rotate-[5deg] top-[17.8rem] right-[8.5rem] hover:scale-105 duration-500">
             <img
               src="woocommerce.svg"
               draggable="false"
@@ -159,7 +159,7 @@ export default function Integration() {
             </svg>
           </div>
 
-          <div className="absolute flex justify-center top-[17rem] left-[8rem] transition-all duration-300">
+          <div className="absolute flex justify-center top-[17rem] left-[7.5rem] transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="152"
