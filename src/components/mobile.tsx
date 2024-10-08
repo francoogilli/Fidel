@@ -16,7 +16,7 @@ export default function Mobile() {
             className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Satoshi" }}
           >
-            Aplicacion Movil
+            Aplicacion Mobile
           </h2>
         </div>
         <ThreeStripesRight />
