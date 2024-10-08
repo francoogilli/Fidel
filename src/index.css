@@ -127,11 +127,3 @@ body {
   }
 }
 
-.animation-1{
-  view-timeline-name: --reveal;
-
-  animation-name: slideIn;
-  animation-fill-mode: both;
-  animation-timeline: --reveal;
-  animation-range: entry 35% cover 55%;
-}
