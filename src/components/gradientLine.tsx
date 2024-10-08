@@ -1,6 +1,7 @@
 interface GradientLineProps {
   direction?: 'left' | 'right';
   from?: string;
+  weight?: string;
 }
 
 export default function GradientLine({ direction = 'left', from = "#e6f0e7" }: GradientLineProps) {
