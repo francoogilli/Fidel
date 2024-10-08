@@ -3,7 +3,7 @@ interface GradientLineProps {
     weight?: string;
   }
   
-  export default function GradientLine({ direction = 'left', weight = '1px' }: GradientLineProps) {
+  export default function GradientLine({ direction = 'left'}: GradientLineProps) {
     const gradientDirection = direction === 'left' ? 'bg-gradient-to-l' : 'bg-gradient-to-r';
   
     return (
