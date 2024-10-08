@@ -2,11 +2,13 @@ import CheckIcon from "../icons/check";
 import MobileIcon from "../icons/mobile";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
+import GradientLine from "./gradientLine";
 
 export default function Mobile() {
   return (
     <div className="max-w-7xl mb-8 mx-auto px-3 md:px-3">
-      <div className="flex justify-center items-center gap-x-2.5 pt-20">
+      <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
+        <GradientLine direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <MobileIcon className="size-4 md:size-4 text-[#f5f5f5]" />
@@ -18,6 +20,7 @@ export default function Mobile() {
           </h2>
         </div>
         <ThreeStripesRight />
+        <GradientLine direction="right" />
       </div>
       <div className="flex mx-auto justify-center items-center">
         <h3
