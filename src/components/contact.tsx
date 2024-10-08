@@ -1,11 +1,13 @@
 import MailIcon from "../icons/email";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
+import GradientLine from "./gradientLine";
 
 export default function Contact() {
   return (
-    <>
-      <div className="flex justify-center items-center gap-x-2.5 mt-16 mb-10 md:mt-32">
+    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+      <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
+        <GradientLine weight="1.5px" direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <MailIcon className="size-4 md:size-5 text-[#f5f5f5]" />
@@ -17,6 +19,7 @@ export default function Contact() {
           </h2>
         </div>
         <ThreeStripesRight />
+        <GradientLine weight="1.5px" direction="right" />
       </div>
       <h3
         className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight"
@@ -35,8 +38,11 @@ export default function Contact() {
         className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[20rem] md:w-[45rem] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
-        <span className="hidden md:inline">¿Tenes alguna duda sobre el sistema o queres
-        consultar algo en general?</span> Completa el formulario y te respondemos en un plazo de 2 días hábiles.
+        <span className="hidden md:inline">
+          ¿Tenes alguna duda sobre el sistema o queres consultar algo en
+          general?
+        </span>{" "}
+        Completa el formulario y te respondemos en un plazo de 2 días hábiles.
       </h4>
       <div className="flex flex-col mx-auto max-w-[45rem] pt-7 justify-center gap-y-5 px-4">
         <div className="flex flex-col">
@@ -78,6 +84,6 @@ export default function Contact() {
           Enviar mensaje
         </button>
       </div>
-    </>
+    </div>
   );
 }

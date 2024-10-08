@@ -3,11 +3,13 @@ import ArrowUpIcon from "../icons/arrow-up";
 import UsersIcon from "../icons/users";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
+import GradientLine from "./gradientLine";
 
 export default function Recommend() {
   return (
-    <>
-      <div className="flex justify-center items-center gap-x-2.5 pt-20">
+    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+      <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
+        <GradientLine weight="1.5px" direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <UsersIcon className="size-4 md:size-4 text-[#f5f5f5]" />
@@ -19,6 +21,7 @@ export default function Recommend() {
           </h2>
         </div>
         <ThreeStripesRight />
+        <GradientLine weight="1.5px" direction="right" />
       </div>
 
       <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca956] to-[#ffffff24] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
@@ -262,6 +265,6 @@ export default function Recommend() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }

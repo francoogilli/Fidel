@@ -3,6 +3,7 @@ import { FAQIcon } from "../icons/faq";
 import { accordionData } from "../data/data";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
+import GradientLine from "./gradientLine";
 
 export const QuestionsAnswers = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -12,8 +13,9 @@ export const QuestionsAnswers = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
-      <div className="flex justify-center items-center gap-x-2.5">
+    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+      <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
+        <GradientLine weight="1.5px" direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <FAQIcon className="size-4 md:size-5 text-[#f5f5f5]" />
@@ -25,6 +27,7 @@ export const QuestionsAnswers = () => {
           </h2>
         </div>
         <ThreeStripesRight />
+        <GradientLine weight="1.5px" direction="right" />
       </div>
       <h3
         className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
