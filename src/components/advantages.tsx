@@ -34,7 +34,7 @@ export default function Advantages() {
           className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
           style={{ fontFamily: "Satoshi" }}
         >
-          Aprovecha todos nuestras
+          Aprovecha todas nuestras
           <span
             className="italic text-4xl md:text-[3.25rem] tracking-wide"
             style={{ fontFamily: "instrument-serif" }}
