@@ -2,7 +2,7 @@ interface Props {
   className?: string;
   strokeWidth?: string;
 }
-export default function ChartIcon({ className, strokeWidth = "2" }: Props) {
+export default function StonksIcon({ className, strokeWidth = "2" }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,10 +17,12 @@ export default function ChartIcon({ className, strokeWidth = "2" }: Props) {
       className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
-      <path d="M15 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
-      <path d="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
-      <path d="M4 20h14" />
+      <path d="M18 11h.009" />
+      <path d="M14 15h.009" />
+      <path d="M12 6h.009" />
+      <path d="M8 10h.009" />
+      <path d="M3 21l17 -17" />
+      <path d="M3 3v18h18" />
     </svg>
   );
 }

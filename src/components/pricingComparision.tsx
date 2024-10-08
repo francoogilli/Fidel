@@ -8,12 +8,7 @@ import { pricingComparison } from '../data/data';
 export default function PricingComparison() {
     return (
       <div className="max-w-7xl mx-auto px-4 pb-10 pt-3">
-        <div className="flex items-center justify-between pb-10">
-        <hr className="flex-grow border-t border-zinc-200" />
-        <h2 className='text-2xl md:text-3xl font-medium text-center px-4 whitespace-nowrap'>
-          Comparar planes
-        </h2>
-        <hr className="flex-grow border-t border-zinc-200" />
+        <div className="flex items-center justify-between">
       </div>
         <div className="overflow-x-auto rounded-3xl border border-[#e8e8e8]">
           <table className="min-w-full divide-y divide-[#e8e8e8] rounded-3xl overflow-hidden">

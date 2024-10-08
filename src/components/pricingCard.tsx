@@ -5,11 +5,14 @@ import Cross from "../icons/cross";
 import InfoCircle from "../icons/infoCircle";
 import Tooltip from "./tooltip";
 import { pricingData } from "../data/data";
-import { Link } from "react-router-dom";
-import ArrowUpIcon from "../icons/arrow-up";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import GradientLine from "./gradientLine";
+import ThunderIcon from "../icons/thunder";
+import AdvantagesIcon from "../icons/advantages";
+import ChartIcon from "../icons/chart";
+import StonksIcon from "../icons/stonks";
+import ModulesIcon from "../icons/modules";
 
 interface Props {
   viewComparison?: boolean;
@@ -137,17 +140,52 @@ export default function PricingCard({ viewComparison }: Props) {
           </div>
         ))}
       </div>
-      {viewComparison && (
-        <Link to="/plans">
-          <button
-            className="bg-[#fafafa] mt-10 tracking-tighter mx-auto md:tracking-normal gap-x-1.5 text-[#171717] justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-2.5 text-lg md:text-[15px] rounded-[18px]  flex items-center space-x-2 border-4 border-[#ffffff] hover:border-[#f6f6f6] transition-all duration-700"
+      <div className="animation-1">
+        <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-8">
+          <GradientLine from="#5b5b5b" direction="left" />
+          <ThreeStripesLeft />
+          <h4
+            className="text-lg px-5 text-[#4e4e4e] font-semibold"
             style={{ fontFamily: "Satoshi" }}
           >
-            Ver comparacion
-            <ArrowUpIcon className="w-4" />
-          </button>
-        </Link>
-      )}
+            Incluido en todos los planes
+          </h4>
+          <ThreeStripesRight />
+          <GradientLine from="#5b5b5b" direction="right" />
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-x-2">
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+            <ThunderIcon className="size-6" strokeWidth="1.5" />
+            <span className="text-sm text-[#2c2c2c] font-medium">
+              Atención al cliente
+            </span>
+          </div>
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+            <StonksIcon className="size-6" strokeWidth="1.7" />
+            <span className="text-sm text-[#2c2c2c] font-medium">
+              Sin límite de ventas.
+            </span>
+          </div>
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+            <ChartIcon className="size-6" strokeWidth="1.7" />
+            <span className="text-sm text-[#2c2c2c] font-medium">
+              Analítica básica
+            </span>
+          </div>
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+            <ModulesIcon className="size-6" strokeWidth="1.6" />
+            <span className="text-sm text-[#2c2c2c] font-medium">
+              Clientes, Ventas y Productos
+            </span>
+          </div>
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+            <AdvantagesIcon className="size-6" strokeWidth="1.6" />
+            <span className="text-sm text-[#2c2c2c] font-medium">
+              Actualizaciones gratuitas
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
