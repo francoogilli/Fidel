@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import ArrowUpIcon from "../icons/arrow-up";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
+import GradientLine from "./gradientLine";
 
 interface Props {
   viewComparison?: boolean;
@@ -43,6 +44,7 @@ export default function PricingCard({ viewComparison }: Props) {
       ) : (
         <>
           <div className="flex justify-center items-center gap-x-2.5">
+            <GradientLine direction="left" />
             <ThreeStripesLeft />
             <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
               <CreditCardIcon className="size-4 md:size-5 text-[#f5f5f5]" />
@@ -54,6 +56,7 @@ export default function PricingCard({ viewComparison }: Props) {
               </h2>
             </div>
             <ThreeStripesRight />
+            <GradientLine direction="right" />
           </div>
           <h3
             className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
