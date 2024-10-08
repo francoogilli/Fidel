@@ -153,7 +153,7 @@ export default function PricingCard({ viewComparison }: Props) {
           <ThreeStripesRight />
           <GradientLine from="#5b5b5b" direction="right" />
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-x-2">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2">
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
             <ThunderIcon className="size-6" strokeWidth="1.5" />
             <span className="text-sm text-[#2c2c2c] font-medium">
@@ -163,7 +163,7 @@ export default function PricingCard({ viewComparison }: Props) {
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
             <StonksIcon className="size-6" strokeWidth="1.7" />
             <span className="text-sm text-[#2c2c2c] font-medium">
-              Sin límite de ventas.
+              Ventas sin límites
             </span>
           </div>
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
@@ -181,7 +181,7 @@ export default function PricingCard({ viewComparison }: Props) {
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
             <AdvantagesIcon className="size-6" strokeWidth="1.6" />
             <span className="text-sm text-[#2c2c2c] font-medium">
-              Actualizaciones gratuitas
+              Actualizaciones
             </span>
           </div>
         </div>
