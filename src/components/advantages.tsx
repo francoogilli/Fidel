@@ -9,11 +9,13 @@ import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import { TruckDeliveryIcon } from "../icons/truck-delivery";
 import UsersIcon from "../icons/users";
+import GradientLine from "./gradientLine";
 
 export default function Advantages() {
   return (
     <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
-      <div className="flex justify-center items-center gap-x-2.5 pt-20">
+      <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
+        <GradientLine direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <AdvantagesIcon className="size-4 text-[#f5f5f5]" />
@@ -25,6 +27,7 @@ export default function Advantages() {
           </h2>
         </div>
         <ThreeStripesRight />
+        <GradientLine direction="right" />
       </div>
       <div className="flex mx-auto justify-center items-center">
         <h3
