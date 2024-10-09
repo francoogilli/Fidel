@@ -87,7 +87,7 @@ export default function PricingCard({ viewComparison }: Props) {
             className="flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]"
             key={pricing.name}
           >
-            <div className="bg-[#F8FAFC] border-b border-[#e5e5e5] -mx-6 -mt-4 rounded-t-3xl p-6">
+            <div className="bg-[#f8fcfa] border-b border-[#e5e5e5] -mx-6 -mt-4 rounded-t-3xl p-6">
               <h3 className="text-xl text-left font-semibold text-[#212121]">
                 {pricing.name}
               </h3>
