@@ -324,7 +324,7 @@ export const pricingComparison: PricingCardProps[] = [
 export const pricingData: PricingCardProps[] = [
   {
     name: "Básico",
-    price: 30000,
+    price: 37000,
     bestOption: "monotributistas",
     benefits: [
       {
@@ -366,7 +366,7 @@ export const pricingData: PricingCardProps[] = [
   },
   {
     name: "Inicial",
-    price: 41000,
+    price: 50000,
     bestOption: "negocios locales",
     benefits: [
       {
@@ -408,7 +408,7 @@ export const pricingData: PricingCardProps[] = [
   },
   {
     name: "Intermedio",
-    price: 56000,
+    price: 68000,
     bestOption: "pequeñas y medianas empresas",
     benefits: [
       {
@@ -450,7 +450,7 @@ export const pricingData: PricingCardProps[] = [
   },
   {
     name: "Avanzado",
-    price: 72000,
+    price: 88000,
     bestOption: "grandes empresas",
     benefits: [
       {
