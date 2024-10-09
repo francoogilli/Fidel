@@ -1,7 +1,6 @@
 import React from "react";
 import Check from "../icons/checkIcon";
 import CreditCardIcon from "../icons/creditCard";
-import Cross from "../icons/cross";
 import InfoCircle from "../icons/infoCircle";
 import Tooltip from "./tooltip";
 import { pricingData } from "../data/data";
@@ -82,41 +81,57 @@ export default function PricingCard({ viewComparison }: Props) {
           </h4>
         </>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {pricingData.map((pricing) => (
           <div
-            className="flex flex-col p-6 text-center rounded-3xl border border-[#ededed]"
+            className="flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]"
             key={pricing.name}
           >
-            <h3 className="text-3xl text-left font-semibold text-[#212121]">
-              {pricing.name}
-            </h3>
-            <p className="font-light text-zinc-500 text-[10px] sm:text-xs text-left">
-              Para {pricing.bestOption}
-            </p>
-            <div className="flex justify-start text-left text-[#212121] items-baseline my-5">
-              <span className="text-5xl font-semibold">
-                ${Number(pricing.price).toLocaleString("en-US")}
-              </span>
-              <span className="font-light text-zinc-500 sm:text-xs text-left">
-                /mes
-              </span>
+            <div className="bg-[#F8FAFC] border-b border-[#e5e5e5] -mx-6 -mt-4 rounded-t-3xl p-6">
+              <h3 className="text-xl text-left font-semibold text-[#212121]">
+                {pricing.name}
+              </h3>
+              <div className="flex justify-start text-left text-[#212121] items-baseline my-3">
+                <span className="text-5xl font-semibold">
+                  ${Number(pricing.price).toLocaleString("en-US")}
+                </span>
+                <span className="font-semibold text-[#454545] sm:text-xs text-left">
+                  /mes
+                </span>
+              </div>
+              <h5 className="text-sm font-medium text-left text-[#212121] pb-3.5">
+                Para {pricing.bestOption}
+              </h5>
+              <a
+                href="/"
+                style={{ fontFamily: "Satoshi" }}
+                className="flex justify-center tracking-wide items-center gap-x-1 bg-gradient-to-tr from-[#000000ef] to-[#383838ee] text-[#fff] font-medium rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#F8FAFC] hover:border-[#e0e0e0] transition-all duration-700"
+              >
+                Elegir
+              </a>
             </div>
-            <hr className="flex-grow border-t border-zinc-200 mb-5" />
-            <p className="font-light text-zinc-500 sm:text-xs text-left pb-3">
-              ¿Qué incluye?
+
+            {/* <hr className="flex-grow border-t border-zinc-200 mb-5" /> */}
+            <p className="font-medium text-[#343434] sm:text-sm text-left pb-3 pt-3">
+              Incluye
             </p>
-            <ul role="list" className="mb-7 space-y-2.5 text-left">
+            <ul role="list" className="mb-5 space-y-2.5 text-left">
               {pricing.benefits.map((benefit, index) => (
                 <React.Fragment key={index}>
                   <li className="flex items-center space-x-2 justify-between">
                     <div className="flex items-center space-x-2">
                       {benefit.active ? (
-                        <Check className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-md p-1" />
+                        <Check className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-full p-1" />
                       ) : (
-                        <Cross />
+                        <Check className="bg-gradient-to-tr from-[#f5f5f5] to-[#ffffff] rounded-full p-1" />
                       )}
-                      <span className="text-sm">{benefit.text}</span>
+                      <span
+                        className={`text-sm ${
+                          !benefit.active ? "line-through text-zinc-900" : ""
+                        }`}
+                      >
+                        {benefit.text}
+                      </span>
                     </div>
                     {benefit.tooltipInfo && (
                       <Tooltip text={benefit.tooltipInfo} hideOnSmallScreens>
@@ -125,60 +140,53 @@ export default function PricingCard({ viewComparison }: Props) {
                     )}
                   </li>
                   {index < pricing.benefits.length - 1 && (
-                    <hr className="border-t border-zinc-100" />
+                    <hr className="border-t border-white" />
                   )}
                 </React.Fragment>
               ))}
             </ul>
-            <a
-              href="/"
-              style={{ fontFamily: "Satoshi" }}
-              className="flex justify-center tracking-wide items-center gap-x-1 bg-[#74fc72] text-[#2d2d2d] font-semibold rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#fff] hover:border-[#d9fed8] transition-all duration-700"
-            >
-              Elegir
-            </a>
           </div>
         ))}
       </div>
       <div className="animation-1">
         <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-8">
-          <GradientLine from="#5b5b5b" direction="left" />
+          <GradientLine from="#f8f8f8" direction="left" />
           <ThreeStripesLeft />
           <h4
             className="text-lg px-5 text-[#4e4e4e] font-semibold"
             style={{ fontFamily: "Satoshi" }}
           >
-            Incluido en todos los planes
+            Por defecto en todos los planes
           </h4>
           <ThreeStripesRight />
-          <GradientLine from="#5b5b5b" direction="right" />
+          <GradientLine from="#f8f8f8" direction="right" />
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2">
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
             <ThunderIcon className="size-6" strokeWidth="1.5" />
             <span className="text-sm text-[#2c2c2c] font-medium">
               Atención al cliente
             </span>
           </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
             <StonksIcon className="size-6" strokeWidth="1.7" />
             <span className="text-sm text-[#2c2c2c] font-medium">
               Ventas sin límites
             </span>
           </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
             <ChartIcon className="size-6" strokeWidth="1.7" />
             <span className="text-sm text-[#2c2c2c] font-medium">
               Analítica básica
             </span>
           </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
             <ModulesIcon className="size-6" strokeWidth="1.6" />
             <span className="text-sm text-[#2c2c2c] font-medium">
               Clientes, Ventas y Productos
             </span>
           </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-full">
+          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
             <AdvantagesIcon className="size-6" strokeWidth="1.6" />
             <span className="text-sm text-[#2c2c2c] font-medium">
               Actualizaciones
