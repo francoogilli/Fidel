@@ -200,7 +200,7 @@ export const pricingComparison: PricingCardProps[] = [
   {
     name: "Intermedio",
     price: 18500,
-    bestOption: "pequeñas y medianas empresas",
+    bestOption: "pequeñas/medianas empresas",
     benefits: [
       {
         text: "Asesoría prioritaria",
