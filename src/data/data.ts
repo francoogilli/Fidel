@@ -450,7 +450,7 @@ export const pricingData: PricingCardProps[] = [
   },
   {
     name: "Avanzado",
-    price: 88000,
+    price: 88000, 
     bestOption: "grandes empresas",
     benefits: [
       {
