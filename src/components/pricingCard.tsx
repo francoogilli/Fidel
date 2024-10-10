@@ -121,7 +121,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   <li className="flex items-center space-x-2 justify-between">
                     <div className="flex items-center space-x-2">
                       {benefit.active ? (
-                        <Check className="bg-gradient-to-b from-[#b7ff33] to-[#dbff99] rounded-full p-1" />
+                        <Check className="bg-gradient-to-b from-[#63ff33] to-[#b3ff99] rounded-full p-1" />
                       ) : (
                         <Check className="bg-gradient-to-tr from-[#f5f5f5] to-[#ffffff] rounded-full p-1" />
                       )}

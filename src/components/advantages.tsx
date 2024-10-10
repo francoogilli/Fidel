@@ -53,7 +53,7 @@ export default function Advantages() {
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3.5 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
             <ShoppingCartIcon className="size-10" />
           </div>
           <h4
@@ -71,7 +71,7 @@ export default function Advantages() {
         </div>
 
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3.5 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
             <ShoppingBagIcon className="size-10" />
           </div>
           <h4
@@ -88,7 +88,7 @@ export default function Advantages() {
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3.5 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
             <UsersIcon className="size-10" />
           </div>
           <h4
@@ -105,7 +105,7 @@ export default function Advantages() {
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3 flex justify-center items-center mb-2">
             <PackageIcon className="size-11" />
           </div>
           <h4
@@ -122,7 +122,7 @@ export default function Advantages() {
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3.5 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
             <CashIcon className="size-10" />
           </div>
           <h4
@@ -139,7 +139,7 @@ export default function Advantages() {
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3.5 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
             <ChartIcon className="size-10" />
           </div>
           <h4
@@ -156,7 +156,7 @@ export default function Advantages() {
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3.5 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
             <ReceiptIcon className="size-10" />
           </div>
           <h4
@@ -173,7 +173,7 @@ export default function Advantages() {
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#d2f88a] to-[#eeffcf] rounded-full p-3.5 flex justify-center items-center mb-2">
+          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
             <TruckDeliveryIcon className="size-10 ml-0.5" />
           </div>
           <h4
