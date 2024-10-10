@@ -9,9 +9,9 @@ import ThreeStripesLeft from "../icons/threeStripesLeft";
 import GradientLine from "./gradientLine";
 import ThunderIcon from "../icons/thunder";
 import AdvantagesIcon from "../icons/advantages";
-import ChartIcon from "../icons/chart";
 import StonksIcon from "../icons/stonks";
 import ModulesIcon from "../icons/modules";
+import CashIcon from "../icons/cash";
 
 interface Props {
   viewComparison?: boolean;
@@ -176,15 +176,15 @@ export default function PricingCard({ viewComparison }: Props) {
             </span>
           </div>
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
-            <ChartIcon className="size-6" strokeWidth="1.7" />
+            <CashIcon className="size-6" strokeWidth="1.7" />
             <span className="text-sm text-[#2c2c2c] font-medium">
-              Analítica básica
+              Caja y Ventas
             </span>
           </div>
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
             <ModulesIcon className="size-6" strokeWidth="1.6" />
             <span className="text-sm text-[#2c2c2c] font-medium">
-              Clientes, Ventas y Productos
+              Clientes y Productos
             </span>
           </div>
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
