@@ -152,17 +152,12 @@ export default function PricingCard({ viewComparison }: Props) {
         <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-8">
           <GradientLine from="#f8f8f8" direction="left" />
           <ThreeStripesLeft />
+
           <h4
-            className="hidden md:block text-lg px-5 text-[#4e4e4e] font-semibold"
+            className="text-lg px-5 text-[#4e4e4e] font-semibold"
             style={{ fontFamily: "Satoshi" }}
           >
-            Por defecto en todos los planes
-          </h4>
-          <h4
-            className="md:hidden text-lg px-5 text-[#4e4e4e] font-semibold"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Incluido en todos los planes
+            Todos los planes incluyen
           </h4>
           <ThreeStripesRight />
           <GradientLine from="#f8f8f8" direction="right" />
