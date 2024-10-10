@@ -109,19 +109,19 @@ export default function Mobile() {
           </div>
           <div className="pt-0 md:pt-5 space-y-2">
             <div className="col-span-1 bg-[#fdfdfd] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-3xl p-3">
-              <div className="bg-[#DBFF99] rounded-full p-1 border border-[#e6eee6]">
+              <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] rounded-full p-1 border border-[#e6eee6]">
                 <CheckIcon className="size-6" />
               </div>
               Acceso en cualquier lugar y en cualquier momento.
             </div>
             <div className="col-span-1 bg-[#fdfdfd] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-3xl p-3">
-              <div className="bg-[#DBFF99] rounded-full p-1 border border-[#e6eee6]">
+              <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] rounded-full p-1 border border-[#e6eee6]">
                 <CheckIcon className="size-6" />
               </div>
               Visualiza todos tus datos o información en tiempo real.
             </div>
             <div className="col-span-1 bg-[#fdfdfd] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-3xl p-3">
-              <div className="bg-[#DBFF99] rounded-full p-1 border border-[#e6eee6]">
+              <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] rounded-full p-1 border border-[#e6eee6]">
                 <CheckIcon className="size-6" />
               </div>
               Realiza pedidos directamente desde cualquier lugar
