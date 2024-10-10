@@ -8,10 +8,10 @@ import ThreeStripesRight from "../icons/threeStripesRight";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import GradientLine from "./gradientLine";
 import ThunderIcon from "../icons/thunder";
-import AdvantagesIcon from "../icons/advantages";
 import StonksIcon from "../icons/stonks";
 import ModulesIcon from "../icons/modules";
 import CashIcon from "../icons/cash";
+import CalendarIcon from "../icons/calendar";
 
 interface Props {
   viewComparison?: boolean;
@@ -188,7 +188,7 @@ export default function PricingCard({ viewComparison }: Props) {
             </span>
           </div>
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
-            <AdvantagesIcon className="size-6" strokeWidth="1.6" />
+            <CalendarIcon className="size-6" strokeWidth="1.6" />
             <span className="text-sm text-[#2c2c2c] font-medium">
               Actualizaciones
             </span>
