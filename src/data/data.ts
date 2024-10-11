@@ -591,10 +591,9 @@ export const termsData = {
 
 export const navLinks = [
   { href: "/", label: "Inicio" },
-  { href: "/plans", label: "Planes" },
-  { href: "#services", label: "Producto" },
-  { href: "#download", label: "About us" },
-  { href: "#story", label: "Contacto" },
+  { href: "/precios", label: "Precios" },
+  { href: "/funcionalidades", label: "Funcionalidades" },
+  { href: "/contacto", label: "Contacto" },
 ];
 
 export const headerData = {
