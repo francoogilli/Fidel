@@ -2,7 +2,7 @@ interface CalendarIconProps {
     className?: string;
     strokeWidth?: string;
   }
-  export default function CalendarIcon({ className, strokeWidth }: CalendarIconProps) {
+  export default function CalendarIcon({ className, strokeWidth="2" }: CalendarIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
