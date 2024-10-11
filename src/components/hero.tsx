@@ -17,8 +17,8 @@ export default function Hero() {
       <div className="absolute top-28 left-0 right-0 flex justify-center">
         <div className="text-sm font-medium bg-gradient-to-br from-[#fefffd] to-[#F8F9FA] border border-[#e6eee6] pr-2.5 mb-0 md:mb-0 lg:mb-10 inline-block rounded-3xl">
           <div className="flex justify-center items-center text-xs text-[#1f1f1f] gap-x-2 p-[3px]">
-            <div className="bg-gradient-to-r p-1.5 from-[#D9FF93] to-[#B9FF38] rounded-full">
-              <CalendarIcon className="size-[17px]" />
+            <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] p-1.5 rounded-full">
+              <CalendarIcon className="size-[17px]" strokeWidth="2" />
             </div>
             ¡Novedades cada dos semanas!
           </div>
