@@ -88,18 +88,18 @@ export default function PricingCard({ viewComparison }: Props) {
             key={pricing.name}
           >
             <div className="bg-[#f8fcfa] border-b border-[#e5e5e5] -mx-6 -mt-4 rounded-t-3xl p-6">
-              <h3 className="text-xl text-left font-semibold text-[#212121]">
+              <h3 className="text-lg text-left font-semibold text-[#212121]" style={{ fontFamily: "Satoshi" }}>
                 {pricing.name}
               </h3>
               <div className="flex justify-start text-left text-[#212121] items-baseline my-3">
-                <span className="text-5xl font-semibold">
+                <span className="text-5xl font-semibold" style={{ fontFamily: "Satoshi" }}>
                   ${Number(pricing.price).toLocaleString("en-US")}
                 </span>
-                <span className="font-semibold text-[#454545] sm:text-xs text-left">
+                <span className="font-semibold text-[#454545] sm:text-xs text-left" style={{ fontFamily: "Satoshi" }}>
                   /mes
                 </span>
               </div>
-              <h5 className="text-sm font-medium text-left text-[#212121] pb-3.5">
+              <h5 className="text-sm font-medium text-left text-[#212121] pb-3.5" style={{ fontFamily: "Satoshi" }}>
                 Para {pricing.bestOption}
               </h5>
               <a
