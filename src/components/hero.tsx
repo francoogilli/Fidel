@@ -4,7 +4,6 @@ import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
 import PlayIcon from "../icons/play";
 import Modal from "./modal";
-import CalendarIcon from "../icons/calendar";
 
 export default function Hero() {
   const [isModalOpen, setModalOpen] = useState(false);
