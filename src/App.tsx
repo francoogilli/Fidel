@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import ScrollToTop from "./components/scrollTop";
 import FullScreenSpinner from "./components/spinner";
+import Contact from "./pages/Contact";
 
 const Home = lazy(() => import("./pages/Home"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/precios" element={<Plans />} />
+          <Route path="/contacto" element={<Contact />} />
         </Routes>
       </Suspense>
       <Footer />

@@ -2,11 +2,14 @@ import MailIcon from "../icons/email";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
-
-export default function Contact() {
+interface Props {
+  viewPage?: boolean;
+}
+export default function ContactSection({ viewPage }: Props) {
   return (
     <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
-      <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
+      {!viewPage ? (
+        <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine weight="1.5px" direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
@@ -21,6 +24,7 @@ export default function Contact() {
         <ThreeStripesRight />
         <GradientLine weight="1.5px" direction="right" />
       </div>
+      ): <div className="pt-10"></div>}
       <h3
         className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight"
         style={{ fontFamily: "Satoshi" }}

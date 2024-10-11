@@ -70,7 +70,7 @@ export default function Header() {
             </div>
           )}
         </div>
-        <div className="mx-auto hidden h-[58px] w-full items-center justify-between transition duration-500 ease-in-out md:flex">
+        <div className="mx-auto hidden pt-1 h-[58px] w-full items-center justify-between transition duration-500 ease-in-out md:flex">
           <div className="flex lg:w-[225px]">
             <a
               href="/"
@@ -86,7 +86,8 @@ export default function Header() {
             <ul className="flex items-center text-[13px] font-medium">
               {navLinks.map((link) => (
                 <Link key={link.href} to={link.href}>
-                  <li className="hover:bg-[#00000007] transition duration-300 cursor-pointer border border-none hover:border-[#e7e7e7] px-5 py-2 rounded-lg">
+                  <li className="hover:bg-[#00000007] flex justify-center items-center gap-x-1.5 transition duration-300 cursor-pointer border border-none hover:border-[#e7e7e7] px-5 py-2 rounded-xl">
+                    {link.icon && <link.icon className="w-4 pb-0.5" strokeWidth="1.6" />}
                     {link.label}
                   </li>
                 </Link>

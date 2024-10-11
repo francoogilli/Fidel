@@ -9,6 +9,10 @@ import FileImportIcon from "../icons/file-import";
 import ScreenIcon from "../icons/screen";
 import CloudIcon from "../icons/cloud";
 import HelpIcon from "../icons/help";
+import HomeIcon from "../icons/home";
+import CoinIcon from "../icons/coin";
+import MailIcon from "../icons/email";
+import FunctionalitiesIcon from "../icons/functionalities";
 
 export interface AccordionItem {
   id: number;
@@ -590,10 +594,10 @@ export const termsData = {
 };
 
 export const navLinks = [
-  { href: "/", label: "Inicio" },
-  { href: "/precios", label: "Precios" },
-  { href: "/funcionalidades", label: "Funcionalidades" },
-  { href: "/contacto", label: "Contacto" },
+  { href: "/", label: "Inicio", icon:HomeIcon },
+  { href: "/funcionalidades", label: "Funcionalidades", icon:FunctionalitiesIcon },
+  { href: "/precios", label: "Precios", icon:CoinIcon },
+  { href: "/contacto", label: "Contacto", icon:MailIcon },
 ];
 
 export const headerData = {
