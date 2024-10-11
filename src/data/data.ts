@@ -504,7 +504,7 @@ export const socialLinks = [
 
 export const footerLinks = [
   {
-    title: "Paginas",
+    title: "Secciones",
     links: [
       { text: "Inicio", href: "" },
       { text: "Funcionalidades", href: "/funcionalidades" },
