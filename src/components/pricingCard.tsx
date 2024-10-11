@@ -54,7 +54,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
                 style={{ fontFamily: "Satoshi" }}
               >
-                Planes
+                Precios
               </h2>
             </div>
             <ThreeStripesRight />
@@ -64,7 +64,7 @@ export default function PricingCard({ viewComparison }: Props) {
             className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
             style={{ fontFamily: "Satoshi" }}
           >
-            Precios que tienen
+            Planes que tienen
             <span
               className="italic text-4xl md:text-[3.25rem] tracking-wide"
               style={{ fontFamily: "instrument-serif" }}
