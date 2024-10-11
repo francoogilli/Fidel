@@ -81,10 +81,10 @@ export default function Advantages() {
             Compras
           </h4>
           <h6
-            className="text-lg px-5 font-medium text-[#777777] text-center"
+            className="text-base px-5 font-medium text-[#777777] text-center"
             style={{ fontFamily: "Satoshi" }}
           >
-             Automate repetitive tasks effortlessly.
+             Gestiona facturas, pagos y órdenes de pago.
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
@@ -123,7 +123,7 @@ export default function Advantages() {
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
           <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <CashIcon className="size-10" />
+            <CashIcon className="size-10" strokeWidth="2" />
           </div>
           <h4
             className="text-2xl pt-3 pb-3 font-semibold text-center"
@@ -132,10 +132,10 @@ export default function Advantages() {
             Caja
           </h4>
           <h6
-            className="text-lg px-5 font-medium text-[#777777] text-center"
+            className="text-base px-5 font-medium text-[#777777] text-center"
             style={{ fontFamily: "Satoshi" }}
           >
-            Automate repetitive tasks effortlessly.
+            Gestión de movimientos y pagos del comercio.
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
@@ -149,10 +149,10 @@ export default function Advantages() {
             Estadisticas
           </h4>
           <h6
-            className="text-lg px-5 font-medium text-[#777777] text-center"
+            className="text-base px-5 font-medium text-[#777777] text-center"
             style={{ fontFamily: "Satoshi" }}
           >
-            Automate repetitive tasks effortlessly.
+            Visualiza tus métricas de ventas y compras.
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
@@ -183,10 +183,10 @@ export default function Advantages() {
             Pedidos
           </h4>
           <h6
-            className="text-lg px-5 font-medium text-[#777777] text-center"
+            className="text-base px-5 font-medium text-[#777777] text-center"
             style={{ fontFamily: "Satoshi" }}
           >
-            Automate repetitive tasks effortlessly.
+            Gestión de pedidos, desde confección hasta facturación.
           </h6>
         </div>
       </div>
