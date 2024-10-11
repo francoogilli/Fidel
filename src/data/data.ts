@@ -504,22 +504,12 @@ export const socialLinks = [
 
 export const footerLinks = [
   {
-    title: "Home",
+    title: "Paginas",
     links: [
-      { text: "Product Features", href: "#link1" },
-      { text: "Benefits", href: "#link2" },
-      { text: "How To Use", href: "#link3" },
-      { text: "Key Features", href: "#link4" },
-      { text: "Pricing", href: "#link5" },
-      { text: "Testimonials", href: "#link6" },
-    ],
-  },
-  {
-    title: "App",
-    links: [
-      { text: "Mobile App", href: "#link8" },
-      { text: "Desktop App", href: "#link9" },
-      { text: "How To Use", href: "#link10" },
+      { text: "Inicio", href: "" },
+      { text: "Funcionalidades", href: "/funcionalidades" },
+      { text: "Precios", href: "/precios" },
+      { text: "Contacto", href: "/contacto" },
     ],
   },
   {
@@ -527,8 +517,6 @@ export const footerLinks = [
     links: [
       { text: "Home", href: "#link11" },
       { text: "App", href: "#link12" },
-      { text: "Blogs", href: "#link13" },
-      { text: "Blogs Open", href: "#link14" },
       { text: "Contact", href: "#link15" },
       { text: "Privacy Policy", href: "#link16" },
     ],
