@@ -20,7 +20,7 @@ const FeatureItem: React.FC<{ icon: React.ReactNode; text: string }> = ({
   </li>
 );
 
-const LogoCarousel: React.FC = () => {
+const CarouselInfinite: React.FC = () => {
   const logosRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
@@ -87,4 +87,4 @@ const LogoCarousel: React.FC = () => {
   );
 };
 
-export default LogoCarousel;
+export default CarouselInfinite;

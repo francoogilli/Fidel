@@ -4,7 +4,7 @@ import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
 import PlayIcon from "../icons/play";
 import Modal from "./modal";
-import Prueba from "./prueba";
+import CarouselInfinite from "./carouselInfinite";
 
 export default function Hero() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -102,7 +102,7 @@ export default function Hero() {
       >
         Conoce nuestras funcionalidades
       </h4>
-      <Prueba />
+      <CarouselInfinite />
     </>
   );
 }
