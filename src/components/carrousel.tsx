@@ -91,7 +91,7 @@ export default function Carousel({
         onClick={handlePrev}
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none"
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#a7faa5] group-hover:bg-[#79f277] duration-200 focus:ring-4 focus:ring-white">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#1f1f1f] group-hover:bg-[#464646] duration-200 focus:ring-4 focus:ring-white">
           <ChevronIconLeft className="size-5 text-white" />
           <span className="sr-only">Previous</span>
         </span>
@@ -101,7 +101,7 @@ export default function Carousel({
         onClick={handleNext}
         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none"
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#a7faa5] group-hover:bg-[#79f277] duration-200 focus:ring-4 focus:ring-white">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#1f1f1f] group-hover:bg-[#464646] duration-200 focus:ring-4 focus:ring-white">
           <ChevronIcon className="size-5 text-white" />
           <span className="sr-only">Next</span>
         </span>

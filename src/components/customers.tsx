@@ -39,7 +39,7 @@ export default function Customers() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 pt-5">
-        <div className="md:col-span-5 col-span-12 order-2 md:order-1 border-[8px] border-[#a7faa5] hover:border-[#79f277] rounded-[1.8rem] duration-300">
+        <div className="md:col-span-5 col-span-12 order-2 md:order-1 border-[7px] border-[#a7faa5] hover:border-[#79f277] rounded-[1.8rem] duration-300">
           <Carousel onSlideChange={handleSlideChange} />
         </div>
         <div className="md:col-span-7 col-span-12 order-1 md:order-2 px-10">
