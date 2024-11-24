@@ -1,8 +1,9 @@
 interface ShoppingCartIconProps {
   className?: string;
+  strokeWidth?: string;
 }
 
-export default function ShoppingCartIcon({ className }: ShoppingCartIconProps) {
+export default function ShoppingCartIcon({ className, strokeWidth }: ShoppingCartIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +12,7 @@ export default function ShoppingCartIcon({ className }: ShoppingCartIconProps) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
+      stroke-width={strokeWidth}
       stroke-linecap="round"
       stroke-linejoin="round"
       className={className}

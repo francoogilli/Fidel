@@ -1,7 +1,8 @@
 interface UsersIconProps {
   className?: string;
+  strokeWidth?: string;
 }
-export default function UsersIcon({ className }: UsersIconProps) {
+export default function UsersIcon({ className, strokeWidth = "2.3" }: UsersIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +11,7 @@ export default function UsersIcon({ className }: UsersIconProps) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2.3"
+      stroke-width={strokeWidth}
       stroke-linecap="round"
       stroke-linejoin="round"
       className={className}

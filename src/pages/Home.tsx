@@ -8,6 +8,7 @@ import Mobile from "../components/mobile";
 import Integration from "../components/integration";
 import Advantages from "../components/advantages";
 import Customers from "../components/customers";
+import Functionalities from "../components/functionalities";
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <div className="backgroundImage"></div>
       <Hero />
       <Customers/>
+      <Functionalities />
       <PricingCard viewComparison />
       <Advantages />
       <Mobile />
