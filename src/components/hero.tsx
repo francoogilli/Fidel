@@ -96,7 +96,7 @@ export default function Hero() {
           videoUrl="https://www.youtube.com/embed/WO2b03Zdu4Q?autoplay=1"
         />
       </div>
-      <div className="md:py-6 pt-4">
+      <div className="md:py-7 pt-4">
         <h4
           className="text-center text-sm md:text-base font-medium text-[#1b1b1b] pb-4"
           style={{ fontFamily: "Satoshi" }}

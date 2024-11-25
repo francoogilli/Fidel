@@ -12,7 +12,7 @@ const FeatureItem: React.FC<{ icon: React.ReactNode; text: string }> = ({
   icon,
   text,
 }) => (
-  <li className="flex justify-center items-center p-[.4375rem] px-3 gap-x-1 bg-[#ffffff] border border-[#edeff3] rounded-xl">
+  <li className="flex justify-center items-center p-[.4375rem] px-3 gap-x-1 bg-[#ffffff] border border-[#edeff3] rounded-lg">
     {icon}
     <span className="md:text-sm text-xs text-gray-800 font-normal whitespace-nowrap">
       {text}
