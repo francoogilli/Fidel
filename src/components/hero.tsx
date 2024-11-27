@@ -84,7 +84,7 @@ export default function Hero() {
             onClick={openModal}
             className="absolute inset-0 flex justify-center mt-0 md:mt-11 items-center"
           >
-            <div className="bg-[#6fff6d] hover:bg-[#43fc40] border-[7px] border-[#dcffdb] hover:border-[#e6ffe6] p-4 rounded-full shadow-xl hover:shadow-2xl duration-500 transition-all">
+            <div className="bg-[#6fff6d] hover:bg-[#43fc40] border-[5px] border-[#dcffdb] hover:border-[#e6ffe6] p-4 rounded-full shadow-xl hover:shadow-2xl duration-500 transition-all">
               <PlayIcon className="size-8 md:size-12 pl-0.5 text-white" />
             </div>
           </button>
