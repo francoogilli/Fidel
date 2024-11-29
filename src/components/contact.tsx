@@ -62,7 +62,7 @@ export default function ContactSection({ viewPage }: Props) {
           <input
             type="text"
             className="border rounded-xl text-sm p-2.5 placeholder:text-sm placeholder:px-0.5"
-            placeholder="nombre@ejemplo.com"
+            placeholder="nombre@correo.com"
           />
         </div>
         <div className="flex flex-col">
