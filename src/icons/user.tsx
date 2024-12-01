@@ -1,8 +1,11 @@
-interface MailIconProps {
+interface UsersIconIndividualProps {
   className?: string;
   strokeWidth?: string;
 }
-export default function MailIcon({ className, strokeWidth = "2" }: MailIconProps) {
+export default function UsersIconIndividual({
+  className,
+  strokeWidth = "2.3",
+}: UsersIconIndividualProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,8 +20,8 @@ export default function MailIcon({ className, strokeWidth = "2" }: MailIconProps
       className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-      <path d="M3 7l9 6l9 -6" />
+      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+      <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
     </svg>
   );
 }
