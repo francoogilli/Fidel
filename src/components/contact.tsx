@@ -178,7 +178,7 @@ export default function ContactSection({ viewPage }: Props) {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.firstname}
-                  placeholder="Nombre completo"
+                  placeholder="Nombre y Apellido"
                 />
               </div>
               {errors.firstname && touched.firstname && (
