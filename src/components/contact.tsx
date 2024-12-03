@@ -173,7 +173,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <input
                   type="text"
-                  className="w-full bg-[#F9F9F9] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="firstname"
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -200,7 +200,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <input
                   type="text"
-                  className="w-full bg-[#F9F9F9] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="email"
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -227,7 +227,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <input
                   type="text"
-                  className="w-full bg-[#F9F9F9] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="phone"
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -255,7 +255,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <textarea
                   rows={4}
-                  className="w-full bg-[#F9F9F9] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="publicidad"
                   onChange={handleChange}
                   onBlur={handleBlur}
