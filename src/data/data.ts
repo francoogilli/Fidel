@@ -75,6 +75,7 @@ interface Benefit {
 
 interface PricingCardProps {
   name: string;
+  iconPro?:boolean;
   price: number;
   bestOption: string;
   benefits: Benefit[];
@@ -456,6 +457,7 @@ export const pricingData: PricingCardProps[] = [
     name: "Avanzado",
     price: 88000, 
     bestOption: "grandes empresas",
+    iconPro: true,
     benefits: [
       {
         text: "Asesoría personalizada",

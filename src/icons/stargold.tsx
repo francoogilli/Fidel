@@ -1,10 +1,31 @@
-export default function StargoldIcon() {
+interface Props {
+  className?: string;
+  strokeWidth?: string;
+}
+export default function StarGoldIcon({ className, strokeWidth = "2" }: Props) {
   return (
-    <svg width="17" height="16" fill="none" className="hover:scale-125 transition-transform duration-150" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 25 24"
+      fill="none"
+      className={className}
+      stroke-width={strokeWidth}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {" "}
       <path
-        d="m8.20765 12.6277 3.80415 2.3009c.6966.4216 1.5491-.2017 1.3658-.99l-1.0083-4.32673 3.3641-2.91501c.6142-.53167.2842-1.54-.5225-1.60417l-4.4275-.37583L9.05095.62853c-.3116-.7425-1.375-.7425-1.6866 0L5.63181 4.70769l-4.4275.37584C.397649 5.14769.0676492 6.15603.681809 6.68769L4.04598 9.60267 3.03765 13.9294c-.18334.7883.66916 1.4117 1.36583.99l3.80417-2.2917Z"
-        fill="#FFBC1B"
-      />
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M21.625 11.5155C17.265 10.3915 13.858 6.9845 12.734 2.6245L12.25 0.747498L11.766 2.6245C10.642 6.9845 7.23505 10.3915 2.87505 11.5155L0.998047 11.9995L2.87505 12.4845C7.23505 13.6085 10.642 17.0155 11.766 21.3745L12.25 23.2525L12.734 21.3745C13.858 17.0155 17.265 13.6085 21.625 12.4845L23.502 11.9995L21.625 11.5155Z"
+        fill="currentColor"
+      ></path>{" "}
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M19.0011 7.74691C19.0011 6.58491 20.2751 5.24791 21.5001 5.24791C20.3211 5.24791 19.0011 3.89691 19.0011 2.74991C19.0011 3.89691 17.6931 5.24791 16.5031 5.24791C17.6481 5.24791 19.0011 6.57791 19.0011 7.74691Z"
+        fill="currentColor"
+      ></path>{" "}
     </svg>
   );
 }
