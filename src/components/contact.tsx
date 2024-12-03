@@ -11,6 +11,7 @@ import UsersIconIndividual from "../icons/user";
 import PhoneIcon from "../icons/phone";
 import MessageIcon from "../icons/message";
 import CheckSquareIcon from "../icons/checkSquare";
+import DangerIcon from "../icons/danger";
 interface Props {
   viewPage?: boolean;
 }
@@ -24,6 +25,34 @@ const validationSchema = Yup.object({
 
 export default function ContactSection({ viewPage }: Props) {
   const [toastVisible, setToastVisible] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
+  const [toastType, setToastType] = useState<"success" | "warning" | "error">(
+    "success"
+  );
+
+  const toastConfig = {
+    success: {
+      icon: (
+        <CheckSquareIcon className="size-9 text-[#34ff30]" strokeWidth="1.8" />
+      ),
+      bgColor: "bg-gradient-to-tr from-[#1C1C1C] via-[#1C1C1C] to-[#404040]",
+      textColor: "text-[#f0f0f0]",
+    },
+    warning: {
+      icon: (
+        <DangerIcon className="size-9 text-[#fff86e]" strokeWidth="1.8" />
+      ),
+      bgColor: "bg-gradient-to-tr from-[#1C1C1C] via-[#1C1C1C] to-[#000]",
+      textColor: "text-[#f0f0f0]",
+    },
+    error: {
+      icon: (
+        <CheckSquareIcon className="size-9 text-[#ff3030]" strokeWidth="1.8" />
+      ),
+      bgColor: "bg-gradient-to-tr from-[#400000] via-[#400000] to-[#800000]",
+      textColor: "text-[#ffe6e6]",
+    },
+  };
   const [values] = useState<Contact>({
     firstname: "",
     email: "",
@@ -39,33 +68,41 @@ export default function ContactSection({ viewPage }: Props) {
         publicidad: values.publicidad,
       },
     };
+
     const result = await saveContact(body);
 
     if (result.success) {
-      console.log("Contacto creado con éxito:", result.data);
-      setToastVisible(true);
-      setTimeout(() => setToastVisible(false), 7000);
+      setToastType("success");
+      setToastMessage("Contacto creado con éxito.");
+    } else if (
+      result.error?.status === 409 &&
+      result.error?.category === "CONFLICT"
+    ) {
+      setToastType("warning");
+      setToastMessage("Ya hemos recibido tu mensaje.");
     } else {
-      console.error("Error al crear contacto:", result.error);
+      setToastType("error");
+      setToastMessage("Ocurrió un error inesperado.");
     }
+
+    setToastVisible(true);
+    setTimeout(() => setToastVisible(false), 7000);
   };
+
   return (
     <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
       {toastVisible && (
         <div
           id="toast-simple"
-          className="flex items-center w-full bg-gradient-to-tr from-[#1C1C1C] via-[#1C1C1C] to-[#404040] text-[#f0f0f0] max-w-xs p-2 space-x-4  divide-x  rounded-xl divide-[#c1c1c1]  fixed top-5 right-5 z-50"
+          className={`flex items-center w-full ${toastConfig[toastType].bgColor} ${toastConfig[toastType].textColor} max-w-xs p-2 space-x-4 divide-x rounded-xl divide-[#c1c1c1] fixed top-5 right-5 z-50`}
           role="alert"
         >
-          <CheckSquareIcon
-            className="size-9 text-[#34ff30]"
-            strokeWidth="1.8"
-          />
+          {toastConfig[toastType].icon}
           <div
             className="pl-4 text-sm font-semibold"
             style={{ fontFamily: "Satoshi" }}
           >
-            Mensaje enviado correctamente.
+            {toastMessage}
           </div>
         </div>
       )}

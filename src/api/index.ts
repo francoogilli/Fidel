@@ -8,7 +8,11 @@ const saveContact = async (
 ): Promise<{
   success: boolean;
   data?: any;
-  error?: string;
+  error?: {
+    status: number;
+    message: string;
+    category?: string;
+  };
 }> => {
   try {
     const response = await axios.post(
@@ -26,12 +30,19 @@ const saveContact = async (
       data: response.data,
     };
   } catch (error: any) {
-    const errorMessage =
+    const status = error.response?.status;
+    const message =
       error.response?.data?.message ||
       "Ocurrió un error al guardar el contacto.";
+    const category = error.response?.data?.category;
+
     return {
       success: false,
-      error: errorMessage,
+      error: {
+        status,
+        message,
+        category,
+      },
     };
   }
 };
