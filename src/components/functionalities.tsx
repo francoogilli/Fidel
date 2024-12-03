@@ -33,15 +33,15 @@ export default function Functionalities() {
           >
             {" "}
             todo
-          </span>
-          {" "} en un mismo lugar.
+          </span>{" "}
+          en un mismo lugar.
         </h3>
-        {/* <h4
+        <h4
           className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[21rem] mx-auto pb-0 md:pb-9"
           style={{ fontFamily: "Satoshi" }}
         >
-          Diseñamos nuestros precios para que se adapten a tu negocio.
-        </h4> */}
+          Todas las herramientas que necesitas, juntas en un solo lugar.
+        </h4>
       </>
     </>
   );
