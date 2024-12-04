@@ -21,7 +21,7 @@ export default function Customers() {
   };
 
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+    <div className="max-w-7xl mb-32 mx-auto px-4 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
