@@ -96,7 +96,7 @@ export default function Functionalities() {
           {items.slice(0, 3).map((item, index) => (
             <div
               key={index}
-              className="bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-500 rounded-2xl p-4 flex flex-col items-start"
+              className="bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start"
             >
               <img
                 src={item.imgSrc}
@@ -117,7 +117,7 @@ export default function Functionalities() {
           {items.slice(3, 5).map((item, index) => (
             <div
               key={index}
-              className="bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-500 rounded-2xl p-4 flex flex-col items-start"
+              className="bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start"
             >
               <img
                 src={item.imgSrc}
@@ -135,7 +135,7 @@ export default function Functionalities() {
 
         {/* Tercer Renglón: Primera Columna 3/4 */}
         <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
-          <div className="col-span-10 md:col-span-6 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-500 rounded-2xl p-4 flex flex-col items-start">
+          <div className="col-span-10 md:col-span-6 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
             <img
               src={items[5].imgSrc}
               className="w-full h-64 object-cover rounded-md"
@@ -147,7 +147,7 @@ export default function Functionalities() {
               {items[5].subtitle}
             </p>
           </div>
-          <div className="col-span-10 md:col-span-4 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-500 rounded-2xl p-4 flex flex-col items-start">
+          <div className="col-span-10 md:col-span-4 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
             <img
               src={items[6].imgSrc}
               className="w-full h-64 object-cover rounded-md"
@@ -163,7 +163,7 @@ export default function Functionalities() {
 
         {/* Cuarto Renglón: Segunda Columna 3/4 */}
         <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
-          <div className="col-span-10 md:col-span-4 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-500 rounded-2xl p-4 flex flex-col items-start">
+          <div className="col-span-10 md:col-span-4 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
             <img
               src={items[7].imgSrc}
               className="w-full h-64 object-cover rounded-md"
@@ -175,7 +175,7 @@ export default function Functionalities() {
               {items[7].subtitle}
             </p>
           </div>
-          <div className="col-span-10 md:col-span-6 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-500 rounded-2xl p-4 flex flex-col items-start">
+          <div className="col-span-10 md:col-span-6 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
             <img
               src={items[8].imgSrc}
               className="w-full h-64 object-cover rounded-md"
