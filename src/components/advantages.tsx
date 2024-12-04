@@ -11,6 +11,65 @@ import { TruckDeliveryIcon } from "../icons/truck-delivery";
 import UsersIcon from "../icons/users";
 import GradientLine from "./gradientLine";
 
+const cardsData = [
+  {
+    icon: <ShoppingCartIcon className="size-10" strokeWidth="2" />,
+    title: "Ventas",
+    description: "Facilita tus cobranzas y la creación de presupuestos.",
+  },
+  {
+    icon: <ShoppingBagIcon className="size-10" strokeWidth="2" />,
+    title: "Compras",
+    description: "Gestiona facturas, pagos y órdenes de pago.",
+  },
+  {
+    icon: <UsersIcon className="size-10" />,
+    title: "Clientes",
+    description: "Consulta el saldo de clientes y accede a datos y facturas.",
+  },
+  {
+    icon: <PackageIcon className="size-10" />,
+    title: "Productos",
+    description: "Consulta el precios, stock de productos y en diferentes listas.",
+  },
+  {
+    icon: <CashIcon className="size-10" strokeWidth="2" />,
+    title: "Caja",
+    description: "Gestión de movimientos y pagos del comercio.",
+  },
+  {
+    icon: <ChartIcon className="size-10" />,
+    title: "Estadisticas",
+    description: "Visualiza tus métricas de ventas y compras.",
+  },
+  {
+    icon: <ReceiptIcon className="size-10" />,
+    title: "Contabilidad",
+    description: "Controla el IVA y los reportes de Ingresos Brutos y Retenciones.",
+  },
+  {
+    icon: <TruckDeliveryIcon className="size-10 ml-0.5" />,
+    title: "Pedidos",
+    description: "Gestión de pedidos, desde confección hasta facturación.",
+  },
+];
+
+function AdvantageCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
+  return (
+    <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
+      <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
+        {icon}
+      </div>
+      <h4 className="text-2xl pt-3 pb-3 font-semibold text-center" style={{ fontFamily: "Satoshi" }}>
+        {title}
+      </h4>
+      <h6 className="text-base px-3 font-medium text-[#777777] text-center" style={{ fontFamily: "Satoshi" }}>
+        {description}
+      </h6>
+    </div>
+  );
+}
+
 export default function Advantages() {
   return (
     <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
@@ -19,10 +78,7 @@ export default function Advantages() {
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <AdvantagesIcon className="size-4 text-[#f5f5f5]" />
-          <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
-            style={{ fontFamily: "Satoshi" }}
-          >
+          <h2 className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]" style={{ fontFamily: "Satoshi" }}>
             Ventajas
           </h2>
         </div>
@@ -49,143 +105,9 @@ export default function Advantages() {
         crecer tu negocio y aprovechar al máximo tu emprendimiento.
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <ShoppingCartIcon className="size-10" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Ventas
-          </h4>
-          <h6
-            className="text-base px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Facilita tus cobranzas y la creación de presupuestos.
-          </h6>
-        </div>
-
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <ShoppingBagIcon className="size-10" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Compras
-          </h4>
-          <h6
-            className="text-base px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Gestiona facturas, pagos y órdenes de pago.
-          </h6>
-        </div>
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <UsersIcon className="size-10" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Clientes
-          </h4>
-          <h6
-            className="text-base px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Consulta el saldo de clientes y accede a datos y facturas.
-          </h6>
-        </div>
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3 flex justify-center items-center mb-2">
-            <PackageIcon className="size-11" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Productos
-          </h4>
-          <h6
-            className="text-base tracking-tight px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Consulta el precios, stock de productos y en diferentes listas.
-          </h6>
-        </div>
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <CashIcon className="size-10" strokeWidth="2" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Caja
-          </h4>
-          <h6
-            className="text-base px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Gestión de movimientos y pagos del comercio.
-          </h6>
-        </div>
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <ChartIcon className="size-10" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Estadisticas
-          </h4>
-          <h6
-            className="text-base px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Visualiza tus métricas de ventas y compras.
-          </h6>
-        </div>
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <ReceiptIcon className="size-10" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Contabilidad
-          </h4>
-          <h6
-            className="text-base tracking-tight px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Controla el IVA y los reportes de Ingresos Brutos y Retenciones.
-          </h6>
-        </div>
-        <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
-          <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
-            <TruckDeliveryIcon className="size-10 ml-0.5" />
-          </div>
-          <h4
-            className="text-2xl pt-3 pb-3 font-semibold text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Pedidos
-          </h4>
-          <h6
-            className="text-base px-5 font-medium text-[#777777] text-center"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Gestión de pedidos, desde confección hasta facturación.
-          </h6>
-        </div>
+        {cardsData.map((card, index) => (
+          <AdvantageCard key={index} icon={card.icon} title={card.title} description={card.description} />
+        ))}
       </div>
     </div>
   );
