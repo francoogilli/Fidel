@@ -28,10 +28,7 @@ export default function Mobile() {
           style={{ fontFamily: "Satoshi" }}
         >
           Maneja tu{" "}
-          <span
-            className="italic text-4xl md:text-[3.25rem] tracking-wide"
-            style={{ fontFamily: "instrument-serif" }}
-          >
+          <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
             negocio{" "}
           </span>
           desde tu celular
@@ -90,13 +87,7 @@ export default function Mobile() {
               style={{ fontFamily: "Satoshi" }}
             >
               Gestiona tu
-              <span
-                className="italic tracking-wide"
-                style={{ fontFamily: "instrument-serif" }}
-              >
-                {" "}
-                empresa{" "}
-              </span>
+              empresa
               desde donde vos quieras.
             </h3>
 

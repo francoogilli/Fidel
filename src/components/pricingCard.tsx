@@ -67,8 +67,7 @@ export default function PricingCard({ viewComparison }: Props) {
           >
             Planes que tienen
             <span
-              className="italic text-4xl md:text-[3.25rem] tracking-wide"
-              style={{ fontFamily: "instrument-serif" }}
+              className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent"
             >
               {" "}
               sentido.

@@ -32,10 +32,7 @@ export default function Integration() {
           style={{ fontFamily: "Satoshi" }}
         >
           Conecta fácil con tu
-          <span
-            className="italic text-4xl md:text-[3.25rem] tracking-wide"
-            style={{ fontFamily: "instrument-serif" }}
-          >
+          <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
             {" "}
             tienda online
           </span>
@@ -63,10 +60,8 @@ export default function Integration() {
               style={{ fontFamily: "Satoshi" }}
             >
               Descubri las
-              <span
-                className="italic tracking-wide"
-                style={{ fontFamily: "instrument-serif" }}
-              >
+              <span className="text-3xl md:text-5xl bg-gradient-to-r from-[#252525] to-[#323232] bg-clip-text text-transparent">
+
                 {" "}
                 integraciones{" "}
               </span>

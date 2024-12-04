@@ -35,10 +35,7 @@ export default function Advantages() {
           style={{ fontFamily: "Satoshi" }}
         >
           Aprovecha todas nuestras
-          <span
-            className="italic text-4xl md:text-[3.25rem] tracking-wide"
-            style={{ fontFamily: "instrument-serif" }}
-          >
+          <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
             {" "}
             ventajas{" "}
           </span>
@@ -84,7 +81,7 @@ export default function Advantages() {
             className="text-base px-5 font-medium text-[#777777] text-center"
             style={{ fontFamily: "Satoshi" }}
           >
-             Gestiona facturas, pagos y órdenes de pago.
+            Gestiona facturas, pagos y órdenes de pago.
           </h6>
         </div>
         <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
