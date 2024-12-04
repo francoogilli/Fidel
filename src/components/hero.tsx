@@ -78,7 +78,7 @@ export default function Hero() {
           <img
             src="/image.png"
             alt="Laptop"
-            className="md:border-[8px] border-[7px] border-[#a7faa5] md:mt-11 w-[100%] rounded-[2.5rem] transition-colors duration-300 group-hover:border-[#79f277]"
+            className="md:border-[7px] border-[7px] border-[#a7faa5] md:mt-11 w-[100%] rounded-[2.5rem] transition-colors duration-300 group-hover:border-[#79f277]"
           />
           <button
             onClick={openModal}
