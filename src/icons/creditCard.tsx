@@ -1,7 +1,11 @@
 interface CreditCardIconProps {
   className?: string;
+  strokeWidth?: string;
 }
-export default function CreditCardIcon({ className }: CreditCardIconProps) {
+export default function CreditCardIcon({
+  className,
+  strokeWidth = "2",
+}: CreditCardIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,13 +14,14 @@ export default function CreditCardIcon({ className }: CreditCardIconProps) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
+      stroke-width={strokeWidth}
       stroke-linecap="round"
       stroke-linejoin="round"
       className={className}
     >
-      <rect width="20" height="14" x="2" y="5" rx="2" />
-      <line x1="2" x2="22" y1="10" y2="10" />
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2" />
+      <path d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5" />
     </svg>
   );
 }
