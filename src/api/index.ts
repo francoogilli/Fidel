@@ -1,7 +1,8 @@
 import axios from "axios";
 import { PostRequest } from "./types";
 
-const token = import.meta.env.VITE_HUBSPOT_TOKEN;
+// const token = import.meta.env.VITE_HUBSPOT_TOKEN;
+const token = import.meta.env.HUBSPOT_TOKEN;
 
 const saveContact = async (
   body: PostRequest
