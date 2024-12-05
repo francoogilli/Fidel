@@ -10,9 +10,9 @@ import ScreenIcon from "../icons/screen";
 import CloudIcon from "../icons/cloud";
 import HelpIcon from "../icons/help";
 import HomeIcon from "../icons/home";
-import CoinIcon from "../icons/coin";
 import MailIcon from "../icons/email";
 import FunctionalitiesIcon from "../icons/functionalities";
+import CreditCardIcon from "../icons/creditCard";
 
 export interface AccordionItem {
   id: number;
@@ -586,7 +586,7 @@ export const termsData = {
 export const navLinks = [
   { href: "/", label: "Inicio", icon:HomeIcon },
   { href: "/funcionalidades", label: "Funcionalidades", icon:FunctionalitiesIcon },
-  { href: "/precios", label: "Precios", icon:CoinIcon },
+  { href: "/precios", label: "Precios", icon:CreditCardIcon },
   { href: "/contacto", label: "Contacto", icon:MailIcon },
 ];
 
