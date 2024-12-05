@@ -2,7 +2,6 @@ import axios from "axios";
 import { PostRequest } from "./types";
 
 const token = import.meta.env.VITE_HUBSPOT_TOKEN;
-// const token = import.meta.env.HUBSPOT_TOKEN;
 
 const saveContact = async (
   body: PostRequest
@@ -17,7 +16,7 @@ const saveContact = async (
 }> => {
   try {
     const response = await axios.post(
-      'https://api.hubapi.com/crm/v3/objects/contacts',
+      "/hubspot/crm/v3/objects/contacts",
       body,
       {
         headers: {
