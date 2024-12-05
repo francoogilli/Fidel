@@ -17,7 +17,7 @@ const saveContact = async (
 }> => {
   try {
     const response = await axios.post(
-      "/hubspot/crm/v3/objects/contacts",
+      'https://api.hubapi.com/crm/v3/objects/contacts',
       body,
       {
         headers: {
