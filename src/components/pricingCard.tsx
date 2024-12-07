@@ -87,7 +87,7 @@ export default function PricingCard({ viewComparison }: Props) {
             className="flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]"
             key={pricing.name}
           >
-            <div className="bg-[#f8fcfa] border-b border-[#e5e5e5] -mx-6 -mt-4 rounded-t-3xl p-6">
+            <div className="bg-[#f8fcfa] border-b border-[#e5e5e5] px-6 py-5 -mx-6 -mt-4 rounded-t-3xl">
               <div className="flex justify-start items-center space-x-2.5">
                 {pricing.iconPro && (
                   <StarGoldIcon className="size-5 md:size-6 text-[#efeb23]" />
