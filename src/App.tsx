@@ -6,6 +6,7 @@ import Header from "./components/header";
 import ScrollToTop from "./components/scrollTop";
 import FullScreenSpinner from "./components/spinner";
 import Contact from "./pages/Contact";
+import WhatsappButton from "./components/whatsappButton";
 
 const Home = lazy(() => import("./pages/Home"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
@@ -25,6 +26,7 @@ function App() {
         </Routes>
       </Suspense>
       <Footer />
+      <WhatsappButton/>
     </Router>
   );
 }
