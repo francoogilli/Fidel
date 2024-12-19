@@ -42,10 +42,10 @@ export const ModalScheduleMeet: React.FC = () => {
           {open && (
             <Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[600px]">
               <motion.div
-                className="flex-col overflow-hidden rounded-3xl p-3.5 border border-gray-3 bg-[#ffffff] sm:w-[600px]"
+                className="flex-col overflow-hidden rounded-3xl  border border-gray-3 bg-[#ffffff] sm:w-[600px]"
                 {...variants.content}
               >
-                <Dialog.Title className="text-lg text-center flex justify-center gap-x-2 items-center font-semibold mb-3">
+                <Dialog.Title className="text-lg text-center flex justify-center gap-x-2 items-center font-semibold my-4">
                   <CalendarIcon
                     className="size-5 text-[#2b2b2b]"
                     strokeWidth="2.2"
@@ -57,7 +57,6 @@ export const ModalScheduleMeet: React.FC = () => {
                   width="100%"
                   height="600px"
                   frameBorder="0"
-                  className="rounded-2xl border border-[#ececec]"
                   title="Calendly Embed"
                 ></iframe>
               </motion.div>
