@@ -1,6 +1,6 @@
 export default function Cross() {
   return (
-    <div className="bg-gradient-to-r from-[#f2f2f2] to-[#f2f2f2] rounded-md p-1 border border-[#eaeaea]">
+    <div className="bg-gradient-to-r from-[#f2f2f2] to-[#ffffff] rounded-full p-1 border border-[#eaeaea]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -8,7 +8,7 @@ export default function Cross() {
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        stroke-width="2"
+        stroke-width="2.5"
         stroke-linecap="round"
         stroke-linejoin="round"
         className="size-3"
