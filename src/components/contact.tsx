@@ -12,6 +12,7 @@ import PhoneIcon from "../icons/phone";
 import MessageIcon from "../icons/message";
 import CheckSquareIcon from "../icons/checkSquare";
 import DangerIcon from "../icons/danger";
+import { ModalScheduleMeet } from "./modalScheduleMeet";
 interface Props {
   viewPage?: boolean;
 }
@@ -39,9 +40,7 @@ export default function ContactSection({ viewPage }: Props) {
       textColor: "text-[#f0f0f0]",
     },
     warning: {
-      icon: (
-        <DangerIcon className="size-9 text-[#fff86e]" strokeWidth="1.8" />
-      ),
+      icon: <DangerIcon className="size-9 text-[#fff86e]" strokeWidth="1.8" />,
       bgColor: "bg-gradient-to-tr from-[#1C1C1C] via-[#1C1C1C] to-[#000]",
       textColor: "text-[#f0f0f0]",
     },
@@ -140,7 +139,7 @@ export default function ContactSection({ viewPage }: Props) {
         </span>
       </h3>
       <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[20rem] md:w-[45rem] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[20rem] md:w-[45rem] mx-auto pb-0 md:pb-4"
         style={{ fontFamily: "Satoshi" }}
       >
         <span className="hidden md:inline">
@@ -159,6 +158,9 @@ export default function ContactSection({ viewPage }: Props) {
       >
         {({ errors, touched, handleChange, handleBlur, values }) => (
           <Form className="flex flex-col mx-auto max-w-[45rem] pt-7 justify-center gap-y-5 px-4">
+            <div className="flex justify-center">
+              <ModalScheduleMeet />
+            </div>
             <div className="flex flex-col">
               <label className="text-xs font-medium mb-2.5">
                 Nombre y Apellido
@@ -269,13 +271,14 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
               )}
             </div>
-
-            <button
-              type="submit"
-              className="group flex justify-center items-center bg-[#abff98] hover:bg-[#9aff83] w-full text-[#000000]  text-sm font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
-            >
-              Enviar mensaje
-            </button>
+            <div className="flex justify-between mt-4">
+              <button
+                type="submit"
+                className="group flex justify-center items-center bg-[#abff98] hover:bg-[#87fa6d] w-full text-[#000000] text-sm font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
+              >
+                Enviar mensaje
+              </button>
+            </div>
           </Form>
         )}
       </Formik>
