@@ -12,6 +12,7 @@ import CashIcon from "../icons/cash";
 import CalendarIcon from "../icons/calendar";
 import StarGoldIcon from "../icons/stargold";
 import DoubleChevron from "../icons/doubleChevron";
+import Garabato from "../icons/garabato";
 
 interface Props {
   viewComparison?: boolean;
@@ -128,7 +129,10 @@ export default function PricingCard({ viewComparison }: Props) {
                   <li className="flex items-center space-x-2 justify-between">
                     <div className="flex items-center space-x-2">
                       {benefit.active ? (
-                        <Check strokeWidth="3" className="bg-gradient-to-b from-[#63ff33] to-[#b3ff99] rounded-[5px] p-1" />
+                        <Check
+                          strokeWidth="3"
+                          className="bg-gradient-to-b from-[#63ff33] to-[#b3ff99] rounded-[5px] p-1"
+                        />
                       ) : (
                         <Check className="bg-gradient-to-tr from-[#f5f5f5] to-[#ffffff] rounded-[5px] p-1" />
                       )}
@@ -207,14 +211,18 @@ export default function PricingCard({ viewComparison }: Props) {
           </div>
         </div>
       ) : (
-        <>
+        <div className="relative flex items-center justify-center">
           <h4
-            className="text-3xl mx-auto w-[20rem] md:w-[40rem] md:text-5xl font-bold text-center md:pt-14 pb-1 tracking-tight"
+            className="text-3xl mx-auto w-[32rem] md:w-[40rem] md:text-5xl font-bold text-center md:pt-14 pb-1 tracking-tight"
             style={{ fontFamily: "Satoshi" }}
           >
-            Compara y explora las características de cada plan
+            Compara y explora las características de cada plan.
           </h4>
-        </>
+          <Garabato
+            className="hidden md:block absolute top-10 right-[305px] size-16"
+            color="#61fd31"
+          />
+        </div>
       )}
     </div>
   );
