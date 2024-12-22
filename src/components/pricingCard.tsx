@@ -165,53 +165,64 @@ export default function PricingCard({ viewComparison }: Props) {
           </div>
         ))}
       </div>
-      <div className="animation-1">
-        <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-8">
-          <GradientLine from="#f8f8f8" direction="left" />
-          <ThreeStripesLeft />
+      {viewComparison ? (
+        <div className="animation-1">
+          <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-8">
+            <GradientLine from="#f8f8f8" direction="left" />
+            <ThreeStripesLeft />
 
+            <h4
+              className="text-lg px-5 text-[#4e4e4e] font-semibold"
+              style={{ fontFamily: "Satoshi" }}
+            >
+              Todos los planes incluyen
+            </h4>
+            <ThreeStripesRight />
+            <GradientLine from="#f8f8f8" direction="right" />
+          </div>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2">
+            <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
+              <ThunderIcon className="size-6" strokeWidth="1.5" />
+              <span className="text-sm text-[#2c2c2c] font-medium">
+                Atención al cliente
+              </span>
+            </div>
+            <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
+              <StonksIcon className="size-6" strokeWidth="1.7" />
+              <span className="text-sm text-[#2c2c2c] font-medium">
+                Ventas sin límites
+              </span>
+            </div>
+            <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
+              <CashIcon className="size-6" strokeWidth="1.7" />
+              <span className="text-sm text-[#2c2c2c] font-medium">
+                Caja y Ventas
+              </span>
+            </div>
+            <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
+              <ModulesIcon className="size-6" strokeWidth="1.6" />
+              <span className="text-sm text-[#2c2c2c] font-medium">
+                Clientes y Productos
+              </span>
+            </div>
+            <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
+              <CalendarIcon className="size-6" strokeWidth="1.6" />
+              <span className="text-sm text-[#2c2c2c] font-medium">
+                Actualizaciones
+              </span>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <>
           <h4
-            className="text-lg px-5 text-[#4e4e4e] font-semibold"
+            className="text-3xl mx-auto w-[20rem] md:w-[40rem] md:text-[3.2rem] md:leading-[1.05em] font-bold text-center md:pt-14 pb-1 tracking-tight"
             style={{ fontFamily: "Satoshi" }}
           >
-            Todos los planes incluyen
+            Compara y explora las características de cada plan
           </h4>
-          <ThreeStripesRight />
-          <GradientLine from="#f8f8f8" direction="right" />
-        </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2">
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
-            <ThunderIcon className="size-6" strokeWidth="1.5" />
-            <span className="text-sm text-[#2c2c2c] font-medium">
-              Atención al cliente
-            </span>
-          </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
-            <StonksIcon className="size-6" strokeWidth="1.7" />
-            <span className="text-sm text-[#2c2c2c] font-medium">
-              Ventas sin límites
-            </span>
-          </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
-            <CashIcon className="size-6" strokeWidth="1.7" />
-            <span className="text-sm text-[#2c2c2c] font-medium">
-              Caja y Ventas
-            </span>
-          </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
-            <ModulesIcon className="size-6" strokeWidth="1.6" />
-            <span className="text-sm text-[#2c2c2c] font-medium">
-              Clientes y Productos
-            </span>
-          </div>
-          <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 bg-[#F4F7F9] border border-[#dfdfdf] rounded-xl">
-            <CalendarIcon className="size-6" strokeWidth="1.6" />
-            <span className="text-sm text-[#2c2c2c] font-medium">
-              Actualizaciones
-            </span>
-          </div>
-        </div>
-      </div>
+        </>
+      )}
     </div>
   );
 }
