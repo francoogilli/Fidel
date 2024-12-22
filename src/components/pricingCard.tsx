@@ -95,7 +95,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   className="text-5xl font-semibold"
                   style={{ fontFamily: "Satoshi" }}
                 >
-                  ${Number(pricing.price).toLocaleString("en-US")}
+                  ${Number(pricing.price).toLocaleString("es-AR")}
                 </span>
                 <span
                   className="font-semibold text-[#454545] sm:text-xs text-left"
