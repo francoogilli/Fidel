@@ -1,8 +1,6 @@
 import React from "react";
 import Check from "../icons/checkIcon";
 import CreditCardIcon from "../icons/creditCard";
-import InfoCircle from "../icons/infoCircle";
-import Tooltip from "./tooltip";
 import { pricingData } from "../data/data";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
@@ -130,9 +128,9 @@ export default function PricingCard({ viewComparison }: Props) {
                   <li className="flex items-center space-x-2 justify-between">
                     <div className="flex items-center space-x-2">
                       {benefit.active ? (
-                        <Check className="bg-gradient-to-b from-[#63ff33] to-[#b3ff99] rounded-full p-1" />
+                        <Check strokeWidth="3" className="bg-gradient-to-b from-[#63ff33] to-[#b3ff99] rounded-[5px] p-1" />
                       ) : (
-                        <Check className="bg-gradient-to-tr from-[#f5f5f5] to-[#ffffff] rounded-full p-1" />
+                        <Check className="bg-gradient-to-tr from-[#f5f5f5] to-[#ffffff] rounded-[5px] p-1" />
                       )}
                       <span
                         className={`text-sm ${
@@ -142,11 +140,6 @@ export default function PricingCard({ viewComparison }: Props) {
                         {benefit.text}
                       </span>
                     </div>
-                    {benefit.tooltipInfo && (
-                      <Tooltip text={benefit.tooltipInfo} hideOnSmallScreens>
-                        <InfoCircle />
-                      </Tooltip>
-                    )}
                   </li>
                   {index < pricing.benefits.length - 1 && (
                     <hr className="border-t border-white" />

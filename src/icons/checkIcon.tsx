@@ -1,7 +1,8 @@
 interface CheckIconProps {
   className?: string;
+  strokeWidth?: string;
 }
-export default function Check({className}: CheckIconProps) {
+export default function Check({className, strokeWidth = "2.5"}: CheckIconProps) {
   return (
     <div className={className}>
       <svg
@@ -11,10 +12,10 @@ export default function Check({className}: CheckIconProps) {
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        stroke-width="2.5"
+        stroke-width={strokeWidth}
         stroke-linecap="round"
         stroke-linejoin="round"
-        className="size-3"
+        className="size-2.5"
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path d="M5 12l5 5l10 -10" />
