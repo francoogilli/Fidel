@@ -216,7 +216,7 @@ export default function PricingCard({ viewComparison }: Props) {
       ) : (
         <>
           <h4
-            className="text-3xl mx-auto w-[20rem] md:w-[40rem] md:text-[3.2rem] md:leading-[1.05em] font-bold text-center md:pt-14 pb-1 tracking-tight"
+            className="text-3xl mx-auto w-[20rem] md:w-[40rem] md:text-5xl font-bold text-center md:pt-14 pb-1 tracking-tight"
             style={{ fontFamily: "Satoshi" }}
           >
             Compara y explora las características de cada plan
