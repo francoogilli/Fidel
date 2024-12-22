@@ -220,7 +220,7 @@ export default function PricingCard({ viewComparison }: Props) {
           </h4>
           <Garabato
             className="hidden md:block absolute top-10 right-[305px] size-16"
-            color="#61fd31"
+            color="#c2ffb0"
           />
         </div>
       )}
