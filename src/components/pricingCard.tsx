@@ -13,6 +13,7 @@ import ModulesIcon from "../icons/modules";
 import CashIcon from "../icons/cash";
 import CalendarIcon from "../icons/calendar";
 import StarGoldIcon from "../icons/stargold";
+import DoubleChevron from "../icons/doubleChevron";
 
 interface Props {
   viewComparison?: boolean;
@@ -66,9 +67,7 @@ export default function PricingCard({ viewComparison }: Props) {
             style={{ fontFamily: "Satoshi" }}
           >
             Planes que tienen
-            <span
-              className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent"
-            >
+            <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
               {" "}
               sentido.
             </span>
@@ -114,18 +113,11 @@ export default function PricingCard({ viewComparison }: Props) {
                 </span>
               </div>
               <h5
-                className="text-sm font-medium text-left text-[#212121] pb-3.5"
+                className="text-sm font-medium text-left text-[#212121]"
                 style={{ fontFamily: "Satoshi" }}
               >
                 Para {pricing.bestOption}
               </h5>
-              <a
-                href="/"
-                style={{ fontFamily: "Satoshi" }}
-                className="flex justify-center tracking-wide items-center gap-x-1 bg-gradient-to-tr from-[#000000ef] to-[#383838ee] text-[#fff] font-medium rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#F8FAFC] hover:border-[#e0e0e0] transition-all duration-700"
-              >
-                Elegir
-              </a>
             </div>
 
             {/* <hr className="flex-grow border-t border-zinc-200 mb-5" /> */}
@@ -161,6 +153,14 @@ export default function PricingCard({ viewComparison }: Props) {
                   )}
                 </React.Fragment>
               ))}
+              <a
+                href="/"
+                style={{ fontFamily: "Satoshi", marginTop: "27px" }}
+                className="flex justify-center tracking-wide  items-center gap-x-1 bg-gradient-to-tr from-[#000000ef] to-[#383838ee] text-[#fff] font-medium rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#F8FAFC] hover:border-[#e0e0e0] transition-all duration-700"
+              >
+                Empezar
+                <DoubleChevron className="size-4" strokeWidth="2.2" />
+              </a>
             </ul>
           </div>
         ))}
