@@ -133,11 +133,11 @@ export default function PricingPrueba() {
               <div className="hidden lg:flex justify-center align-center w-full">
                 <button
                   style={{ fontFamily: "Satoshi" }}
-                  className={`flex justify-center tracking-wide items-center gap-x-1 bg-[#191919] hover:bg-[#232323] ${
+                  className={`flex justify-center tracking-wide items-center gap-x-1 ${
                     selectedPlanIndex === index
                       ? "bg-[#ffffff] text-[#232323]"
-                      : ""
-                  } hover:text-[#f5f5f5] text-[#f3f3f3] font-medium rounded-3xl text-sm px-5 py-2.5 text-center transition-all duration-200`}
+                      : "bg-[#191919] text-[#f3f3f3]"
+                  } font-medium rounded-3xl text-sm px-5 py-2.5 text-center transition-all duration-200`}
                 >
                   Empezar ahora
                   <DoubleChevron className="size-4" strokeWidth="2.2" />
