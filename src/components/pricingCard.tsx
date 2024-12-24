@@ -19,7 +19,7 @@ interface Props {
 }
 export default function PricingCard({ viewComparison }: Props) {
   return (
-    <div className="max-w-7xl mx-auto mt-32 mb-10 px-4 space-y-7">
+    <div className="max-w-7xl mx-auto mt-32 mb-0 md:mb-10 px-4 space-y-7">
       {!viewComparison ? (
         <>
           <h3
@@ -207,7 +207,7 @@ export default function PricingCard({ viewComparison }: Props) {
         <div className="relative flex items-center justify-center">
           <h4
             className="text-3xl mx-auto w-[32rem] md:w-[40rem] md:text-5xl font-bold text-center md:pt-14 pb-1 tracking-tight"
-            style={{ fontFamily: "Satoshi" }}
+            style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Compara y explora las características de cada plan.
           </h4>

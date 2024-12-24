@@ -98,6 +98,14 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('./assets/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
 body {
   background-color: #fff;
   font-family: 'Poppins', sans-serif;

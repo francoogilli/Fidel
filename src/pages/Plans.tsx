@@ -1,11 +1,11 @@
 import PricingCard from "../components/pricingCard";
-import PricingComparison from "../components/pricingComparision";
+import PricingPrueba from "../components/pricingPrueba";
 
 const Plans = () => {
   return (
     <>
       <PricingCard viewComparison={false} />
-      <PricingComparison />
+      <PricingPrueba />
     </>
   );
 };
