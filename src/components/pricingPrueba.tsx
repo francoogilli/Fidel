@@ -163,9 +163,9 @@ export default function PricingPrueba() {
                     selectedPlanIndex === index
                       ? "bg-[#ffffff] text-[#232323]"
                       : "bg-[#191919] text-[#f3f3f3]"
-                  } font-medium rounded-3xl text-sm px-5 py-2.5 text-center transition-all duration-200`}
+                  } font-medium rounded-3xl text-sm px-8 py-2.5 text-center transition-all duration-200`}
                 >
-                  Empezar ahora
+                  Elegir plan
                   <DoubleChevron className="size-4" strokeWidth="2.2" />
                 </button>
               </div>

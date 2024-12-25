@@ -75,6 +75,7 @@ interface Benefit {
 
 interface PricingCardProps {
   name: string;
+  popular?: boolean;
   iconPro?:boolean;
   price: number;
   bestOption: string;
@@ -348,7 +349,7 @@ export const pricingData: PricingCardProps[] = [
         tooltipInfo: "No incluye integración con Tienda Nube.",
       },
       {
-        text: "1 vendedor",
+        text: "Vendedores",
         active: false,
         tooltipInfo: "No incluye soporte para múltiples vendedores.",
       },
@@ -372,6 +373,7 @@ export const pricingData: PricingCardProps[] = [
   {
     name: "Inicial",
     price: 50000,
+    popular: true,
     bestOption: "negocios locales",
     benefits: [
       {
@@ -390,7 +392,7 @@ export const pricingData: PricingCardProps[] = [
         tooltipInfo: "Incluye integración con Tienda Nube.",
       },
       {
-        text: "1 vendedor",
+        text: "Vendedores",
         active: false,
         tooltipInfo: "No incluye soporte para múltiples vendedores.",
       },
