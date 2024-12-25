@@ -126,7 +126,7 @@ export default function PricingPrueba() {
                   : "border-[#747474]"
               } border-opacity-10 flex flex-col items-center lg:items-start justify-around h-[72px] lg:h-auto cursor-pointer`}
             >
-              {index === 1 && ( // Si quieres que el plan "Inicial" sea el popular
+              {index === 1 && (
                 <div className="hidden lg:block absolute top-3 right-3 bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full">
                   Popular
                 </div>
