@@ -24,7 +24,7 @@ export default function PricingCard({ viewComparison }: Props) {
         <>
           <h3
             className="text-4xl mx-auto w-[20rem] md:w-[55rem] md:leading-[4rem] md:text-[3.45rem] font-bold text-center my-8 pb-1 tracking-tight"
-            style={{ fontFamily: "Satoshi" }}
+            style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Planes para cada tipo de negocio.
           </h3>
