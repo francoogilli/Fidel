@@ -161,7 +161,7 @@ export default function PricingPrueba() {
               <div className="flex items-center gap-2">
                 <div className="hidden lg:flex items-center gap-1">
                   <Tooltip text={feature.info} hideOnSmallScreens={true}>
-                    <InfoCircle />
+                    <InfoCircle className="size-3.5 text-[#414141]" />
                   </Tooltip>
                 </div>
                 <p>{feature.title}</p>
