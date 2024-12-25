@@ -10,9 +10,9 @@ import StonksIcon from "../icons/stonks";
 import ModulesIcon from "../icons/modules";
 import CashIcon from "../icons/cash";
 import CalendarIcon from "../icons/calendar";
-import StarGoldIcon from "../icons/stargold";
 import DoubleChevron from "../icons/doubleChevron";
 import Garabato from "../icons/garabato";
+import CrossIcon from "../icons/crossx";
 
 interface Props {
   viewComparison?: boolean;
@@ -72,87 +72,129 @@ export default function PricingCard({ viewComparison }: Props) {
           </h4>
         </>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2.5">
         {pricingData.map((pricing) => (
           <div
-            className="flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]"
-            key={pricing.name}
-          >
-            <div className="bg-[#f8fcfa] border-b border-[#e5e5e5] px-6 py-5 -mx-6 -mt-4 rounded-t-3xl">
-              <div className="flex justify-start items-center space-x-2.5">
-                {pricing.iconPro && (
-                  <StarGoldIcon className="size-5 md:size-6 text-[#efeb23]" />
-                )}
-                <h3
-                  className="text-lg text-left tracking-wide font-semibold text-[#212121]"
-                  style={{ fontFamily: "Satoshi" }}
-                >
-                  {pricing.name}
-                </h3>
-              </div>
-              <div className="flex justify-start text-left text-[#212121] items-baseline my-3">
-                <span
-                  className="text-5xl font-semibold"
-                  style={{ fontFamily: "Satoshi" }}
-                >
-                  ${Number(pricing.price).toLocaleString("es-AR")}
-                </span>
-                <span
-                  className="font-semibold text-[#454545] sm:text-xs text-left"
-                  style={{ fontFamily: "Satoshi" }}
-                >
-                  /mes
-                </span>
-              </div>
-              <h5
-                className="text-sm font-medium text-left text-[#212121]"
-                style={{ fontFamily: "Satoshi" }}
-              >
-                Para {pricing.bestOption}
-              </h5>
+          className={`${
+            pricing.popular === true
+              ? "bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f]"
+              : "bg-[#FAFAFA]"
+          } relative flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]`}
+          key={pricing.name}
+        >
+          {pricing.popular && (
+            <div className="absolute top-3 right-3 bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full">
+              Popular
             </div>
-
-            {/* <hr className="flex-grow border-t border-zinc-200 mb-5" /> */}
-            <p className="font-medium text-[#343434] sm:text-sm text-left pb-3 pt-3">
-              Incluye
-            </p>
-            <ul role="list" className="mb-5 space-y-2.5 text-left">
-              {pricing.benefits.map((benefit, index) => (
-                <React.Fragment key={index}>
-                  <li className="flex items-center space-x-2 justify-between">
-                    <div className="flex items-center space-x-2">
-                      {benefit.active ? (
+          )}
+          <div className="px-6 py-5 -mx-6 -mt-4 rounded-t-3xl">
+            <div className="flex justify-start items-center space-x-2.5">
+              <h3
+                className={`text-[14px] lg:text-[24px] font-semibold lg:font-bold ${
+                  pricing.popular === true ? "text-[#fefefe]" : "text-[#212121]"
+                }`}
+                style={{ fontFamily: "Plus Jakarta Sans" }}
+              >
+                {pricing.name}
+              </h3>
+            </div>
+            <div className="flex justify-start text-left text-[#212121] items-baseline my-3">
+              <span
+                className={`text-5xl -tracking-wider font-bold ${
+                  pricing.popular === true ? "text-[#fefefe]" : "text-[#212121]"
+                }`}
+                style={{ fontFamily: "Plus Jakarta Sans" }}
+              >
+                ${Number(pricing.price).toLocaleString("es-AR")}
+              </span>
+              <span
+                className={`pl-1 font-bold text-xs md:text-[15px] text-left ${
+                  pricing.popular === true ? "text-[#fafafa]" : "text-[#212121]"
+                }`}
+                style={{ fontFamily: "Plus Jakarta Sans" }}
+              >
+                /mes
+              </span>
+            </div>
+            <h5
+              className={`text-sm font-medium text-left ${
+                pricing.popular === true ? "text-[#fafafa]" : "text-[#212121]"
+              }`}
+              style={{ fontFamily: "Plus Jakarta Sans" }}
+            >
+              Para {pricing.bestOption}
+            </h5>
+          </div>
+        
+          <hr
+            className={`flex-grow border-t mb-6 mt-2 ${
+              pricing.popular === true ? "border-[#90f992]" : "border-zinc-200"
+            }`}
+          />
+        
+          <ul role="list" className="mb-5 space-y-2.5 text-left">
+            {pricing.benefits.map((benefit, index) => (
+              <React.Fragment key={index}>
+                <li className="flex items-center space-x-2 justify-between">
+                  <div className="flex items-center space-x-2">
+                    {benefit.active ? (
+                      pricing.popular ? (
                         <Check
                           strokeWidth="3"
-                          className="bg-gradient-to-b from-[#63ff33] to-[#b3ff99] rounded-[5px] p-1"
+                          className={`bg-[#ffffff] text-[#191919] rounded-[5px] p-1`}
                         />
                       ) : (
-                        <Check className="bg-gradient-to-tr from-[#f5f5f5] to-[#ffffff] rounded-[5px] p-1" />
-                      )}
-                      <span
-                        className={`text-sm ${
-                          !benefit.active ? "line-through text-zinc-900" : ""
-                        }`}
-                      >
-                        {benefit.text}
-                      </span>
-                    </div>
-                  </li>
-                  {index < pricing.benefits.length - 1 && (
-                    <hr className="border-t border-white" />
-                  )}
-                </React.Fragment>
-              ))}
-              <a
-                href="/"
-                style={{ fontFamily: "Satoshi", marginTop: "27px" }}
-                className="flex justify-center tracking-wide  items-center gap-x-1 bg-gradient-to-tr from-[#000000ef] to-[#383838ee] text-[#fff] font-medium rounded-2xl text-sm px-5 py-2.5 text-center border-4 border-[#F8FAFC] hover:border-[#e0e0e0] transition-all duration-700"
-              >
-                Empezar
-                <DoubleChevron className="size-4" strokeWidth="2.2" />
-              </a>
-            </ul>
-          </div>
+                        <Check
+                          strokeWidth="3"
+                          className={`bg-[#191919] text-[#FAFAFA] rounded-[5px] p-1`}
+                        />
+                      )
+                    ) : pricing.popular ? (
+                      <CrossIcon
+                        strokeWidth="3"
+                        className={`size-5 bg-[#fafafa46] text-[#ffffffda] rounded-[5px] p-1`}
+                      />
+                    ) : (
+                      <CrossIcon
+                        strokeWidth="3"
+                        className={`size-5 bg-[#f2f2f2] rounded-[5px] p-1`}
+                      />
+                    )}
+                    <span
+                      className={`text-sm ${
+                        !benefit.active ? "line-through" : ""
+                      } ${
+                        pricing.popular === true ? "text-[#ffffff]" : "text-[#151515]"
+                      }`}
+                    >
+                      {benefit.text}
+                    </span>
+                  </div>
+                </li>
+                {index < pricing.benefits.length - 1 && (
+                  <hr
+                    className={`border-t ${
+                      pricing.popular === true ? "border-[transparent]" : "border-[#fafafa]"
+                    }`}
+                  />
+                )}
+              </React.Fragment>
+            ))}
+            <a
+              href="/"
+              style={{ fontFamily: "Plus Jakarta Sans", marginTop: "60px" }}
+              className={`${
+                pricing.popular === true
+                  ? "bg-[#ffffff] text-[#191919]"
+                  : "bg-[#191919] text-[#fafafa]"
+              } w-[12.5rem] mx-auto flex justify-center tracking-wide items-center gap-x-1 font-medium rounded-3xl text-sm px-5 py-3 text-center transition-all duration-200`}
+            >
+              Elegir plan
+              <DoubleChevron className="size-4" strokeWidth="2.2" />
+            </a>
+          </ul>
+        </div>
+        
         ))}
       </div>
       {viewComparison ? (
