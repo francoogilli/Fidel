@@ -191,7 +191,7 @@ export default function PricingPrueba() {
               {feature.values.map((value, index) => (
                 <div
                   key={index}
-                  className="bg-[#dddddd25] text-[#1f1f1f] text-base font-normal rounded-lg h-[54px] p-3 flex items-center justify-center"
+                  className="bg-[#fbfbfb] hover:bg-[#f2f2f2ae] text-[#1f1f1f] text-base font-normal rounded-lg h-[54px] p-3 flex items-center justify-center"
                 >
                   {renderFeatureValue(value)}
                 </div>
