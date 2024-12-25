@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Check from "../icons/checkIcon";
 import DoubleChevron from "../icons/doubleChevron";
 import CrossIcon from "../icons/crossx";
@@ -6,6 +6,8 @@ import Tooltip from "./tooltip";
 import InfoCircle from "../icons/infoCircle";
 
 export default function PricingPrueba() {
+  const [selectedPlanIndex, setSelectedPlanIndex] = useState(1);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const plans = [
     { name: "Básico", price: "$37.000" },
     { name: "Inicial", price: "$50.000" },
@@ -65,8 +67,26 @@ export default function PricingPrueba() {
       values: [false, false, 2, 6],
     },
   ];
+  useEffect(() => {
+    const handleResize = () => {
+      const isScreenLarge = window.innerWidth >= 768;
+      setIsLargeScreen(isScreenLarge);
+      if (isScreenLarge) {
+        setSelectedPlanIndex(1);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-  const [selectedPlanIndex, setSelectedPlanIndex] = useState(0);
+  const handlePlanClick = (index: number) => {
+    if (!isLargeScreen) {
+      setSelectedPlanIndex(index);
+    }
+  };
   const renderFeatureValue = (value: any) =>
     typeof value === "boolean" ? (
       <span className="text-xl">
@@ -99,15 +119,15 @@ export default function PricingPrueba() {
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              onClick={() => setSelectedPlanIndex(index)}
-              className={`bg-[#dddddd25] p-2 lg:p-5 rounded-[10px] lg:rounded-[20px] border ${
+              onClick={() => handlePlanClick(index)}
+              className={`bg-[#dddddd25] md:cursor-default p-2 lg:p-5 rounded-[10px] lg:rounded-[20px] border ${
                 selectedPlanIndex === index
                   ? "border-[#d5d4d4] bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f] text-[#f5f5f5]"
                   : "border-[#747474]"
               } border-opacity-10 flex flex-col items-center lg:items-start justify-around h-[72px] lg:h-auto cursor-pointer`}
             >
               <p
-                className="text-[14px] lg:text-[24px] font-bold"
+                className="text-[14px] lg:text-[24px] font-semibold lg:font-bold"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
                 {plan.name}
