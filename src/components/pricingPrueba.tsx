@@ -120,12 +120,18 @@ export default function PricingPrueba() {
             <div
               key={plan.name}
               onClick={() => handlePlanClick(index)}
-              className={`bg-[#dddddd25] md:cursor-default p-2 lg:p-5 rounded-[10px] lg:rounded-[20px] border ${
+              className={`relative bg-[#dddddd25] md:cursor-default p-2 lg:p-5 rounded-[10px] lg:rounded-[20px] border ${
                 selectedPlanIndex === index
                   ? "border-[#d5d4d4] bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f] text-[#f5f5f5]"
                   : "border-[#747474]"
               } border-opacity-10 flex flex-col items-center lg:items-start justify-around h-[72px] lg:h-auto cursor-pointer`}
             >
+              {index === 1 && ( // Si quieres que el plan "Inicial" sea el popular
+                <div className="hidden lg:block absolute top-3 right-3 bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full">
+                  Popular
+                </div>
+              )}
+
               <p
                 className="text-[14px] lg:text-[24px] font-semibold lg:font-bold"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
