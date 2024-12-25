@@ -75,126 +75,154 @@ export default function PricingCard({ viewComparison }: Props) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2.5">
         {pricingData.map((pricing) => (
           <div
-          className={`${
-            pricing.popular === true
-              ? "bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f]"
-              : "bg-[#FAFAFA]"
-          } relative flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]`}
-          key={pricing.name}
-        >
-          {pricing.popular && (
-            <div className="absolute top-3 right-3 bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full">
-              Popular
-            </div>
-          )}
-          <div className="px-6 py-5 -mx-6 -mt-4 rounded-t-3xl">
-            <div className="flex justify-start items-center space-x-2.5">
-              <h3
-                className={`text-[14px] lg:text-[24px] font-semibold lg:font-bold ${
-                  pricing.popular === true ? "text-[#fefefe]" : "text-[#212121]"
-                }`}
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                {pricing.name}
-              </h3>
-            </div>
-            <div className="flex justify-start text-left text-[#212121] items-baseline my-3">
-              <span
-                className={`text-5xl -tracking-wider font-bold ${
-                  pricing.popular === true ? "text-[#fefefe]" : "text-[#212121]"
-                }`}
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                ${Number(pricing.price).toLocaleString("es-AR")}
-              </span>
-              <span
-                className={`pl-1 font-bold text-xs md:text-[15px] text-left ${
+            className={`${
+              pricing.popular === true
+                ? "bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f]"
+                : "bg-[#FAFAFA]"
+            } relative flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]`}
+            key={pricing.name}
+          >
+            {pricing.popular && (
+              <div className="absolute top-3 right-3 flex flex-col items-start">
+                <div className="bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full">
+                  Popular
+                </div>
+                <svg
+                  className="-mt-2.5 -ml-3 size-8"
+                  width="48"
+                  height="47"
+                  viewBox="0 0 48 47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.86938 17.6771C7.0936 22.1864 22.5294 31.9981 42.479 35.1705M11.7096 15.022c3.9703 3.3037 16.0263 10.1155 32.4877 10.9334"
+                    stroke="#fff"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </div>
+            )}
+            <div className="px-6 py-5 -mx-6 -mt-4 rounded-t-3xl">
+              <div className="flex justify-start items-center space-x-2.5">
+                <h3
+                  className={`text-[14px] lg:text-[24px] font-semibold lg:font-bold ${
+                    pricing.popular === true
+                      ? "text-[#fefefe]"
+                      : "text-[#212121]"
+                  }`}
+                  style={{ fontFamily: "Plus Jakarta Sans" }}
+                >
+                  {pricing.name}
+                </h3>
+              </div>
+              <div className="flex justify-start text-left text-[#212121] items-baseline my-3">
+                <span
+                  className={`text-5xl -tracking-wider font-bold ${
+                    pricing.popular === true
+                      ? "text-[#fefefe]"
+                      : "text-[#212121]"
+                  }`}
+                  style={{ fontFamily: "Plus Jakarta Sans" }}
+                >
+                  ${Number(pricing.price).toLocaleString("es-AR")}
+                </span>
+                <span
+                  className={`pl-1 font-bold text-xs md:text-[15px] text-left ${
+                    pricing.popular === true
+                      ? "text-[#fafafa]"
+                      : "text-[#212121]"
+                  }`}
+                  style={{ fontFamily: "Plus Jakarta Sans" }}
+                >
+                  /mes
+                </span>
+              </div>
+              <h5
+                className={`text-sm font-medium text-left ${
                   pricing.popular === true ? "text-[#fafafa]" : "text-[#212121]"
                 }`}
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                /mes
-              </span>
+                Para {pricing.bestOption}
+              </h5>
             </div>
-            <h5
-              className={`text-sm font-medium text-left ${
-                pricing.popular === true ? "text-[#fafafa]" : "text-[#212121]"
+
+            <hr
+              className={`flex-grow border-t mb-6 mt-2 ${
+                pricing.popular === true
+                  ? "border-[#90f992]"
+                  : "border-zinc-200"
               }`}
-              style={{ fontFamily: "Plus Jakarta Sans" }}
-            >
-              Para {pricing.bestOption}
-            </h5>
-          </div>
-        
-          <hr
-            className={`flex-grow border-t mb-6 mt-2 ${
-              pricing.popular === true ? "border-[#90f992]" : "border-zinc-200"
-            }`}
-          />
-        
-          <ul role="list" className="mb-5 space-y-2.5 text-left">
-            {pricing.benefits.map((benefit, index) => (
-              <React.Fragment key={index}>
-                <li className="flex items-center space-x-2 justify-between">
-                  <div className="flex items-center space-x-2">
-                    {benefit.active ? (
-                      pricing.popular ? (
-                        <Check
+            />
+
+            <ul role="list" className="mb-5 space-y-2.5 text-left">
+              {pricing.benefits.map((benefit, index) => (
+                <React.Fragment key={index}>
+                  <li className="flex items-center space-x-2 justify-between">
+                    <div className="flex items-center space-x-2">
+                      {benefit.active ? (
+                        pricing.popular ? (
+                          <Check
+                            strokeWidth="3"
+                            className={`bg-[#ffffff] text-[#191919] rounded-[5px] p-1`}
+                          />
+                        ) : (
+                          <Check
+                            strokeWidth="3"
+                            className={`bg-[#191919] text-[#FAFAFA] rounded-[5px] p-1`}
+                          />
+                        )
+                      ) : pricing.popular ? (
+                        <CrossIcon
                           strokeWidth="3"
-                          className={`bg-[#ffffff] text-[#191919] rounded-[5px] p-1`}
+                          className={`size-5 bg-[#fafafa46] text-[#ffffffda] rounded-[5px] p-1`}
                         />
                       ) : (
-                        <Check
+                        <CrossIcon
                           strokeWidth="3"
-                          className={`bg-[#191919] text-[#FAFAFA] rounded-[5px] p-1`}
+                          className={`size-5 bg-[#f2f2f2] rounded-[5px] p-1`}
                         />
-                      )
-                    ) : pricing.popular ? (
-                      <CrossIcon
-                        strokeWidth="3"
-                        className={`size-5 bg-[#fafafa46] text-[#ffffffda] rounded-[5px] p-1`}
-                      />
-                    ) : (
-                      <CrossIcon
-                        strokeWidth="3"
-                        className={`size-5 bg-[#f2f2f2] rounded-[5px] p-1`}
-                      />
-                    )}
-                    <span
-                      className={`text-sm ${
-                        !benefit.active ? "line-through" : ""
-                      } ${
-                        pricing.popular === true ? "text-[#ffffff]" : "text-[#151515]"
+                      )}
+                      <span
+                        className={`text-sm ${
+                          !benefit.active ? "line-through" : ""
+                        } ${
+                          pricing.popular === true
+                            ? "text-[#ffffff]"
+                            : "text-[#151515]"
+                        }`}
+                      >
+                        {benefit.text}
+                      </span>
+                    </div>
+                  </li>
+                  {index < pricing.benefits.length - 1 && (
+                    <hr
+                      className={`border-t ${
+                        pricing.popular === true
+                          ? "border-[transparent]"
+                          : "border-[#fafafa]"
                       }`}
-                    >
-                      {benefit.text}
-                    </span>
-                  </div>
-                </li>
-                {index < pricing.benefits.length - 1 && (
-                  <hr
-                    className={`border-t ${
-                      pricing.popular === true ? "border-[transparent]" : "border-[#fafafa]"
-                    }`}
-                  />
-                )}
-              </React.Fragment>
-            ))}
-            <a
-              href="/"
-              style={{ fontFamily: "Plus Jakarta Sans", marginTop: "60px" }}
-              className={`${
-                pricing.popular === true
-                  ? "bg-[#ffffff] text-[#191919]"
-                  : "bg-[#191919] text-[#fafafa]"
-              } w-[12.5rem] mx-auto flex justify-center tracking-wide items-center gap-x-1 font-medium rounded-3xl text-sm px-5 py-3 text-center transition-all duration-200`}
-            >
-              Elegir plan
-              <DoubleChevron className="size-4" strokeWidth="2.2" />
-            </a>
-          </ul>
-        </div>
-        
+                    />
+                  )}
+                </React.Fragment>
+              ))}
+              <a
+                href="/"
+                style={{ fontFamily: "Plus Jakarta Sans", marginTop: "60px" }}
+                className={`${
+                  pricing.popular === true
+                    ? "bg-[#ffffff] text-[#191919]"
+                    : "bg-[#191919] text-[#fafafa]"
+                } w-[12.5rem] mx-auto flex justify-center tracking-wide items-center gap-x-1 font-medium rounded-3xl text-sm px-5 py-3 text-center transition-all duration-200`}
+              >
+                Elegir plan
+                <DoubleChevron className="size-4" strokeWidth="2.2" />
+              </a>
+            </ul>
+          </div>
         ))}
       </div>
       {viewComparison ? (
