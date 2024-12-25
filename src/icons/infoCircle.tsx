@@ -2,7 +2,7 @@ interface Props {
   className?: string;
   strokeWidth?: string;
 }
-export default function InfoCircle({ className, strokeWidth }: Props) {
+export default function InfoCircle({ className, strokeWidth = "2" }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +11,7 @@ export default function InfoCircle({ className, strokeWidth }: Props) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
+      stroke-width={strokeWidth}
       stroke-linecap="round"
       stroke-linejoin="round"
       className={className}
