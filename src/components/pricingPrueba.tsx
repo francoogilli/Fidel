@@ -140,7 +140,7 @@ export default function PricingPrueba() {
               </p>
               <div className="flex items-center justify-center space-x-1">
                 <p
-                  className="text-[13px] lg:text-[35px] font-bold my-3"
+                  className="text-[13px] lg:text-[35px] lg:tracking-tight font-bold my-3"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
                   {plan.price}
