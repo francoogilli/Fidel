@@ -83,7 +83,7 @@ export default function PricingCard({ viewComparison }: Props) {
           >
             {pricing.popular && (
               <div className="absolute top-3 right-3 flex flex-col items-start">
-                <div className="bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full">
+                <div className="bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full shadow-2xl hover:scale-105 transition-all duration-500 cursor-default">
                   Popular
                 </div>
                 <svg
