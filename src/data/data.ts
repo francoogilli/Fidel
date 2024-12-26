@@ -512,7 +512,7 @@ export const footerLinks = [
     links: [
       { text: "Inicio", href: "" },
       { text: "Funcionalidades", href: "/funcionalidades" },
-      { text: "Precios", href: "/precios" },
+      { text: "Planes", href: "/planes" },
       { text: "Contacto", href: "/contacto" },
     ],
   },
@@ -588,7 +588,7 @@ export const termsData = {
 export const navLinks = [
   { href: "/", label: "Inicio", icon:HomeIcon },
   { href: "/funcionalidades", label: "Funcionalidades", icon:FunctionalitiesIcon },
-  { href: "/precios", label: "Precios", icon:CreditCardIcon },
+  { href: "/planes", label: "Planes", icon:CreditCardIcon },
   { href: "/contacto", label: "Contacto", icon:MailIcon },
 ];
 
