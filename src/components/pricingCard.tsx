@@ -55,7 +55,7 @@ export default function PricingCard({ viewComparison }: Props) {
           </div>
           <h3
             className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
-            style={{ fontFamily: "Satoshi" }}
+            style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Planes que tienen
             <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
