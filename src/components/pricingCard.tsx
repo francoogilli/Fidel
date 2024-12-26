@@ -13,15 +13,29 @@ import CalendarIcon from "../icons/calendar";
 import DoubleChevron from "../icons/doubleChevron";
 import Garabato from "../icons/garabato";
 import CrossIcon from "../icons/crossx";
-
+import { motion } from "framer-motion";
 interface Props {
   viewComparison?: boolean;
 }
 export default function PricingCard({ viewComparison }: Props) {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const scaleUp = {
+    hidden: { scale: 0.95, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
+  };
   return (
     <div className="max-w-7xl mx-auto mt-32 mb-0 md:mb-10 px-4 space-y-7">
       {!viewComparison ? (
-        <>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          className="text-center"
+        >
           <h3
             className="text-4xl mx-auto w-[20rem] md:w-[45rem] md:leading-[4.5rem] md:text-[4.2rem] font-bold text-center my-8 pb-1 tracking-tight"
             style={{ fontFamily: "Plus Jakarta Sans" }}
@@ -32,10 +46,10 @@ export default function PricingCard({ viewComparison }: Props) {
             className="text-center text-sm md:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[40rem] mx-auto pb-0 md:pb-9"
             style={{ fontFamily: "Satoshi" }}
           >
-            Ya seas un emprendedor independiente, una pyme o una empresa, tenemos la solución que se adapta a tus
-            necesidades.
+            Ya seas un emprendedor independiente, una pyme o una empresa,
+            tenemos la solución que se adapta a tus necesidades.
           </h4>
-        </>
+        </motion.div>
       ) : (
         <>
           <div className="flex justify-center items-center gap-x-2.5">
@@ -57,11 +71,7 @@ export default function PricingCard({ viewComparison }: Props) {
             className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Planes que tienen
-            <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
-              {" "}
-              sentido.
-            </span>
+            Planes que tienen sentido.
           </h3>
           <h4
             className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[21rem] mx-auto pb-0 md:pb-9"
@@ -71,15 +81,21 @@ export default function PricingCard({ viewComparison }: Props) {
           </h4>
         </>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2.5">
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2.5"
+        initial="hidden"
+        animate="visible"
+        variants={fadeIn}
+      >
         {pricingData.map((pricing) => (
-          <div
+          <motion.div
             className={`${
               pricing.popular === true
                 ? "bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f]"
                 : "bg-[#FAFAFA]"
             } relative flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#e5e5e5]`}
             key={pricing.name}
+            variants={scaleUp}
           >
             {pricing.popular && (
               <div className="absolute top-3 right-3 flex flex-col items-start">
@@ -221,9 +237,10 @@ export default function PricingCard({ viewComparison }: Props) {
                 <DoubleChevron className="size-4" strokeWidth="2.2" />
               </a>
             </ul>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
+
       {viewComparison ? (
         <div className="animation-1">
           <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-8">
