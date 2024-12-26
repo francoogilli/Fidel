@@ -213,8 +213,8 @@ export default function PricingCard({ viewComparison }: Props) {
                 style={{ fontFamily: "Plus Jakarta Sans", marginTop: "60px" }}
                 className={`${
                   pricing.popular === true
-                    ? "bg-[#ffffff] text-[#191919]"
-                    : "bg-[#191919] text-[#fafafa]"
+                    ? "bg-[#ffffff] hover:bg-[#efefef] text-[#191919]"
+                    : "bg-[#191919] hover:bg-[#333333] text-[#fafafa]"
                 } w-[12.5rem] mx-auto flex justify-center tracking-wide items-center gap-x-1 font-medium rounded-3xl text-sm px-5 py-3 text-center transition-all duration-200`}
               >
                 Elegir plan

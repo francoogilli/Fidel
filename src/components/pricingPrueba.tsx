@@ -161,8 +161,8 @@ export default function PricingPrueba() {
                   style={{ fontFamily: "Satoshi" }}
                   className={`flex justify-center tracking-wide items-center gap-x-1 ${
                     selectedPlanIndex === index
-                      ? "bg-[#ffffff] text-[#232323]"
-                      : "bg-[#191919] text-[#f3f3f3]"
+                      ? "bg-[#ffffff] hover:bg-[#efefef] text-[#232323]"
+                      : "bg-[#191919] hover:bg-[#333333] text-[#f3f3f3]"
                   } font-medium rounded-3xl text-sm px-8 py-2.5 text-center transition-all duration-200`}
                 >
                   Elegir plan
