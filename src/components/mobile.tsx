@@ -14,7 +14,7 @@ export default function Mobile() {
           <MobileIcon className="size-4 md:size-4 text-[#f5f5f5]" />
           <h2
             className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
-            style={{ fontFamily: "Satoshi" }}
+            style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Aplicacion Mobile
           </h2>

@@ -18,7 +18,7 @@ export default function Integration() {
           <IntegrationIcon className="size-4 rotate-90 -scale-x-100 text-[#f5f5f5]" />
           <h2
             className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
-            style={{ fontFamily: "Satoshi" }}
+            style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Integraciones
           </h2>
