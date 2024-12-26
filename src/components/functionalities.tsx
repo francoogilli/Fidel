@@ -71,14 +71,9 @@ export default function Functionalities() {
       </div>
       <h3
         className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
-        style={{ fontFamily: "Satoshi" }}
+        style={{ fontFamily: "Plus Jakarta Sans" }}
       >
-        Hace
-        <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
-          {" "}
-          todo
-        </span>{" "}
-        en un mismo lugar.
+        Hace todo en un mismo lugar.
       </h3>
       <h4
         className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[24rem] mx-auto pb-0 md:pb-9"
