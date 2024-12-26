@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Check from "../icons/checkIcon";
 import DoubleChevron from "../icons/doubleChevron";
 import CrossIcon from "../icons/crossx";
@@ -67,6 +68,7 @@ export default function PricingPrueba() {
       values: [false, false, 2, 6],
     },
   ];
+
   useEffect(() => {
     const handleResize = () => {
       const isScreenLarge = window.innerWidth >= 768;
@@ -87,29 +89,35 @@ export default function PricingPrueba() {
       setSelectedPlanIndex(index);
     }
   };
+
   const renderFeatureValue = (value: any) =>
     typeof value === "boolean" ? (
-      <span className="text-xl">
+      <motion.span
+        className="text-xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
         {value ? (
           <Check className="bg-gradient-to-b from-[#63ff33] to-[#b3ff99] rounded-full p-1" />
         ) : (
           <CrossIcon className="rounded-full bg-gradient-to-tl from-[#ececec] to-[#ffffff] text-[#000000] size-5 p-1" />
         )}
-      </span>
+      </motion.span>
     ) : (
-      <span>{value}</span>
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        {value}
+      </motion.span>
     );
 
   return (
     <div className="max-w-7xl px-4 mx-auto flex flex-col gap-6 mt-0 lg:mt-[60px]">
       <div className="flex flex-col lg:flex-row items-center gap-5 w-full">
-        <div className="flex flex-col gap-6 w-full lg:w-[200px]  border-opacity-10 rounded-[10px] lg:rounded-[20px] p-0 lg:p-5">
-          {/* <div className="hidden lg:flex flex-col gap-3">
-            <h3 className="text-xl font-bold text-[#1a1a1a]">Planes</h3>
-            <p className="text-xl font-normal text-[#D1D1D1]">
-              Save with yearly billing!
-            </p>
-          </div> */}
+        <div className="flex flex-col gap-6 w-full lg:w-[200px] border-opacity-10 rounded-[10px] lg:rounded-[20px] p-0 lg:p-5">
           <p className="mt-4 min-[1024px]:hidden text-base font-normal text-center">
             Elija la opción que se ajuste a sus necesidades.
           </p>
@@ -117,7 +125,7 @@ export default function PricingPrueba() {
 
         <div className="grid grid-cols-4 gap-1 w-full lg:w-[calc(100%-200px)]">
           {plans.map((plan, index) => (
-            <div
+            <motion.div
               key={plan.name}
               onClick={() => handlePlanClick(index)}
               className={`relative bg-[#dddddd25] md:cursor-default p-2 lg:p-5 rounded-[10px] lg:rounded-[20px] border ${
@@ -125,60 +133,83 @@ export default function PricingPrueba() {
                   ? "border-[#d5d4d4] bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f] text-[#f5f5f5]"
                   : "border-[#747474]"
               } border-opacity-10 flex flex-col items-center lg:items-start justify-around h-[72px] lg:h-auto cursor-pointer`}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.3 }}
             >
               {index === 1 && (
-                <div className="hidden lg:block absolute top-3 right-3 bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full">
+                <motion.div
+                  className="hidden lg:block absolute top-3 right-3 bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full"
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
                   Popular
-                </div>
+                </motion.div>
               )}
 
-              <p
+              <motion.p
                 className="text-[14px] lg:text-[24px] font-semibold lg:font-bold"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
               >
                 {plan.name}
-              </p>
+              </motion.p>
+
               <div className="flex items-center justify-center space-x-1">
-                <p
+                <motion.p
                   className="text-[13px] lg:text-[35px] lg:tracking-tight font-bold my-3"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
                 >
                   {plan.price}
-                </p>
-                <p
+                </motion.p>
+                <motion.p
                   className={`hidden lg:block text-[14px] lg:text-xs ${
                     selectedPlanIndex === index
                       ? "text-[#ffffff]"
                       : "text-[#222222]"
                   } font-bold mt-3`}
                   style={{ fontFamily: "Plus Jakarta Sans" }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
                 >
                   /mes
-                </p>
+                </motion.p>
               </div>
+
               <div className="hidden lg:flex justify-center align-center w-full">
-                <button
+                <motion.button
                   style={{ fontFamily: "Satoshi" }}
                   className={`flex justify-center tracking-wide items-center gap-x-1 ${
                     selectedPlanIndex === index
                       ? "bg-[#ffffff] hover:bg-[#efefef] text-[#232323]"
                       : "bg-[#191919] hover:bg-[#333333] text-[#f3f3f3]"
                   } font-medium rounded-3xl text-sm px-8 py-2.5 text-center transition-all duration-200`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   Elegir plan
                   <DoubleChevron className="size-4" strokeWidth="2.2" />
-                </button>
+                </motion.button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
 
       <div className="flex flex-col items-center gap-1">
         {features.map((feature) => (
-          <div
+          <motion.div
             key={feature.title}
             className="flex items-center justify-between gap-5 w-full"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
             <div
               className="w-[50%] lg:w-[200px] font-medium text-base lg:text-[18px]"
@@ -195,20 +226,27 @@ export default function PricingPrueba() {
             </div>
             <div className="hidden lg:grid grid-cols-4 gap-1 w-[calc(100%-200px)]">
               {feature.values.map((value, index) => (
-                <div
+                <motion.div
                   key={index}
                   className="bg-[#fbfbfb] hover:bg-[#f2f2f2ae] text-[#1f1f1f] text-base font-normal rounded-lg h-[54px] p-3 flex items-center justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
                 >
                   {renderFeatureValue(value)}
-                </div>
+                </motion.div>
               ))}
             </div>
             <div className="lg:hidden w-[50%] grid grid-cols-1">
-              <div className="bg-[#fbfbfb] text-[#1f1f1f] text-base font-normal rounded-lg h-[54px] p-3 flex items-center justify-center">
+              <motion.div
+                className="bg-[#fbfbfb] text-[#1f1f1f] text-base font-normal rounded-lg h-[54px] p-3 flex items-center justify-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
                 {renderFeatureValue(feature.values[selectedPlanIndex])}
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
