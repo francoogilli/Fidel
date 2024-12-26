@@ -71,8 +71,8 @@ function AdvantageCard({
         {icon}
       </div>
       <h4
-        className="text-2xl pt-3 pb-3 font-semibold text-center"
-        style={{ fontFamily: "Satoshi" }}
+        className="text-2xl text-[#333333] pt-3 pb-3 font-bold text-center"
+        style={{ fontFamily: "Plus Jakarta Sans" }}
       >
         {title}
       </h4>
