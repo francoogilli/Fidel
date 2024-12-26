@@ -23,18 +23,17 @@ export default function PricingCard({ viewComparison }: Props) {
       {!viewComparison ? (
         <>
           <h3
-            className="text-4xl mx-auto w-[20rem] md:w-[55rem] md:leading-[4rem] md:text-[3.45rem] font-bold text-center my-8 pb-1 tracking-tight"
+            className="text-4xl mx-auto w-[20rem] md:w-[45rem] md:leading-[4.5rem] md:text-[4.2rem] font-bold text-center my-8 pb-1 tracking-tight"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Planes para cada tipo de negocio.
+            Encontra el plan para tus necesidades.
           </h3>
           <h4
-            className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[20rem] md:w-[40rem] mx-auto pb-0 md:pb-9"
+            className="text-center text-sm md:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[40rem] mx-auto pb-0 md:pb-9"
             style={{ fontFamily: "Satoshi" }}
           >
-            Hemos diseñado atentamente nuestros planes de precios para que se
-            ajusten a las necesidades específicas de tu negocio, ofreciéndote
-            flexibilidad y valor en cada etapa de tu crecimiento.
+            Ya seas un emprendedor independiente, una pyme o una empresa, tenemos la solución que se adapta a tus
+            necesidades.
           </h4>
         </>
       ) : (
