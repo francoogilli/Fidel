@@ -29,13 +29,9 @@ export default function Integration() {
       <div className="flex mx-auto justify-center items-center">
         <h3
           className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
-          style={{ fontFamily: "Satoshi" }}
+          style={{ fontFamily: "Plus Jakarta Sans" }}
         >
-          Conecta fácil con tu
-          <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
-            {" "}
-            tienda online
-          </span>
+          Conecta fácil con tu tienda online
         </h3>
       </div>
       <h4
@@ -57,15 +53,9 @@ export default function Integration() {
           <div className="hidden md:block">
             <h3
               className="text-3xl md:text-5xl text-[#252525] font-bold my-8 pb-0 md:pb-1 tracking-tight"
-              style={{ fontFamily: "Satoshi" }}
+              style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              Descubri las
-              <span className="text-3xl md:text-5xl bg-gradient-to-r from-[#252525] to-[#323232] bg-clip-text text-transparent">
-
-                {" "}
-                integraciones{" "}
-              </span>
-              que mejoran tu negocio.
+              Descubri las integraciones que mejoran tu negocio.
             </h3>
 
             <p className="text-[#565656] text-sm md:text-base">

@@ -86,7 +86,7 @@ export default function Recommend() {
             draggable="false"
             className="select-none absolute right-44 top-[86%] transform -translate-y-1/2 size-24"
           />
-          <p className="text-3xl md:text-6xl pb-5 font-bold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
+          <p style={{ fontFamily: "Plus Jakarta Sans" }} className="text-3xl md:text-6xl pb-5 font-extrabold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
             ¡Referi y gana!
           </p>
           <p className="font-medium text-[#434343] text-center">

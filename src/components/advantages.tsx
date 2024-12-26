@@ -30,7 +30,8 @@ const cardsData = [
   {
     icon: <PackageIcon className="size-10" />,
     title: "Productos",
-    description: "Consulta el precios, stock de productos y en diferentes listas.",
+    description:
+      "Consulta el precios, stock de productos y en diferentes listas.",
   },
   {
     icon: <CashIcon className="size-10" strokeWidth="2" />,
@@ -45,7 +46,8 @@ const cardsData = [
   {
     icon: <ReceiptIcon className="size-10" />,
     title: "Contabilidad",
-    description: "Controla el IVA y los reportes de Ingresos Brutos y Retenciones.",
+    description:
+      "Controla el IVA y los reportes de Ingresos Brutos y Retenciones.",
   },
   {
     icon: <TruckDeliveryIcon className="size-10 ml-0.5" />,
@@ -54,16 +56,30 @@ const cardsData = [
   },
 ];
 
-function AdvantageCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
+function AdvantageCard({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
   return (
     <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
       <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
         {icon}
       </div>
-      <h4 className="text-2xl pt-3 pb-3 font-semibold text-center" style={{ fontFamily: "Satoshi" }}>
+      <h4
+        className="text-2xl pt-3 pb-3 font-semibold text-center"
+        style={{ fontFamily: "Satoshi" }}
+      >
         {title}
       </h4>
-      <h6 className="text-base px-3 font-medium text-[#777777] text-center" style={{ fontFamily: "Satoshi" }}>
+      <h6
+        className="text-base px-3 font-medium text-[#777777] text-center"
+        style={{ fontFamily: "Satoshi" }}
+      >
         {description}
       </h6>
     </div>
@@ -78,7 +94,10 @@ export default function Advantages() {
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
           <AdvantagesIcon className="size-4 text-[#f5f5f5]" />
-          <h2 className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]" style={{ fontFamily: "Satoshi" }}>
+          <h2
+            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+            style={{ fontFamily: "Satoshi" }}
+          >
             Ventajas
           </h2>
         </div>
@@ -88,13 +107,9 @@ export default function Advantages() {
       <div className="flex mx-auto justify-center items-center">
         <h3
           className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
-          style={{ fontFamily: "Satoshi" }}
+          style={{ fontFamily: "Plus Jakarta Sans" }}
         >
-          Aprovecha todas nuestras
-          <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
-            {" "}
-            ventajas{" "}
-          </span>
+          Aprovecha todas nuestras ventajas
         </h3>
       </div>
       <h4
@@ -106,7 +121,12 @@ export default function Advantages() {
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
         {cardsData.map((card, index) => (
-          <AdvantageCard key={index} icon={card.icon} title={card.title} description={card.description} />
+          <AdvantageCard
+            key={index}
+            icon={card.icon}
+            title={card.title}
+            description={card.description}
+          />
         ))}
       </div>
     </div>

@@ -127,7 +127,7 @@ export default function ContactSection({ viewPage }: Props) {
       )}
       <h3
         className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight"
-        style={{ fontFamily: "Satoshi" }}
+        style={{ fontFamily: "Plus Jakarta Sans" }}
       >
         ¿Tenes preguntas?
         <span

@@ -25,13 +25,9 @@ export default function Mobile() {
       <div className="flex mx-auto justify-center items-center">
         <h3
           className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
-          style={{ fontFamily: "Satoshi" }}
+          style={{ fontFamily: "Plus Jakarta Sans" }}
         >
-          Maneja tu{" "}
-          <span className="text-4xl md:text-[3.25rem] bg-gradient-to-r from-[#000000] to-[#323232] bg-clip-text text-transparent">
-            negocio{" "}
-          </span>
-          desde tu celular
+          Maneja tu negocio desde tu celular
         </h3>
       </div>
       <h4
@@ -84,11 +80,9 @@ export default function Mobile() {
           <div className="hidden md:block">
             <h3
               className="text-3xl md:text-5xl text-[#252525] font-bold my-8 pb-0 md:pb-1 tracking-tight"
-              style={{ fontFamily: "Satoshi" }}
+              style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              Gestiona tu
-              empresa
-              desde donde vos quieras.
+              Gestiona tu empresa desde donde vos quieras.
             </h3>
 
             <p className="text-[#565656] text-sm md:text-base">
