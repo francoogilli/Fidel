@@ -49,7 +49,7 @@ export default function Hero() {
             <div className="flex flex-col md:flex-row md:space-x-3 mx-auto lg:mx-0 justify-center lg:justify-start items-center text-center space-y-2 md:space-y-0">
               <button
                 className="bg-[#5fff5c] tracking-tighter md:tracking-normal text-[#171717] justify-center w-auto gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fafafa] hover:border-[#dfffdf] transition-all duration-700"
-                style={{ fontFamily: "Satoshi" }}
+                style={{ fontFamily: "Plus Jakarta Sans" }}
               >
                 <SparklesIcon className="size-4 md:size-5" />
                 Empezar ahora
@@ -57,7 +57,7 @@ export default function Hero() {
               <Link to="/plans">
                 <button
                   className="bg-[#fafafa] tracking-tighter md:tracking-normal text-[#171717] gap-2 justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] md:border-[#fafafa] hover:border-[#f6f6f6] transition-all duration-700"
-                  style={{ fontFamily: "Satoshi" }}
+                  style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
                   <CreditCardIcon className="size-4 md:size-5" />
                   Conocer planes
