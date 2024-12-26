@@ -28,16 +28,10 @@ export default function Hero() {
 
         <div className="flex-1  text-center lg:text-left pt-0 md:pt-[0rem] lg:pt-[3.1rem]">
           <h2
-            className="font-bold text-4xl md:text-6xl lg:text-[5rem] lg:leading-[1.1em] tracking-tighter"
-            style={{ fontFamily: "Satoshi" }}
+            className="font-bold text-[#252525] text-4xl md:text-6xl lg:text-[5rem] lg:leading-[1.1em] tracking-tighter"
+            style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Organiza tu empresa, en un{" "}
-            <span
-              className="tracking-normal"
-              style={{ fontFamily: "instrument-serif" }}
-            >
-              solo lugar
-            </span>
+            Organiza tu empresa, en un solo lugar.
           </h2>
 
           <div className="lg:px-0 mt-4 mx-auto md:ml-0 w-[23rem] md:w-[36rem]">
