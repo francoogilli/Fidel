@@ -15,7 +15,7 @@ export default function Mobile() {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          viewport={{ once: true }} // La animación solo se ejecuta una vez
+          viewport={{ once: true }}
           className="flex items-center rounded-full bg-[#333333] px-4 py-2"
         >
           <MobileIcon className="size-4 md:size-4 text-[#f5f5f5]" />
@@ -34,7 +34,7 @@ export default function Mobile() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        viewport={{ once: true }} // La animación solo se ejecuta una vez
+        viewport={{ once: true }}
       >
         <h3
           className="text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
@@ -49,7 +49,7 @@ export default function Mobile() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        viewport={{ once: true }} // La animación solo se ejecuta una vez
+        viewport={{ once: true }}
       >
         Controla y toma decisiones desde la comodidad de tu celular. Conecta con
         cada aspecto de tu negocio, estés donde estés, a cualquier hora.
@@ -109,12 +109,24 @@ export default function Mobile() {
             />
           </motion.div>
         </div>
+        <div className="col-span-6 md:hidden flex justify-center items-center mx-auto">
+          <motion.img
+            src="mobileimage.png"
+            alt="Imagen para móviles"
+            className="w-full h-auto"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+          />
+        </div>
         <div className="col-span-6">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }} // La animación solo se ejecuta una vez
+            viewport={{ once: true }}
+            className="hidden md:block"
           >
             <h3
               className="text-3xl md:text-5xl text-[#252525] font-bold my-8 pb-0 md:pb-1 tracking-tight"
@@ -135,7 +147,7 @@ export default function Mobile() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }} // La animación solo se ejecuta una vez
+            viewport={{ once: true }}
           >
             <FeatureItem text="Acceso en cualquier lugar y en cualquier momento." />
             <FeatureItem text="Visualiza todos tus datos o información en tiempo real." />
