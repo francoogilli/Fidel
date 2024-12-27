@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import AdvantagesIcon from "../icons/advantages";
 import CashIcon from "../icons/cash";
 import ChartIcon from "../icons/chart";
@@ -13,7 +14,7 @@ import GradientLine from "./gradientLine";
 
 const cardsData = [
   {
-    icon: <ShoppingCartIcon className="size-10" strokeWidth="2" />,
+    icon: <ShoppingCartIcon className="size-10" strokeWidth="2" />, 
     title: "Ventas",
     description: "Facilita tus cobranzas y la creación de presupuestos.",
   },
@@ -30,8 +31,7 @@ const cardsData = [
   {
     icon: <PackageIcon className="size-10" />,
     title: "Productos",
-    description:
-      "Consulta el precios, stock de productos y en diferentes listas.",
+    description: "Consulta el precios, stock de productos y en diferentes listas.",
   },
   {
     icon: <CashIcon className="size-10" strokeWidth="2" />,
@@ -40,14 +40,13 @@ const cardsData = [
   },
   {
     icon: <ChartIcon className="size-10" />,
-    title: "Estadisticas",
+    title: "Estadísticas",
     description: "Visualiza tus métricas de ventas y compras.",
   },
   {
     icon: <ReceiptIcon className="size-10" />,
     title: "Contabilidad",
-    description:
-      "Controla el IVA y los reportes de Ingresos Brutos y Retenciones.",
+    description: "Controla el IVA y los reportes de Ingresos Brutos y Retenciones.",
   },
   {
     icon: <TruckDeliveryIcon className="size-10 ml-0.5" />,
@@ -66,7 +65,13 @@ function AdvantageCard({
   description: string;
 }) {
   return (
-    <div className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center">
+    <motion.div
+      className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+    >
       <div className="bg-gradient-to-tr from-[#63ff33] to-[#cdffbc] rounded-full p-3.5 flex justify-center items-center mb-2">
         {icon}
       </div>
@@ -82,7 +87,7 @@ function AdvantageCard({
       >
         {description}
       </h6>
-    </div>
+    </motion.div>
   );
 }
 
@@ -92,7 +97,12 @@ export default function Advantages() {
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
-        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+        <motion.div
+          className="flex items-center rounded-full bg-[#333333] px-4 py-2"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+        >
           <AdvantagesIcon className="size-4 text-[#f5f5f5]" />
           <h2
             className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
@@ -100,25 +110,35 @@ export default function Advantages() {
           >
             Ventajas
           </h2>
-        </div>
+        </motion.div>
         <ThreeStripesRight />
         <GradientLine direction="right" />
       </div>
-      <div className="flex mx-auto justify-center items-center">
+      <motion.div
+        className="flex mx-auto justify-center items-center"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+      >
         <h3
-          className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+          className="text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
           style={{ fontFamily: "Plus Jakarta Sans" }}
         >
           Aprovecha todas nuestras ventajas
         </h3>
-      </div>
-      <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[50%] mx-auto pb-0 md:pb-14"
+      </motion.div>
+      <motion.h4
+        className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[50%] mx-auto pb-0 md:pb-14"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
         style={{ fontFamily: "Satoshi" }}
       >
         Descubrí las funcionalidades que nos hacen la mejor opción para hacer
         crecer tu negocio y aprovechar al máximo tu emprendimiento.
-      </h4>
+      </motion.h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
         {cardsData.map((card, index) => (
           <AdvantageCard
