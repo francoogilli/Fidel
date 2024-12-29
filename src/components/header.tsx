@@ -16,7 +16,7 @@ export default function Header() {
   };
   return (
     <header className="md:bg-transparent top-0 sticky md:relative justify-center items-center z-40 border-b border-[#fcfcfc] transition duration-200 ease-in-out">
-      <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl">
+      <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl xl:max-w-[90rem]">
         <div className="bg-white absolute left-0 top-0 z-20 flex w-full flex-col items-center md:hidden">
           <div className="flex w-full items-center px-6 py-4">
             <a href="/" className="flex gap-x-2 justify-center items-center auto font-medium">

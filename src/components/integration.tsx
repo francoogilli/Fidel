@@ -10,14 +10,14 @@ import GradientLine from "./gradientLine";
 
 export default function Integration() {
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+    <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-4 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
-        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+        <div className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2 animation-1">
           <IntegrationIcon className="size-4 rotate-90 -scale-x-100 text-[#f5f5f5]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Integraciones
@@ -28,14 +28,14 @@ export default function Integration() {
       </div>
       <div className="flex mx-auto justify-center items-center">
         <h3
-          className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+          className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
           style={{ fontFamily: "Plus Jakarta Sans" }}
         >
           Conecta fácil con tu tienda online
         </h3>
       </div>
       <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[50%] mx-auto pb-0 md:pb-14"
+        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium md:w-[50%] xl:w-[54%] mx-auto pb-0 md:pb-14"
         style={{ fontFamily: "Satoshi" }}
       >
         Facilita la gestión de tu tienda online sincronizando inventarios,
@@ -52,13 +52,13 @@ export default function Integration() {
         <div className="col-span-6">
           <div className="hidden md:block">
             <h3
-              className="text-3xl md:text-5xl text-[#252525] font-bold my-8 pb-0 md:pb-1 tracking-tight"
+              className="text-3xl md:text-5xl xl:text-[3.2rem] text-[#252525] font-bold my-8 pb-0 md:pb-1 tracking-tight"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
               Descubri las integraciones que mejoran tu negocio.
             </h3>
 
-            <p className="text-[#565656] text-sm md:text-base">
+            <p className="text-[#565656] text-sm md:text-base xl:text-lg">
               Con <span className="font-medium text-[#3d3d3d]">Fidel</span>,
               podés integrar fácilmente tu tienda online con{" "}
               <span className="font-medium text-[#3d3d3d]">Tienda Nube</span> o{" "}
@@ -66,32 +66,32 @@ export default function Integration() {
               gestionando todos tus productos, pedidos y clientes desde una sola
               plataforma.
             </p>
-            <p className="text-[#565656] text-sm md:text-base pt-2.5">
+            <p className="text-[#565656] text-sm md:text-base xl:text-lg pt-2.5">
               Aprovecha nuestras integraciones y potencia tu negocio con una
               gestión más eficiente, mejorando la experiencia de tus clientes y
               aumentando tus ventas sin complicaciones.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-2">
-            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base xl:text-lg gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] rounded-xl p-2 border border-[#e6eee6]">
                 <CheckboxIcon className="size-7" />
               </div>
               Elegi 1 integracion para tu negocio.
             </div>
-            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base xl:text-lg gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] rounded-xl p-2 border border-[#e6eee6]">
                 <RefreshIcon className="size-7" />
               </div>
               Actualiza precios y stock automaticamente
             </div>
-            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base xl:text-lg gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] rounded-xl p-2 border border-[#e6eee6]">
                 <ThunderIcon className="size-7" />
               </div>
               Optimiza y mejora la gestión de tu negocio
             </div>
-            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
+            <div className="col-span-1 bg-[#fcfff8] flex justify-start items-center text-sm md:text-base xl:text-lg gap-x-3.5 border border-[#e6eee6] rounded-xl p-3">
               <div className="bg-gradient-to-tr from-[#63ff33] to-[#b3ff99] rounded-xl p-2 border border-[#e6eee6]">
                 <LockIcon className="size-7" />
               </div>
@@ -107,18 +107,18 @@ export default function Integration() {
           <div className="absolute flex justify-center -top-5 -left-6 transition-all duration-300">
             <img src="papelitoizquierdo.png" className="w-16" alt="" />
           </div>
-          <div className="absolute flex justify-center bg-gradient-to-r from-[#217aff] via-[#4690ff] to-[#217aff] border-[7px] border-[#b6fea8] px-10 py-4 rounded-[2rem] rotate-[5deg] top-[5.5rem] left-[120px] hover:scale-105 duration-500">
-            <TiendaNubeIcon className="size-32" fill="#fff" />
+          <div className="absolute flex justify-center bg-gradient-to-r from-[#217aff] via-[#4690ff] to-[#217aff] border-[7px] border-[#b6fea8] px-10 xl:px-[2.875rem] py-4 rounded-[2rem] rotate-[5deg] top-[5.5rem] left-[120px] hover:scale-105 duration-500">
+            <TiendaNubeIcon className="size-32 xl:size-36" fill="#fff" />
           </div>
-          <div className="absolute flex justify-center bg-[#fff] border-[7px] border-[#D1F9CA]  px-[2.375rem] py-4 rounded-[2rem] -rotate-[5deg] top-[17.8rem] right-[8.5rem] hover:scale-105 duration-500">
+          <div className="absolute flex justify-center bg-[#fff] border-[7px] border-[#D1F9CA]  px-[2.375rem] xl:px-[2.75rem] py-4 rounded-[2rem] -rotate-[5deg] top-[17.8rem] xl:top-[19.5rem] right-[8.5rem] hover:scale-105 duration-500">
             <img
               src="woocommerce.svg"
               draggable="false"
-              className="size-32"
+              className="size-32 xl:size-36"
               alt=""
             />
           </div>
-          <div className="absolute flex justify-center top-[12rem] right-[7.5rem]">
+          <div className="absolute flex justify-center top-[12rem] xl:top-[12rem] right-[7.5rem] xl:right-[9.5rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="152"
@@ -147,7 +147,7 @@ export default function Integration() {
             </svg>
           </div>
 
-          <div className="absolute flex justify-center top-[17rem] left-[7.5rem] transition-all duration-300">
+          <div className="absolute flex justify-center top-[17rem] xl:top-[19rem] left-[7.5rem] xl:left-[10rem] transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="152"

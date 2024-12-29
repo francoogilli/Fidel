@@ -89,7 +89,7 @@ export default function ContactSection({ viewPage }: Props) {
   };
 
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+    <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-4 md:px-3">
       {toastVisible && (
         <div
           id="toast-simple"
@@ -110,10 +110,10 @@ export default function ContactSection({ viewPage }: Props) {
         <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
           <GradientLine weight="1.5px" direction="left" />
           <ThreeStripesLeft />
-          <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+          <div className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2 animation-1">
             <MailIcon className="size-4 md:size-5 text-[#f5f5f5]" />
             <h2
-              className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+              className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
               Contacto
@@ -126,12 +126,12 @@ export default function ContactSection({ viewPage }: Props) {
         <div className="pt-10"></div>
       )}
       <h3
-        className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight"
+        className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight"
         style={{ fontFamily: "Plus Jakarta Sans" }}
       >
         ¿Tenes preguntas?
         <span
-          className="italic text-4xl md:text-[3.25rem] tracking-wide"
+          className="italic text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-wide"
           style={{ fontFamily: "instrument-serif" }}
         >
           {" "}
@@ -139,7 +139,7 @@ export default function ContactSection({ viewPage }: Props) {
         </span>
       </h3>
       <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[20rem] md:w-[45rem] mx-auto pb-0 md:pb-4"
+        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[45rem] xl:w-[50rem] mx-auto pb-0 md:pb-4"
         style={{ fontFamily: "Satoshi" }}
       >
         <span className="hidden md:inline">
@@ -157,12 +157,12 @@ export default function ContactSection({ viewPage }: Props) {
         validateOnBlur={false}
       >
         {({ errors, touched, handleChange, handleBlur, values }) => (
-          <Form className="flex flex-col mx-auto max-w-[45rem] pt-7 justify-center gap-y-5 px-4">
+          <Form className="flex flex-col mx-auto max-w-[45rem] xl:max-w-[52rem] pt-7 justify-center gap-y-5 px-4">
             <div className="flex justify-center">
               <ModalScheduleMeet />
             </div>
             <div className="flex flex-col">
-              <label className="text-xs font-medium mb-2.5">
+              <label className="text-xs xl:text-sm font-medium mb-2.5">
                 Nombre y Apellido
               </label>
               <div className="relative w-full">
@@ -175,7 +175,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <input
                   type="text"
-                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="firstname"
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -184,14 +184,14 @@ export default function ContactSection({ viewPage }: Props) {
                 />
               </div>
               {errors.firstname && touched.firstname && (
-                <div className="text-red-500 text-xs pt-2 pl-0.5">
+                <div className="text-red-500 text-xs xl:text-sm pt-2 pl-0.5">
                   {errors.firstname}
                 </div>
               )}
             </div>
 
             <div className="flex flex-col">
-              <label className="text-xs font-medium mb-2.5">Email</label>
+              <label className="text-xs xl:text-sm font-medium mb-2.5">Email</label>
               <div className="relative w-full">
                 <div className="absolute inset-y-0 left-3 flex items-center">
                   <MailIcon
@@ -202,7 +202,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <input
                   type="text"
-                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="email"
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -211,14 +211,14 @@ export default function ContactSection({ viewPage }: Props) {
                 />
               </div>
               {errors.email && touched.email && (
-                <div className="text-red-500 text-xs pt-2 pl-0.5">
+                <div className="text-red-500 text-xs xl:text-sm pt-2 pl-0.5">
                   {errors.email}
                 </div>
               )}
             </div>
 
             <div className="flex flex-col">
-              <label className="text-xs font-medium mb-2.5">Telefono</label>
+              <label className="text-xs xl:text-sm font-medium mb-2.5">Telefono</label>
               <div className="relative w-full">
                 <div className="absolute inset-y-0 left-3 flex items-center">
                   <PhoneIcon
@@ -229,7 +229,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <input
                   type="text"
-                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="phone"
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -238,13 +238,13 @@ export default function ContactSection({ viewPage }: Props) {
                 />
               </div>
               {errors.phone && touched.phone && (
-                <div className="text-red-500 text-xs pt-2 pl-0.5">
+                <div className="text-red-500 text-xs xl:text-sm pt-2 pl-0.5">
                   {errors.phone}
                 </div>
               )}
             </div>
             <div className="flex flex-col">
-              <label className="text-xs font-medium mb-2.5">
+              <label className="text-xs xl:text-sm font-medium mb-2.5">
                 Contanos sobre tu negocio
               </label>
               <div className="relative w-full">
@@ -257,7 +257,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <textarea
                   rows={4}
-                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
                   name="publicidad"
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -266,7 +266,7 @@ export default function ContactSection({ viewPage }: Props) {
                 />
               </div>
               {errors.publicidad && touched.publicidad && (
-                <div className="text-red-500 text-xs pt-2 pl-0.5">
+                <div className="text-red-500 text-xs xl:text-sm pt-2 pl-0.5">
                   {errors.publicidad}
                 </div>
               )}
@@ -274,7 +274,7 @@ export default function ContactSection({ viewPage }: Props) {
             <div className="flex justify-between mt-4">
               <button
                 type="submit"
-                className="group flex justify-center items-center bg-[#abff98] hover:bg-[#87fa6d] w-full text-[#000000] text-sm font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
+                className="group flex justify-center items-center bg-[#abff98] hover:bg-[#87fa6d] w-full text-[#000000] text-sm xl:text-base font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
               >
                 Enviar mensaje
               </button>

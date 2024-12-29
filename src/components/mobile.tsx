@@ -7,7 +7,7 @@ import GradientLine from "./gradientLine";
 
 export default function Mobile() {
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-3 md:px-3">
+    <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-3 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
@@ -16,11 +16,11 @@ export default function Mobile() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex items-center rounded-full bg-[#333333] px-4 py-2"
+          className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2"
         >
           <MobileIcon className="size-4 md:size-4 text-[#f5f5f5]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Aplicación Mobile
@@ -37,7 +37,7 @@ export default function Mobile() {
         viewport={{ once: true }}
       >
         <h3
-          className="text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+          className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
           style={{ fontFamily: "Plus Jakarta Sans" }}
         >
           Maneja tu negocio desde tu celular
@@ -59,29 +59,28 @@ export default function Mobile() {
           <motion.img
             src="fondo.png"
             alt=""
-            style={{ width: "600px", height: "500px" }}
-            className="absolute z-0 rounded-2xl"
+            className="absolute z-0 rounded-2xl w-[600px] xl:w-[680px] h-[500px] xl:h-[570px]"
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: true }} // La animación solo se ejecuta una vez
+            viewport={{ once: true }}
           />
           <motion.img
             width={600}
             src="cositas.svg"
             alt=""
-            className="p-10 relative z-10"
+            className="p-10 relative z-10 w-[600px] xl:w-[670px]"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }} // La animación solo se ejecuta una vez
+            viewport={{ once: true }}
           />
           <motion.div
-            className="absolute flex justify-center -top-5 right-0"
+            className="absolute flex justify-center -top-5 right-0 "
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }} // La animación solo se ejecuta una vez
+            viewport={{ once: true }}
           >
             <img src="papelitoderecho.png" className="w-16" alt="" />
           </motion.div>
@@ -90,22 +89,22 @@ export default function Mobile() {
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            viewport={{ once: true }} // La animación solo se ejecuta una vez
+            viewport={{ once: true }}
           >
             <img src="papelitoizquierdo.png" className="w-16" alt="" />
           </motion.div>
           <motion.div
-            className="absolute inset-0 flex justify-center items-center z-20"
+            className="absolute inset-0 flex justify-center items-center z-20 xl:top-[1.9rem]"
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            viewport={{ once: true }} // La animación solo se ejecuta una vez
+            viewport={{ once: true }}
           >
             <img
               src="phone.png"
               alt="Imagen de celular"
               width={500}
-              className="overflow-hidden"
+              className="overflow-hidden w-[500px] xl:w-[550px]"
             />
           </motion.div>
         </div>
@@ -129,13 +128,13 @@ export default function Mobile() {
             className="hidden md:block"
           >
             <h3
-              className="text-3xl md:text-5xl text-[#252525] font-bold my-8 pb-0 md:pb-1 tracking-tight"
+              className="text-3xl md:text-5xl xl:text-[3.2rem] text-[#252525] font-bold my-8 pb-0 md:pb-1 xl:pb-2.5 tracking-tight"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
               Gestiona tu empresa desde donde vos quieras.
             </h3>
 
-            <p className="text-[#565656] text-sm md:text-base">
+            <p className="text-[#565656] text-sm md:text-base xl:text-lg">
               Fidel te ofrece acceso instantáneo a toda la información clave de
               tu negocio. Desde la facturación hasta el control de inventario.
               Simplifica la gestión, mejora la eficiencia, y mantén el control
@@ -143,7 +142,7 @@ export default function Mobile() {
             </p>
           </motion.div>
           <motion.div
-            className="pt-0 md:pt-5 space-y-2"
+            className="pt-0 md:pt-5 xl:pt-9 space-y-2"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -162,7 +161,7 @@ export default function Mobile() {
 function FeatureItem({ text }: { text: string }) {
   return (
     <motion.div
-      className="col-span-1 bg-[#fdfdfd] flex justify-start items-center text-sm md:text-base gap-x-3.5 border border-[#e6eee6] rounded-3xl p-3"
+      className="col-span-1 bg-[#fdfdfd] flex justify-start items-center text-sm md:text-base xl:text-lg gap-x-3.5 border border-[#e6eee6] rounded-3xl p-3 xl:p-3.5"
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 0.1 }}
     >

@@ -65,15 +65,15 @@ export default function Customers() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-6 pt-4 pb-20">
+    <div className="max-w-7xl xl:max-w-[90rem] mx-auto px-4 md:px-6 pt-4 pb-20">
       {/* Header */}
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
-        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+        <div className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2 animation-1">
           <UsersGroup className="size-5 text-[#f5f5f5]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Clientes
@@ -85,13 +85,13 @@ export default function Customers() {
 
       {/* Title */}
       <h3
-        className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+        className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
         style={{ fontFamily: "Plus Jakarta Sans" }}
       >
         Lo que nuestros clientes dicen.
       </h3>
       <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[24rem] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[16rem] md:w-[24rem] xl:w-[30rem] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
         Descubri cómo Fidel transformo sus negocios.
@@ -112,7 +112,7 @@ export default function Customers() {
               src={testimonials[activeIndex].image}
               alt={testimonials[activeIndex].name}
               draggable="false"
-              className="w-full h-96 object-cover rounded-[1.8rem] border-[5px] border-[#a6faa5d8] hover:border-[#79f277d0] duration-300"
+              className="w-full h-96 xl:h-[26.5rem] object-cover rounded-[1.8rem] border-[5px] border-[#a6faa5d8] hover:border-[#79f277d0] duration-300"
             />
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
               {testimonials.map((_, index) => (
@@ -134,23 +134,23 @@ export default function Customers() {
         <div className="md:col-span-7 col-span-12 order-1 md:order-2">
           <div className="rounded-2xl p-8 bg-white">
             <h3
-              className="text-2xl font-semibold"
+              className="text-2xl xl:text-3xl font-semibold"
               style={{ fontFamily: "Satoshi" }}
             >
               {testimonials[activeIndex].name}
             </h3>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm xl:text-base text-gray-500">
               {testimonials[activeIndex].role}
             </p>
             <div className="flex mt-2 space-x-0.5">
               {Array.from({ length: testimonials[activeIndex].rating }).map(
                 (_, i) => (
-                  <Star key={i} className="text-[#efeb23] size-4" />
+                  <Star key={i} className="text-[#efeb23] size-4 xl:size-5" />
                 )
               )}
             </div>
             <p
-              className="mt-4 text-[#666666] font-medium text-lg"
+              className="mt-4 text-[#666666] font-medium text-lg xl:text-xl"
               style={{ fontFamily: "Satoshi" }}
             >
               {testimonials[activeIndex].text}

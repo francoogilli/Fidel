@@ -28,7 +28,7 @@ export default function PricingCard({ viewComparison }: Props) {
     visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
   };
   return (
-    <div className="max-w-7xl mx-auto mt-32 mb-0 md:mb-10 px-4 space-y-7">
+    <div className="max-w-7xl xl:max-w-[90rem] mx-auto mt-32 mb-0 md:mb-10 px-4 space-y-7">
       {!viewComparison ? (
         <motion.div
           initial="hidden"
@@ -55,10 +55,10 @@ export default function PricingCard({ viewComparison }: Props) {
           <div className="flex justify-center items-center gap-x-2.5">
             <GradientLine direction="left" />
             <ThreeStripesLeft />
-            <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+            <div className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2 animation-1">
               <CreditCardIcon className="size-4 md:size-5 text-[#f5f5f5]" />
               <h2
-                className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+                className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
                 Precios
@@ -68,13 +68,13 @@ export default function PricingCard({ viewComparison }: Props) {
             <GradientLine direction="right" />
           </div>
           <h3
-            className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+            className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-2.5 tracking-tight"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Planes que tienen sentido.
           </h3>
           <h4
-            className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[16rem] md:w-[21rem] mx-auto pb-0 md:pb-9"
+            className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[16rem] md:w-[21rem] xl:w-[25rem] mx-auto pb-0 md:pb-9"
             style={{ fontFamily: "Satoshi" }}
           >
             Diseñamos nuestros precios para que se adapten a tu negocio.
@@ -99,7 +99,7 @@ export default function PricingCard({ viewComparison }: Props) {
           >
             {pricing.popular && (
               <div className="absolute top-3 right-3 flex flex-col items-start">
-                <div className="bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full shadow-2xl hover:scale-105 transition-all duration-500 cursor-default">
+                <div className="bg-[#fefefe57] text-white text-xs xl:text-sm font-medium px-4 py-2 rounded-full shadow-2xl hover:scale-105 transition-all duration-500 cursor-default">
                   Popular
                 </div>
                 <svg
@@ -122,7 +122,7 @@ export default function PricingCard({ viewComparison }: Props) {
             <div className="px-6 py-5 -mx-6 -mt-4 rounded-t-3xl">
               <div className="flex justify-start items-center space-x-2.5">
                 <h3
-                  className={`text-[14px] lg:text-[24px] font-semibold lg:font-bold ${
+                  className={`text-[14px] lg:text-[24px] xl:text-[26px] font-semibold lg:font-bold ${
                     pricing.popular === true
                       ? "text-[#fefefe]"
                       : "text-[#212121]"
@@ -134,7 +134,7 @@ export default function PricingCard({ viewComparison }: Props) {
               </div>
               <div className="flex justify-start text-left text-[#212121] items-baseline my-3">
                 <span
-                  className={`text-5xl -tracking-wider font-bold ${
+                  className={`text-5xl xl:text-[3.4rem] -tracking-wider font-bold ${
                     pricing.popular === true
                       ? "text-[#fefefe]"
                       : "text-[#212121]"
@@ -144,7 +144,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   ${Number(pricing.price).toLocaleString("es-AR")}
                 </span>
                 <span
-                  className={`pl-1 font-bold text-xs md:text-[15px] text-left ${
+                  className={`pl-1 font-bold text-xs md:text-[15px] xl:text-[16px] text-left ${
                     pricing.popular === true
                       ? "text-[#fafafa]"
                       : "text-[#212121]"
@@ -155,7 +155,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 </span>
               </div>
               <h5
-                className={`text-sm font-medium text-left ${
+                className={`text-sm xl:text-[15px] font-medium text-left ${
                   pricing.popular === true ? "text-[#fafafa]" : "text-[#212121]"
                 }`}
                 style={{ fontFamily: "Plus Jakarta Sans" }}
@@ -165,14 +165,14 @@ export default function PricingCard({ viewComparison }: Props) {
             </div>
 
             <hr
-              className={`flex-grow border-t mb-6 mt-2 ${
+              className={`flex-grow border-t mb-6 xl:mb-8 mt-2 xl:mt-4 ${
                 pricing.popular === true
                   ? "border-[#90f992]"
                   : "border-zinc-200"
               }`}
             />
 
-            <ul role="list" className="mb-5 space-y-2.5 text-left">
+            <ul role="list" className="mb-5 xl:mb-[1.4rem] space-y-2.5 text-left">
               {pricing.benefits.map((benefit, index) => (
                 <React.Fragment key={index}>
                   <li className="flex items-center space-x-2 justify-between">
@@ -201,7 +201,7 @@ export default function PricingCard({ viewComparison }: Props) {
                         />
                       )}
                       <span
-                        className={`text-sm ${
+                        className={`text-sm xl:text-[15px] xl:leading-[1.5rem] ${
                           !benefit.active ? "line-through" : ""
                         } ${
                           pricing.popular === true
@@ -231,7 +231,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   pricing.popular === true
                     ? "bg-[#ffffff] hover:bg-[#efefef] text-[#191919]"
                     : "bg-[#191919] hover:bg-[#333333] text-[#fafafa]"
-                } w-[12.5rem] mx-auto flex justify-center tracking-wide items-center gap-x-1 font-medium rounded-3xl text-sm px-5 py-3 text-center transition-all duration-200`}
+                } w-[12.5rem] xl:w-[13.8rem] mx-auto flex justify-center tracking-wide items-center gap-x-1 font-medium rounded-3xl text-sm xl:text-base px-5 py-3 text-center transition-all duration-200`}
               >
                 Elegir plan
                 <DoubleChevron className="size-4" strokeWidth="2.2" />
@@ -248,7 +248,7 @@ export default function PricingCard({ viewComparison }: Props) {
             <ThreeStripesLeft />
 
             <h4
-              className="text-lg px-5 text-[#4e4e4e] font-semibold"
+              className="text-lg xl:text-xl px-5 text-[#4e4e4e] font-semibold"
               style={{ fontFamily: "Satoshi" }}
             >
               Todos los planes incluyen
@@ -292,13 +292,13 @@ export default function PricingCard({ viewComparison }: Props) {
       ) : (
         <div className="relative flex items-center justify-center">
           <h4
-            className="text-3xl mx-auto w-[32rem] md:w-[40rem] md:text-5xl font-bold text-center md:pt-14 pb-1 tracking-tight"
+            className="text-3xl mx-auto w-[32rem] md:w-[40rem] xl:w-[48rem] md:text-5xl xl:text-[3.5rem] font-bold text-center md:pt-14 pb-1 tracking-tight"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Compara y explora las características de cada plan.
           </h4>
           <Garabato
-            className="hidden md:block absolute top-10 right-[305px] size-16"
+            className="hidden md:block absolute top-10 right-[305px] xl:right-[335px] size-16 xl:size-[4.4rem]"
             color="#c2ffb0"
           />
         </div>

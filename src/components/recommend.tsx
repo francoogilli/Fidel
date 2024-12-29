@@ -7,14 +7,14 @@ import GradientLine from "./gradientLine";
 
 export default function Recommend() {
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+    <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-4 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine weight="1.5px" direction="left" />
         <ThreeStripesLeft />
-        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+        <div className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2 animation-1">
           <UsersIcon className="size-4 md:size-4 text-[#f5f5f5]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Referidos
@@ -24,7 +24,7 @@ export default function Recommend() {
         <GradientLine weight="1.5px" direction="right" />
       </div>
 
-      <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca956] to-[#ffffff24] max-w-[78.5rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
+      <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca956] to-[#ffffff24] max-w-[78.5rem] xl:max-w-[90rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="hidden lg:block relative p-10">
           <img
             src="coin4.png"
@@ -86,19 +86,19 @@ export default function Recommend() {
             draggable="false"
             className="select-none absolute right-44 top-[86%] transform -translate-y-1/2 size-24"
           />
-          <p style={{ fontFamily: "Plus Jakarta Sans" }} className="text-3xl md:text-6xl pb-5 font-extrabold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
+          <p style={{ fontFamily: "Plus Jakarta Sans" }} className="text-3xl md:text-6xl xl:text-7xl  pb-5 font-extrabold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
             ¡Referi y gana!
           </p>
-          <p className="font-medium text-[#434343] text-center">
+          <p className="font-medium text-[#434343] xl:text-lg text-center">
             Recomenda <span className="font-bold text-black">Fidel</span> a tus
             amigos y familiares.
           </p>
-          <p className="font-medium text-[#434343] text-center">
+          <p className="font-medium text-[#434343] xl:text-lg text-center">
             Gana <span className="font-bold text-black">$10.000</span> por cada
             persona que se suscriba usando tu enlace.
           </p>
           <Link to="/terms">
-            <button className="flex justify-center items-center gap-x-2 mx-auto bg-[#212121] text-white font-normal rounded-[1.1rem] text-sm px-7 py-3 mt-5 text-center border-4 border-[#FFF6D8] hover:border-[#ffc6c6] transition-all duration-700">
+            <button className="flex justify-center items-center gap-x-2 mx-auto bg-[#212121] text-white font-normal rounded-[1.1rem] text-sm xl:text-base px-7 xl:px-8 py-3 mt-5 text-center border-4 border-[#FFF6D8] hover:border-[#ffc6c6] transition-all duration-700">
               Descubri más
               <ArrowUpIcon className="size-4" />
             </button>

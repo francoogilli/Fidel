@@ -66,7 +66,7 @@ function AdvantageCard({
 }) {
   return (
     <motion.div
-      className="col-span-1 py-10 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center"
+      className="col-span-1 py-10 xl:py-12 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -76,13 +76,13 @@ function AdvantageCard({
         {icon}
       </div>
       <h4
-        className="text-2xl text-[#333333] pt-3 pb-3 font-bold text-center"
+        className="text-2xl xl:text-[1.6rem] text-[#333333] pt-3 pb-3 font-bold text-center"
         style={{ fontFamily: "Plus Jakarta Sans" }}
       >
         {title}
       </h4>
       <h6
-        className="text-base px-3 font-medium text-[#777777] text-center"
+        className="text-base xl:text-lg px-3 font-medium text-[#777777] text-center"
         style={{ fontFamily: "Satoshi" }}
       >
         {description}
@@ -93,19 +93,19 @@ function AdvantageCard({
 
 export default function Advantages() {
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+    <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-4 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
         <motion.div
-          className="flex items-center rounded-full bg-[#333333] px-4 py-2"
+          className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
         >
           <AdvantagesIcon className="size-4 text-[#f5f5f5]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Ventajas
@@ -122,14 +122,14 @@ export default function Advantages() {
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
       >
         <h3
-          className="text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+          className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-3 tracking-tight"
           style={{ fontFamily: "Plus Jakarta Sans" }}
         >
           Aprovecha todas nuestras ventajas
         </h3>
       </motion.div>
       <motion.h4
-        className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[50%] mx-auto pb-0 md:pb-14"
+        className="text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium md:w-[50%] xl:w-[48%] mx-auto pb-0 md:pb-14"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

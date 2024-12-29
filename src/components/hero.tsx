@@ -16,14 +16,14 @@ export default function Hero() {
   return (
     <>
       <motion.div
-        className="mx-auto flex flex-col lg:flex-row max-w-7xl pt-40 lg:pt-14 space-y-6 px-4 lg:px-4 pb-10"
+        className="mx-auto flex flex-col lg:flex-row max-w-7xl xl:max-w-[90rem] pt-40 lg:pt-14 xl:pt-20 space-y-6 px-4 lg:px-4 pb-10"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="flex-1 text-center lg:text-left pt-0 md:pt-[0rem] lg:pt-[3.1rem]">
+        <div className="flex-1 text-center lg:text-left pt-0 md:pt-[0rem] lg:pt-[3.2rem]">
           <motion.h2
-            className="font-bold text-[#252525] text-4xl md:text-6xl lg:text-[5rem] lg:leading-[1.1em] tracking-tighter"
+            className="font-bold text-[#252525] text-4xl md:text-6xl lg:text-[5rem] lg:leading-[1.1em] xl:text-[5.6rem] xl:leading-[1.2em] tracking-tighter"
             style={{ fontFamily: "Plus Jakarta Sans" }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}

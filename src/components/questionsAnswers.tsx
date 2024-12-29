@@ -13,14 +13,14 @@ export const QuestionsAnswers = () => {
   };
 
   return (
-    <div className="max-w-7xl mb-8 mx-auto px-4 md:px-3">
+    <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-4 md:px-3">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine weight="1.5px" direction="left" />
         <ThreeStripesLeft />
-        <div className="flex items-center rounded-full bg-[#333333] px-4 py-2 animation-1">
+        <div className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2 animation-1">
           <FAQIcon className="size-4 md:size-5 text-[#f5f5f5]" />
           <h2
-            className="text-xs md:text-sm font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             FAQs
@@ -30,12 +30,12 @@ export const QuestionsAnswers = () => {
         <GradientLine weight="1.5px" direction="right" />
       </div>
       <h3
-        className="animation-1 text-4xl md:text-[3.25rem] font-bold text-center my-8 pb-1 tracking-tight"
+        className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
         style={{ fontFamily: "Satoshi" }}
       >
         Preguntas,
         <span
-          className="italic text-4xl md:text-[3.25rem] tracking-wide"
+          className="italic text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-wide"
           style={{ fontFamily: "instrument-serif" }}
         >
           {" "}
@@ -43,7 +43,7 @@ export const QuestionsAnswers = () => {
         </span>
       </h3>
       <h4
-        className="animation-1 text-center text-sm md:text-lg text-[#5c5c5c] font-medium w-[19rem] md:w-[25rem] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[19rem] md:w-[25rem] xl:w-[27rem] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
         ¿Todavía tenes preguntas? Contacta a nuestro soporte, disponible durante
@@ -56,7 +56,7 @@ export const QuestionsAnswers = () => {
           return (
             <div
               key={item.id}
-              className="mx-auto max-w-[56rem] border border-[#e9e9e9] rounded-xl overflow-hidden"
+              className="mx-auto max-w-[56rem] xl:max-w-[67rem] border border-[#e9e9e9] rounded-xl overflow-hidden"
             >
               <button
                 onClick={() => handleToggle(index)}
@@ -65,7 +65,7 @@ export const QuestionsAnswers = () => {
                 <span className="flex items-center">
                   <IconComponent className="mr-3 size-5" />
                   <span
-                    className="text-sm md:text-[1.0625rem] font-medium"
+                    className="text-sm md:text-[1.0625rem] xl:text-lg font-medium"
                     style={{ fontFamily: "Satoshi" }}
                   >
                     {item.title}
@@ -102,7 +102,7 @@ export const QuestionsAnswers = () => {
                 }`}
               >
                 <p
-                  className="text-xs md:text-base font-medium text-[#707070]"
+                  className="text-xs md:text-base xl:text-[17px] font-medium text-[#707070]"
                   style={{ fontFamily: "Satoshi" }}
                 >
                   {item.content}

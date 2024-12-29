@@ -115,7 +115,7 @@ export default function PricingPrueba() {
     );
 
   return (
-    <div className="max-w-7xl px-4 mx-auto flex flex-col gap-6 mt-0 lg:mt-[60px]">
+    <div className="max-w-7xl xl:max-w-[90rem] px-4 mx-auto flex flex-col gap-6 mt-0 lg:mt-[60px]">
       <div className="flex flex-col lg:flex-row items-center gap-5 w-full">
         <div className="flex flex-col gap-6 w-full lg:w-[200px] border-opacity-10 rounded-[10px] lg:rounded-[20px] p-0 lg:p-5">
           <p className="mt-4 min-[1024px]:hidden text-base font-normal text-center">
@@ -132,13 +132,13 @@ export default function PricingPrueba() {
                 selectedPlanIndex === index
                   ? "border-[#d5d4d4] bg-gradient-to-bl from-[#60ff6c] to-[#0bcf0f] text-[#f5f5f5]"
                   : "border-[#747474]"
-              } border-opacity-10 flex flex-col items-center lg:items-start justify-around h-[72px] lg:h-auto cursor-pointer`}
+              } border-opacity-10 flex flex-col items-center lg:items-start justify-around h-[72px] lg:h-auto xl:h-[14rem] cursor-pointer`}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.3 }}
             >
               {index === 1 && (
                 <motion.div
-                  className="hidden lg:block absolute top-3 right-3 bg-[#fefefe57] text-white text-xs font-medium px-4 py-2 rounded-full"
+                  className="hidden lg:block absolute top-3 right-3 bg-[#fefefe57] text-white text-xs xl:text-sm font-medium px-4 py-2 rounded-full"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
@@ -148,7 +148,7 @@ export default function PricingPrueba() {
               )}
 
               <motion.p
-                className="text-[14px] lg:text-[24px] font-semibold lg:font-bold"
+                className="text-[14px] lg:text-[24px] xl:text-[28px] font-semibold lg:font-bold"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -159,7 +159,7 @@ export default function PricingPrueba() {
 
               <div className="flex items-center justify-center space-x-1">
                 <motion.p
-                  className="text-[13px] lg:text-[35px] lg:tracking-tight font-bold my-3"
+                  className="text-[13px] lg:text-[35px] xl:text-[40px] lg:tracking-tight font-bold my-3"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -168,7 +168,7 @@ export default function PricingPrueba() {
                   {plan.price}
                 </motion.p>
                 <motion.p
-                  className={`hidden lg:block text-[14px] lg:text-xs ${
+                  className={`hidden lg:block text-[14px] lg:text-xs xl:text-sm ${
                     selectedPlanIndex === index
                       ? "text-[#ffffff]"
                       : "text-[#222222]"
@@ -189,7 +189,7 @@ export default function PricingPrueba() {
                     selectedPlanIndex === index
                       ? "bg-[#ffffff] hover:bg-[#efefef] text-[#232323]"
                       : "bg-[#191919] hover:bg-[#333333] text-[#f3f3f3]"
-                  } font-medium rounded-3xl text-sm px-8 py-2.5 text-center transition-all duration-200`}
+                  } font-medium rounded-3xl text-sm xl:text-base px-8 py-2.5 text-center transition-all duration-200`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
