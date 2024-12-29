@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../data/data";
 import MenuHamburgerIcon from "../icons/menu-hamburger";
@@ -6,6 +6,8 @@ import CrossMenuIcon from "../icons/crossMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0); 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,12 +16,40 @@ export default function Header() {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="md:bg-transparent top-0 sticky md:relative justify-center items-center z-40 border-b border-[#fcfcfc] transition duration-200 ease-in-out">
+    <header
+      className={`fixed  top-0 w-full z-40 justify-center items-center bg-white border-b border-[#fcfcfc] transition-transform duration-300 ease-in-out ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl xl:max-w-[90rem]">
         <div className="bg-white absolute left-0 top-0 z-20 flex w-full flex-col items-center md:hidden">
           <div className="flex w-full items-center px-6 py-4">
-            <a href="/" className="flex gap-x-2 justify-center items-center auto font-medium">
+            <a
+              href="/"
+              className="flex gap-x-2 justify-center items-center auto font-medium"
+            >
               <img src="/fidel1.svg" className="w-10" alt="Logo Fidel" />
               Fidel
             </a>
@@ -87,7 +117,9 @@ export default function Header() {
               {navLinks.map((link) => (
                 <Link key={link.href} to={link.href}>
                   <li className="hover:bg-[#00000007] flex justify-center items-center gap-x-1.5 transition duration-300 cursor-pointer border border-none hover:border-[#e7e7e7] px-5 py-2 rounded-xl">
-                    {link.icon && <link.icon className="w-4 pb-0.5" strokeWidth="1.6" />}
+                    {link.icon && (
+                      <link.icon className="w-4 pb-0.5" strokeWidth="1.6" />
+                    )}
                     {link.label}
                   </li>
                 </Link>
